@@ -1,5 +1,5 @@
-define(MYSECDATA, SectionData.md)dnl
-define(COURSETITLE, Course Title)dnl
+define(MYSECDATA, Spring17LEdata.md)dnl
+define(COURSETITLE, Information Modeling)dnl
 define(ASSIGNMENTS, Assignments.md)dnl
 define(CALENDAR, SemesterCalendar.md)dnl
 define(OVERVIEW, OverviewObjectives.md)dnl

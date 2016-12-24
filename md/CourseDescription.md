@@ -1,6 +1,17 @@
 # Course Description
 
-> *The course description paragraph from the course catalog goes here.*
+An introduction to the foundations of information modeling methods
+used in current information management applications. The specific methods
+considered include relational database design, conceptual modeling,
+markup systems, and ontologies. The basic concepts underlying these
+methods are, respectively, relations, entities, grammars, and
+logic. Implementations include relational database design, FR/EER/UML
+diagrams, XML markup languages, and RDF/OWL semantic web
+languages. First order logic is emphasized throughout as the
+foundational framework for information modeling in general, and for
+contemporary web-based information management and delivery systems
+(including semantic web technologies) in particular.
+
 
 ## Course Overview
 
@@ -10,5 +21,5 @@
 
 ## Pre- and Co-requisites
 
-> *Note any pre- and/or co-requisites by course name and title or state
-> "none."*
+None.
+
