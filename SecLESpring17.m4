@@ -1,3 +1,4 @@
+include(Spring17Readings.m4)
 define(MYSECDATA, Spring17LEdata.md)dnl
 define(COURSETITLE, Information Modeling)dnl
 define(ASSIGNMENTS, Assignments.md)dnl
@@ -7,11 +8,11 @@ define(METADATA, syllabib.md)dnl
 define(A1DUE, Asgt. 1 Due Date)dnl
 define(A2DUE, Asgt. 2 Due Date)dnl
 define(A3DUE, Asgt. 3 Due Date)dnl
-define(SAFETY, RHFlong.md)dnl
+define(SAFETY, RHFshort.md)dnl
 define(CONTACT1, InstructorContact.md)dnl
 define(CONTACT2, AssistantContact.md)dnl
 define(INSTRUCTOR, AboutInstructor.md)dnl
-define(FINALSEC, # Resources for syllabus design)dnl
+define(FINALSEC, # Readings)dnl
 define(A1LINK, https://courses.ischool.illinois.edu/mod/assign/view.php?id=252847)dnl
 define(A2LINK, https://courses.ischool.illinois.edu/mod/assign/view.php?id=252848)dnl
 define(A3LINK, https://courses.ischool.illinois.edu/mod/assign/view.php?id=252849)dnl
