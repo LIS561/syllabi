@@ -199,7 +199,7 @@
   event:time [ a tl:Interval ;
       tl:at "2017-01-15T00:00:00-5:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
-  dcterms:subject :PresentingModels
+  dcterms:subject :PresentingModels ;
   rdfs:label "Week 1"@en .
 
 :Week2 a :Week ;
@@ -249,21 +249,19 @@
       tl:at "2017-03-05T00:00:00-5:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
   dcterms:subject :NormalForms ;
-
   rdfs:label "Week 8"@en .
 
 :Week9 a :Week ;
   event:time [ a tl:Interval ;
       tl:at "2017-03-12T00:00:00-5:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
-  dcterms:subject :LISEdProf ;
+  dcterms:subject :Syntax ;
   rdfs:label "Week 9"@en .
 
 :Week10 a :Week ;
   event:time [ a tl:Interval ;
       tl:at "2017-03-19T00:00:00-5:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
-  dcterms:subject :Syntax ;
   rdfs:label "Week 10: Spring Break"@en .
 
 :Week11 a :Week ;

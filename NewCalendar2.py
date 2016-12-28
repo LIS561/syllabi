@@ -54,25 +54,21 @@ for d in wlist:
         weeknum += 1
         weekdate = 'PRES' + str(weeknum) + 'DATE'
         print                      
-        print "## " +  myweek + ": " + weekdate + ": " + myconcept
+        print "### " +  myweek + ": " + weekdate + ": " + myconcept
         print
-        rstring = "Required Readings: "
+        rstring = "**Required Readings:** "
         if required:
-          print rstring
+          print rstring + " " + required
           print
-          print ":  " + required
-          print
-        dstring = "Due this week: "
+        dstring = "**Due this week:** "
         if weekstart[d] in deadlines.keys():
-                print dstring
+                print dstring + " " + deadlines[weekstart[d]]
                 print
-                print ":  " + deadlines[weekstart[d]]
-                print
-        bstring = "Further Background: "
+        bstring = "**Further Background:** "
         if background:
-          print bstring
+          print bstring + " " + background
           print
-          print ":  " + background
+
 
 
 
