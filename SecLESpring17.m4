@@ -13,13 +13,12 @@ define(CONTACT1, InstructorContact.md)dnl
 define(CONTACT2, AssistantContact.md)dnl
 define(INSTRUCTOR, AboutInstructor.md)dnl
 define(FINALSEC, # Readings)dnl
-define(PRES0DATE, January 23)dnl
-define(PRES1DATE, January 23)dnl
+define(PRES1DATE, January 16)dnl
 define(PRES2DATE, January 23)dnl
-define(PRES3DATE, January 23)dnl
-define(PRES4DATE, January 23)dnl
-define(PRES5DATE, January 23)dnl
-define(PRES6DATE, January 23)dnl
+define(PRES3DATE, January 30)dnl
+define(PRES4DATE, February 06)dnl
+define(PRES5DATE, February 13)dnl
+define(PRES6DATE, February 20)dnl
 define(PRES7DATE, January 23)dnl
 define(PRES8DATE, January 23)dnl
 define(PRES9DATE, January 23)dnl
