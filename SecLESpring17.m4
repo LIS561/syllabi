@@ -8,10 +8,16 @@ define(METADATA, syllabib.md)dnl
 define(A1DUE, Asgt. 1 Due Date)dnl
 define(A2DUE, Asgt. 2 Due Date)dnl
 define(A3DUE, Asgt. 3 Due Date)dnl
+define(A4DUE, Asgt. 4 Due Date)dnl
+define(A5DUE, Asgt. 5 Due Date)dnl
+define(A6DUE, Asgt. 6 Due Date)dnl
+define(A7DUE, Asgt. 7 Due Date)dnl
+define(A8DUE, Asgt. 8 Due Date)dnl
+define(A9DUE, Asgt. 9 Due Date)dnl
+define(A10DUE, Asgt. 10 Due Date)dnl
 define(SAFETY, RHFshort.md)dnl
-define(CONTACT1, InstructorContact.md)dnl
-define(CONTACT2, AssistantContact.md)dnl
-define(INSTRUCTOR, AboutInstructor.md)dnl
+define(CONTACT1, Dubin.md)dnl
+define(INSTRUCTOR, AboutDubin.md)dnl
 define(FINALSEC, # Readings)dnl
 define(PRES1DATE, No live session)dnl
 define(PRES2DATE, January 23)dnl

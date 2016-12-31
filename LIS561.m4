@@ -20,9 +20,10 @@ include(INSTRUCTOR)
 include(HelpfulResources.md)
 include(Integrity.md)
 include(InclusionAccessibility.md)
+include(SAFETY)
 include(ASSIGNMENTS)
 include(CALENDAR)
-include(SAFETY)
+
 
 FINALSEC
 

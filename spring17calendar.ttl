@@ -86,64 +86,63 @@
 
 :AsgtRDF  a :Assignment ;
   rdfs:label "RDF description assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A1LINK" ;
   :sylSecId "RDFAsgt" ;
   :hasDeadline :A1Due .
 
 :AsgtSets  a :Assignment ;
   rdfs:label "Set theory assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A2LINK" ;
   :sylSecId "SetAsgt" ;
   :hasDeadline :A2Due .
 
 :AsgtLogic0  a :Assignment ;
   rdfs:label "Propositional logic assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A3LINK" ;
   :sylSecId "Logic0Asgt" ;
   :hasDeadline :A3Due .
 
 :AsgtLogic1  a :Assignment ;
   rdfs:label "Predicate logic assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A4LINK" ;
   :sylSecId "Logic1Asgt" ;
   :hasDeadline :A4Due .
 
 :AsgtSyntax  a :Assignment ;
   rdfs:label "Formal grammar assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A5LINK" ;
   :sylSecId "SyntaxAsgt" ;
   :hasDeadline :A5Due .
 
 :AsgtSemantics  a :Assignment ;
   rdfs:label "Formal semantics assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A6LINK" ;
   :sylSecId "SemanticsAsgt" ;
   :hasDeadline :A6Due .
 
 :AsgtLogicD  a :Assignment ;
   rdfs:label "Description logic assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A7LINK" ;
   :sylSecId "DescLogicAsgt" ;
   :hasDeadline :A7Due .
 
 :AsgtRDB  a :Assignment ;
   rdfs:label "Relational modeling assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A8LINK" ;
   :sylSecId "RDBAsgt" ;
   :hasDeadline :A8Due .
 
 :AsgtUML  a :Assignment ;
   rdfs:label "UML class diagram assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A9LINK" ;
   :sylSecId "UMLAsgt" ;
   :hasDeadline :A9Due .
 
 :AsgtSVG  a :Assignment ;
   rdfs:label "SVG diagram assignment" ;
-  :moodleURL "ASOMELINK" ;
+  :moodleURL "A10LINK" ;
   :sylSecId "UMLAsgt" ;
   :hasDeadline :A10Due .
-
 
 :A1Due a :Deadline ;
   rdfs:label "Homework Assignment 1"@en ;
