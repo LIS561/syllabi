@@ -1,4 +1,5 @@
 include(Spring17Readings.m4)dnl
+include(SecLESpring17.defs)dnl
 define(MYSECDATA, Spring17LEdata.md)dnl
 define(COURSETITLE, Information Modeling)dnl
 define(ASSIGNMENTS, Assignments.md)dnl

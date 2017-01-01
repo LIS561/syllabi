@@ -36,7 +36,6 @@
 :PresentingModels a skos:Concept ;
   skos:prefLabel "Presenting Models"@en.
 
-
 :ClassesUML a skos:Concept ;
   :reqReading "UMLREADING" ;
   skos:prefLabel "Classes and Instances: UML"@en .
@@ -86,62 +85,72 @@
 
 :AsgtRDF  a :Assignment ;
   rdfs:label "RDF description assignment" ;
-  :moodleURL "A1LINK" ;
   :sylSecId "RDFAsgt" ;
+  :dueDate "RDFASGTDUE";
+  :moodleURL "A1LINK" ;
   :hasDeadline :A1Due .
 
 :AsgtSets  a :Assignment ;
   rdfs:label "Set theory assignment" ;
-  :moodleURL "A2LINK" ;
   :sylSecId "SetAsgt" ;
+  :dueDate "SETASGTDUE" ;
+  :moodleURL "A2LINK" ;
   :hasDeadline :A2Due .
 
 :AsgtLogic0  a :Assignment ;
   rdfs:label "Propositional logic assignment" ;
-  :moodleURL "A3LINK" ;
   :sylSecId "Logic0Asgt" ;
+  :dueDate "LOGIC0ASGTDUE" ;
+  :moodleURL "A3LINK" ;
   :hasDeadline :A3Due .
 
 :AsgtLogic1  a :Assignment ;
   rdfs:label "Predicate logic assignment" ;
-  :moodleURL "A4LINK" ;
   :sylSecId "Logic1Asgt" ;
+  :dueDate "LOGIC1ASGTDUE" ;
+  :moodleURL "A4LINK" ;
   :hasDeadline :A4Due .
 
 :AsgtSyntax  a :Assignment ;
   rdfs:label "Formal grammar assignment" ;
-  :moodleURL "A5LINK" ;
   :sylSecId "SyntaxAsgt" ;
+  :dueDate "SYNTAXASGTDUE" ;
+  :moodleURL "A5LINK" ;
   :hasDeadline :A5Due .
 
 :AsgtSemantics  a :Assignment ;
   rdfs:label "Formal semantics assignment" ;
-  :moodleURL "A6LINK" ;
   :sylSecId "SemanticsAsgt" ;
+  :dueDate "SEMANTICSASGTDUE" ;
+  :moodleURL "A6LINK" ;
   :hasDeadline :A6Due .
 
 :AsgtLogicD  a :Assignment ;
   rdfs:label "Description logic assignment" ;
-  :moodleURL "A7LINK" ;
   :sylSecId "DescLogicAsgt" ;
+  :dueDate "DESCLOGICASGTDUE" ;
+  :moodleURL "A7LINK" ;
   :hasDeadline :A7Due .
 
 :AsgtRDB  a :Assignment ;
   rdfs:label "Relational modeling assignment" ;
-  :moodleURL "A8LINK" ;
   :sylSecId "RDBAsgt" ;
+  :dueDate "RDBASGTDUE" ;
+  :moodleURL "A8LINK" ;
   :hasDeadline :A8Due .
 
 :AsgtUML  a :Assignment ;
   rdfs:label "UML class diagram assignment" ;
-  :moodleURL "A9LINK" ;
   :sylSecId "UMLAsgt" ;
+  :dueDate "UMLASGTDUE" ;
+  :moodleURL "A9LINK" ;
   :hasDeadline :A9Due .
 
 :AsgtSVG  a :Assignment ;
   rdfs:label "SVG diagram assignment" ;
+  :sylSecId "SVGAsgt" ;
+  :dueDate "SVGASGTDUE" ;
   :moodleURL "A10LINK" ;
-  :sylSecId "UMLAsgt" ;
   :hasDeadline :A10Due .
 
 :A1Due a :Deadline ;

@@ -6,7 +6,7 @@
 M4PATH := ./md
 export M4PATH
 
-%.md : %.m4 %.cldr LIS561.m4
+%.md : %.m4 %.cldr %.defs LIS561.m4
 	m4 -DFORMATDEFS="wpformat.m4" -DMYDEFS="$*.m4" LIS561.m4 > $*.md
 
 %.docx : %.md LIS561.bib
@@ -16,6 +16,9 @@ export M4PATH
 	pandoc -s --bibliography=LIS561.bib -o $*.html $*.md
 
 %.cldr : %.ttl 
-	./NewCalendar2.py $*.ttl > $*.cldr
+	./NewCalendar2.py $*.ttl
+
+%.defs : %.ttl 
+	./NewCalendar2.py $*.ttl
 
 

@@ -35,8 +35,8 @@ in the case of emergencies, as soon as practicable).
 
 **Assignments, Exercises & Grade Distribution:**
 
-- Assignment 1: First Assignment Title. Due A1DUE (N%).
-- Assignment 2: Second Assignment Title. Due A2DUE (N%).
+- Assignment 1: First Assignment Title. Due SVGASGTDUE (N%).
+- Assignment 2: Second Assignment Title. Due SEMANTICSASGTDUE (N%).
 - Assignment 3: Third Assignment Title. Due A3DUE (N%).
 - Attendance and Class Participation (N%) 
 

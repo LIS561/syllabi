@@ -2,8 +2,22 @@
 from rdflib import *
 import bibtexparser
 import sys
+import re
 
-calfilename = str(sys.argv[1])
+ttlfilename = str(sys.argv[1])
+
+project = ""
+newdefs = {}
+regex1 = re.compile(r"([^.]+)\.ttl")
+mymatch = re.search(regex1,ttlfilename)
+if mymatch:
+        project = mymatch.group(1)
+
+if project:
+        cldrfilename = project + ".cldr"
+        cldrfile = open(cldrfilename,"w")
+        defsfilename = project + ".defs"
+        defsfile = open(defsfilename,"w")
 
 l561 = Namespace("http://courseweb.ischool.illinois.edu/lis/2017sp/lis561/")
 event = Namespace("http://purl.org/NET/c4dm/event.owl#")
@@ -12,7 +26,7 @@ dc = Namespace("http://purl.org/dc/terms/")
 skos = Namespace("http://www.w3.org/2004/02/skos/core#")
 
 mygraph = ConjunctiveGraph()
-mygraph.parse(calfilename,format="n3")
+mygraph.parse(ttlfilename,format="n3")
 
 wlist = []  # List of weeks
 weekstart = {} # associate weeks with their starting date
@@ -24,7 +38,7 @@ for s in mygraph.subjects(RDF.type, l561.Week):
 deadlines = {}
 
 for d in mygraph.subjects(RDF.type, l561.Deadline):
-                            weekdue = duedate = dlabel = alabel = ""
+                            weekdue = duedate = adue = dlabel = alabel = ""
                             for o in mygraph.objects(d,RDFS.label):
                                     dlabel = str(o)
                             for o in mygraph.objects(d,l561.dueDuring):
@@ -34,8 +48,12 @@ for d in mygraph.subjects(RDF.type, l561.Deadline):
                             for a in mygraph.subjects(l561.hasDeadline,d):
                                     for o in mygraph.objects(a,RDFS.label):
                                             alabel = str(o)
+                                    for o in mygraph.objects(a,l561.dueDate):
+                                            adue = str(o)
                             deadlines[weekdue] = dlabel + ", " + alabel + ", Due " + duedate
-print "# Topic Schedule"
+                            newdefs[adue] = duedate
+                            
+cldrfile.write("# Topic Schedule\n")
 
 wlist = weekstart.keys()
 wlist.sort()
@@ -53,26 +71,26 @@ for d in wlist:
                               required = str(r)
         weeknum += 1
         weekdate = 'PRES' + str(weeknum) + 'DATE'
-        print                      
-        print "### " +  myweek + ": " + weekdate + ": " + myconcept
-        print
+        cldrfile.write("\n")
+        cldrfile.write("### " +  myweek + ": " + weekdate + ": " + myconcept + "\n")
+        cldrfile.write("\n")
         rstring = "**Required Readings:** "
         if required:
-          print rstring + " " + required
-          print
+          cldrfile.write(rstring + " " + required + "\n")
+          cldrfile.write("\n")
         dstring = "**Due this week:** "
         if weekstart[d] in deadlines.keys():
-                print dstring + " " + deadlines[weekstart[d]]
-                print
+                cldrfile.write(dstring + " " + deadlines[weekstart[d]] + "\n")
+                cldrfile.write("\n")
         bstring = "**Further Background:** "
         if background:
-          print bstring + " " + background
-          print
+          cldrfile.write(bstring + " " + background + "\n")
+          cldrfile.write("\n")
 
+if newdefs:
+        for k in newdefs.keys():
+                defsfile.write("define(" + k + ", " + newdefs[k] + ")dnl\n")
 
-
-
-
-        
-	 
-
+          
+cldrfile.close()
+defsfile.close()
