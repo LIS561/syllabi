@@ -1,0 +1,77 @@
+@prefix : <http://courseweb.ischool.illinois.edu/lis/2017sp/lis561/> .
+@prefix hwk: <https://courses.ischool.illinois.edu/mod/assign/> .
+@prefix z: <http://www.zotero.org/namespaces/export#> .
+@prefix ad: <http://schemas.talis.com/2005/address/schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sam: <http://cirss.lis.illinois.edu/DataCon/SAM/> .
+@prefix sro: <http://salt.semanticauthoring.org/ontologies/sro#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dolce: <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xref: <http://id.crossref.org/contributor/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix resource: <http://purl.org/vocab/resourcelist/schema#> .
+@base <http://courseweb.ischool.illinois.edu/lis/2016fa/lis501/> .
+
+:LIS561concepts a skos:ConceptScheme ;
+  skos:prefLabel "LIS561 Concepts"@en .
+
+:ModelsDomains a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Models and Domains"@en.
+
+
+:universals
+:particulars
+:abstractObject
+:concreteObject
+:socialObject
+:properties
+:relationships
+:instantiation
+:generalization
+:UML
+:RDF
+:SVG
+:domains
+:artificialLanguage
+:proposition
+:stateOfAffairs
+
+:truthValue
+:negation
+:conjunction
+:disjunction
+:implication
+:equivalence
+
+:well-formedness
+:consistency
+:inference
+:validity
+:truthTable
+
+:predicate
+:quantification
+:ambiguity
+:entailment
+
+:alphabet
+:terminals
+:nonterminals
+:productions
+:regularLanguage
+:regularExpression
+:contextfree
+:derivation

@@ -30,57 +30,74 @@
       tl:duration "P70D"^^xsd:duration] ;
   rdfs:label "Spring semester"@en .
 
+:LIS561concepts a skos:ConceptScheme ;
+  skos:prefLabel "LIS561 Concepts"@en .
+
 :ModelsDomains a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   skos:prefLabel "Models and Domains"@en.
 
 :PresentingModels a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   skos:prefLabel "Presenting Models"@en.
 
 :ClassesUML a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "UMLREADING" ;
   skos:prefLabel "Classes and Instances: UML"@en .
 
 :ClassesRDF a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "RDFREADING" ;
   skos:prefLabel "Classes and Instances: the RDF model"@en .
 
 :Sets a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "SETREADING" ;
   skos:prefLabel "Sets, relations, and functions"@en .
 
 :RDBMS a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "RDBMSREADING" ;
   skos:prefLabel "Relational modeling"@en .
 
 :NormalForms a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "NORMALFORMREADING" ;
   skos:prefLabel "Normal forms and normalization"@en .
 
 :Logic0 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "LOGIC0READING" ;
   skos:prefLabel "Propositional Logic"@en .
 
 :Logic1 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "LOGIC1READING" ;
   skos:prefLabel "Predicate Logic"@en .
 
 :LogicD a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "LOGICDREADING" ;
   skos:prefLabel "Description Logics"@en .
 
 :Syntax a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "SYNTAXREADING" ;
   skos:prefLabel "Syntax and Grammar"@en .
 
 :Semantics a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "SEMANTICSREADING" ;
   skos:prefLabel "Semantics and Interpretation"@en .
 
 :Ontologies a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   :reqReading "ONTOLOGYREADING" ;
   skos:prefLabel "Ontologies"@en .
 
 :Conclusion a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
   skos:prefLabel "Wrapup and Evaluation"@en .
 
 :AsgtRDF  a :Assignment ;
