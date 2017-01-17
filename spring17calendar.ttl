@@ -58,8 +58,8 @@
 
 :RDBMS a skos:Concept ;
   skos:inScheme :LIS561concepts ;
-  :reqReading "RDBMSREADING" ;
-  skos:prefLabel "Relational modeling"@en .
+  :reqReading "UMLREADING" ;
+  skos:prefLabel "UML and relational modeling"@en .
 
 :NormalForms a skos:Concept ;
   skos:inScheme :LIS561concepts ;
@@ -104,71 +104,71 @@
   rdfs:label "RDF description assignment" ;
   :sylSecId "RDFAsgt" ;
   :dueDate "RDFASGTDUE";
-  :moodleURL "A1LINK" ;
-  :hasDeadline :A1Due .
+  :moodleURL "A10LINK" ;
+  :hasDeadline :A10Due .
 
 :AsgtSets  a :Assignment ;
   rdfs:label "Set theory assignment" ;
   :sylSecId "SetAsgt" ;
   :dueDate "SETASGTDUE" ;
-  :moodleURL "A2LINK" ;
-  :hasDeadline :A2Due .
+  :moodleURL "A4LINK" ;
+  :hasDeadline :A4Due .
 
 :AsgtLogic0  a :Assignment ;
   rdfs:label "Propositional logic assignment" ;
   :sylSecId "Logic0Asgt" ;
   :dueDate "LOGIC0ASGTDUE" ;
-  :moodleURL "A3LINK" ;
-  :hasDeadline :A3Due .
+  :moodleURL "A2LINK" ;
+  :hasDeadline :A2Due .
 
 :AsgtLogic1  a :Assignment ;
   rdfs:label "Predicate logic assignment" ;
   :sylSecId "Logic1Asgt" ;
   :dueDate "LOGIC1ASGTDUE" ;
-  :moodleURL "A4LINK" ;
-  :hasDeadline :A4Due .
+  :moodleURL "A3LINK" ;
+  :hasDeadline :A3Due .
 
 :AsgtSyntax  a :Assignment ;
   rdfs:label "Formal grammar assignment" ;
   :sylSecId "SyntaxAsgt" ;
   :dueDate "SYNTAXASGTDUE" ;
-  :moodleURL "A5LINK" ;
-  :hasDeadline :A5Due .
+  :moodleURL "A7LINK" ;
+  :hasDeadline :A7Due .
 
 :AsgtSemantics  a :Assignment ;
   rdfs:label "Formal semantics assignment" ;
   :sylSecId "SemanticsAsgt" ;
   :dueDate "SEMANTICSASGTDUE" ;
-  :moodleURL "A6LINK" ;
-  :hasDeadline :A6Due .
+  :moodleURL "A8LINK" ;
+  :hasDeadline :A8Due .
 
 :AsgtLogicD  a :Assignment ;
   rdfs:label "Description logic assignment" ;
   :sylSecId "DescLogicAsgt" ;
   :dueDate "DESCLOGICASGTDUE" ;
-  :moodleURL "A7LINK" ;
-  :hasDeadline :A7Due .
+  :moodleURL "A9LINK" ;
+  :hasDeadline :A9Due .
 
 :AsgtRDB  a :Assignment ;
   rdfs:label "Relational modeling assignment" ;
   :sylSecId "RDBAsgt" ;
   :dueDate "RDBASGTDUE" ;
-  :moodleURL "A8LINK" ;
-  :hasDeadline :A8Due .
+  :moodleURL "A6LINK" ;
+  :hasDeadline :A6Due .
 
 :AsgtUML  a :Assignment ;
   rdfs:label "UML class diagram assignment" ;
   :sylSecId "UMLAsgt" ;
   :dueDate "UMLASGTDUE" ;
-  :moodleURL "A9LINK" ;
-  :hasDeadline :A9Due .
+  :moodleURL "A5LINK" ;
+  :hasDeadline :A5Due .
 
 :AsgtSVG  a :Assignment ;
   rdfs:label "SVG diagram assignment" ;
   :sylSecId "SVGAsgt" ;
   :dueDate "SVGASGTDUE" ;
-  :moodleURL "A10LINK" ;
-  :hasDeadline :A10Due .
+  :moodleURL "A1LINK" ;
+  :hasDeadline :A1Due .
 
 :A1Due a :Deadline ;
   rdfs:label "Homework Assignment 1"@en ;
@@ -177,48 +177,48 @@
 
 :A2Due a :Deadline ;
   rdfs:label "Homework Assignment 2"@en ;
-  :dueDuring :Week3 ;
-  :dueDate "PRES3DATE" .
-
-:A3Due a :Deadline ;
-  rdfs:label "Homework Assignment 3"@en ;
   :dueDuring :Week4 ;
   :dueDate "PRES4DATE" .
 
-:A4Due a :Deadline ;
-  rdfs:label "Homework Assignment 4"@en ;
+:A3Due a :Deadline ;
+  rdfs:label "Homework Assignment 3"@en ;
   :dueDuring :Week5 ;
   :dueDate "PRES5DATE" .
 
-:A5Due a :Deadline ;
-  rdfs:label "Homework Assignment 5"@en ;
-  :dueDuring :Week6 ;
-  :dueDate "PRES6DATE" .
-
-:A6Due a :Deadline ;
-  rdfs:label "Homework Assignment 6"@en ;
+:A4Due a :Deadline ;
+  rdfs:label "Homework Assignment 4"@en ;
   :dueDuring :Week7 ;
   :dueDate "PRES7DATE" .
 
-:A7Due a :Deadline ;
-  rdfs:label "Homework Assignment 7"@en ;
+:A5Due a :Deadline ;
+  rdfs:label "Homework Assignment 5"@en ;
   :dueDuring :Week8 ;
   :dueDate "PRES8DATE" .
 
-:A8Due a :Deadline ;
-  rdfs:label "Homework Assignment 8"@en ;
+:A6Due a :Deadline ;
+  rdfs:label "Homework Assignment 6"@en ;
   :dueDuring :Week9 ;
   :dueDate "PRES9DATE" .
 
-:A9Due a :Deadline ;
-  rdfs:label "Homework Assignment 9"@en ;
+:A7Due a :Deadline ;
+  rdfs:label "Homework Assignment 7"@en ;
   :dueDuring :Week11 ;
   :dueDate "PRES11DATE" .
 
-:A10Due a :Deadline ;
-  rdfs:label "Homework Assignment 10"@en ;
+:A8Due a :Deadline ;
+  rdfs:label "Homework Assignment 8"@en ;
   :dueDuring :Week12 ;
   :dueDate "PRES12DATE" .
+
+:A9Due a :Deadline ;
+  rdfs:label "Homework Assignment 9"@en ;
+  :dueDuring :Week13 ;
+  :dueDate "PRES13DATE" .
+
+:A10Due a :Deadline ;
+  rdfs:label "Homework Assignment 10"@en ;
+  :dueDuring :Week14 ;
+  :dueDate "PRES14DATE" .
 
 :Week1 a :Week ;
   event:time [ a tl:Interval ;

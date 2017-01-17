@@ -32,46 +32,100 @@
   skos:prefLabel "Models and Domains"@en.
 
 
-:universals
-:particulars
-:abstractObject
-:concreteObject
-:socialObject
-:properties
-:relationships
-:instantiation
-:generalization
-:UML
-:RDF
-:SVG
-:domains
-:artificialLanguage
-:proposition
-:stateOfAffairs
-
-:truthValue
-:negation
-:conjunction
-:disjunction
-:implication
-:equivalence
-
-:well-formedness
-:consistency
-:inference
-:validity
-:truthTable
-
-:predicate
-:quantification
-:ambiguity
-:entailment
-
-:alphabet
-:terminals
-:nonterminals
-:productions
-:regularLanguage
-:regularExpression
-:contextfree
-:derivation
+:universal a skos:Concept ;
+  skos:prefLabel "universal"@en.
+:particular a skos:Concept ;
+  skos:prefLabel "particular"@en.
+:abstractObject a skos:Concept ;
+  skos:prefLabel "abstract object"@en.
+:concreteObject a skos:Concept ;
+  skos:prefLabel "concrete object"@en.
+:socialObject a skos:Concept ;
+  skos:prefLabel "social object"@en.
+:property a skos:Concept ;
+  skos:prefLabel "property"@en.
+:relationship a skos:Concept ;
+  skos:prefLabel "relationship"@en.
+:instantiation a skos:Concept ;
+  skos:prefLabel "instantiation"@en.
+:generalization a skos:Concept ;
+  skos:prefLabel "generalization"@en.
+:UML a skos:Concept ;
+  skos:prefLabel "UML"@en.
+:RDF a skos:Concept ;
+  skos:prefLabel "RDF"@en.
+:SVG a skos:Concept ;
+  skos:prefLabel "SVG"@en.
+:domain a skos:Concept ;
+  skos:prefLabel "domain"@en.
+:proposition a skos:Concept ;
+  skos:prefLabel "proposition"@en.
+:stateOfAffairs a skos:Concept ;
+  skos:prefLabel "state of affairs"@en.
+  
+:truthValue a skos:Concept ;
+  skos:prefLabel "truth value"@en.
+:negation a skos:Concept ;
+  skos:prefLabel "negation"@en.
+:conjunction a skos:Concept ;
+  skos:prefLabel "conjunction"@en.
+:disjunction a skos:Concept ;
+  skos:prefLabel "disjunction"@en.
+:implication a skos:Concept ;
+  skos:prefLabel "implication"@en.
+:equivalence a skos:Concept ;
+  skos:prefLabel "equivalence"@en.
+  
+:well-formedness a skos:Concept ;
+  skos:prefLabel "well-formedness"@en.
+:consistency a skos:Concept ;
+  skos:prefLabel "consistency"@en.
+:inference a skos:Concept ;
+  skos:prefLabel "inference"@en.
+:validity a skos:Concept ;
+  skos:prefLabel "validity"@en.
+:truthTable a skos:Concept ;
+  skos:prefLabel "truth table"@en.
+:predicate a skos:Concept ;
+  skos:prefLabel "predicate"@en.
+:quantification a skos:Concept ;
+  skos:prefLabel "quantification"@en.
+:ambiguity a skos:Concept ;
+  skos:prefLabel "ambiguity"@en.
+:entailment a skos:Concept ;
+  skos:prefLabel "entailment"@en.
+  
+:alphabet a skos:Concept ;
+  skos:prefLabel "alphabet"@en.
+:terminal a skos:Concept ;
+  skos:prefLabel "terminal"@en.
+:nonterminal a skos:Concept ;
+  skos:prefLabel "nonterminal"@en.
+:production a skos:Concept ;
+  skos:prefLabel "production"@en.
+:regularLanguage a skos:Concept ;
+  skos:prefLabel "regular language"@en.
+:regularExpression a skos:Concept ;
+  skos:prefLabel "regular expression"@en.
+:contextfree a skos:Concept ;
+  skos:prefLabel "context free"@en.
+:derivation a skos:Concept ;
+  skos:prefLabel "derivation"@en.
+:BNF a skos:Concept ;
+  skos:prefLabel "BNF"@en.
+:denotation a skos:Concept ;
+  skos:prefLabel "denotation"@en.
+:interpretation a skos:Concept ;
+  skos:prefLabel "interpretation"@en.
+:model a skos:Concept ;
+  skos:prefLabel "model"@en.
+:satisfaction a skos:Concept ;
+  skos:prefLabel "satisfaction"@en.
+:set a skos:Concept ;
+  skos:prefLabel "set"@en.
+:relations a skos:Concept ;
+  skos:prefLabel "relation"@en.
+:functions a skos:Concept ;
+  skos:prefLabel "function"@en.
+:openworldreasoning a skos:Concept ;
+  skos:prefLabel "open world reasoning"@en.
