@@ -9,4 +9,4 @@ define(LOGIC1READING, [@van_benthem_chapter_2014-1])dnl
 define(LOGICDREADING, [@krotzsch_description_2012])dnl
 define(SYNTAXREADING, [@rosen_languages_1988])dnl
 define(SEMANTICSREADING, [@bach_background_1989])dnl
-define(ONTOLOGYREADING, [@hitzler_owl_2012])dnl
+define(ONTOLOGYREADING, [@hitzler_owl_2012; @manola_rdf_2014])dnl

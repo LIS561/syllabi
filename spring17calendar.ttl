@@ -171,54 +171,182 @@
   :hasDeadline :A1Due .
 
 :A1Due a :Deadline ;
-  rdfs:label "Homework Assignment 1"@en ;
+  rdfs:label "**Graded Assignment 1**"@en ;
   :dueDuring :Week2 ;
   :dueDate "PRES2DATE" .
 
 :A2Due a :Deadline ;
-  rdfs:label "Homework Assignment 2"@en ;
+  rdfs:label "**Graded Assignment 2**"@en ;
   :dueDuring :Week4 ;
   :dueDate "PRES4DATE" .
 
 :A3Due a :Deadline ;
-  rdfs:label "Homework Assignment 3"@en ;
+  rdfs:label "**Graded Assignment 3**"@en ;
   :dueDuring :Week5 ;
   :dueDate "PRES5DATE" .
 
 :A4Due a :Deadline ;
-  rdfs:label "Homework Assignment 4"@en ;
+  rdfs:label "**Graded Assignment 4**"@en ;
   :dueDuring :Week7 ;
   :dueDate "PRES7DATE" .
 
 :A5Due a :Deadline ;
-  rdfs:label "Homework Assignment 5"@en ;
+  rdfs:label "**Graded Assignment 5**"@en ;
   :dueDuring :Week8 ;
   :dueDate "PRES8DATE" .
 
 :A6Due a :Deadline ;
-  rdfs:label "Homework Assignment 6"@en ;
+  rdfs:label "**Graded Assignment 6**"@en ;
   :dueDuring :Week9 ;
   :dueDate "PRES9DATE" .
 
 :A7Due a :Deadline ;
-  rdfs:label "Homework Assignment 7"@en ;
+  rdfs:label "**Graded Assignment 7**"@en ;
   :dueDuring :Week11 ;
   :dueDate "PRES11DATE" .
 
 :A8Due a :Deadline ;
-  rdfs:label "Homework Assignment 8"@en ;
+  rdfs:label "**Graded Assignment 8**"@en ;
   :dueDuring :Week12 ;
   :dueDate "PRES12DATE" .
 
 :A9Due a :Deadline ;
-  rdfs:label "Homework Assignment 9"@en ;
+  rdfs:label "**Graded Assignment 9**"@en ;
   :dueDuring :Week13 ;
   :dueDate "PRES13DATE" .
 
 :A10Due a :Deadline ;
-  rdfs:label "Homework Assignment 10"@en ;
+  rdfs:label "**Graded Assignment 10**"@en ;
   :dueDuring :Week14 ;
   :dueDate "PRES14DATE" .
+
+:A11Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 1**"@en ;
+  :dueDuring :Week3 ;
+  :dueDate "PRES3DATE" .
+
+:A12Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 2**"@en ;
+  :dueDuring :Week4 ;
+  :dueDate "PRES4DATE" .
+
+:A13Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 3**"@en ;
+  :dueDuring :Week5 ;
+  :dueDate "PRES5DATE" .
+
+:A14Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 4**"@en ;
+  :dueDuring :Week6 ;
+  :dueDate "PRES6DATE" .
+
+:A15Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 5**"@en ;
+  :dueDuring :Week7 ;
+  :dueDate "PRES7DATE" .
+
+:A16Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 6**"@en ;
+  :dueDuring :Week8 ;
+  :dueDate "PRES8DATE" .
+
+:A17Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 7**"@en ;
+  :dueDuring :Week9 ;
+  :dueDate "PRES9DATE" .
+
+:A18Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 8**"@en ;
+  :dueDuring :Week11 ;
+  :dueDate "PRES11DATE" .
+
+:A19Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 9**"@en ;
+  :dueDuring :Week12 ;
+  :dueDate "PRES12DATE" .
+
+:A20Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 10**"@en ;
+  :dueDuring :Week13 ;
+  :dueDate "PRES13DATE" .
+
+:ExRDF  a :Assignment ;
+  rdfs:label "RDF description exercise" ;
+  :sylSecId "RDFEx" ;
+  :dueDate "RDFEXDUE";
+  :moodleURL "A20LINK" ;
+  :hasDeadline :A20Due .
+
+:ExSets  a :Assignment ;
+  rdfs:label "Set theory exercise" ;
+  :sylSecId "SetEx" ;
+  :dueDate "SETEXDUE" ;
+  :moodleURL "A14LINK" ;
+  :hasDeadline :A14Due .
+
+:ExLogic0  a :Assignment ;
+  rdfs:label "Propositional logic exercise" ;
+  :sylSecId "Logic0Ex" ;
+  :dueDate "LOGIC0EXDUE" ;
+  :moodleURL "A11LINK" ;
+  :hasDeadline :A11Due .
+
+:ExLogic1  a :Assignment ;
+  rdfs:label "First predicate logic exercise" ;
+  :sylSecId "Logic1Ex" ;
+  :dueDate "LOGIC1EXDUE" ;
+  :moodleURL "A12LINK" ;
+  :hasDeadline :A12Due .
+
+:ExLogic2  a :Assignment ;
+  rdfs:label "Second predicate logic exercise" ;
+  :sylSecId "Logic1Ex" ;
+  :dueDate "LOGIC1EXDUE" ;
+  :moodleURL "A13LINK" ;
+  :hasDeadline :A13Due .
+
+:ExSyntax  a :Assignment ;
+  rdfs:label "Formal grammar exercise" ;
+  :sylSecId "SyntaxEx" ;
+  :dueDate "SYNTAXEXDUE" ;
+  :moodleURL "A17LINK" ;
+  :hasDeadline :A17Due .
+
+:ExSemantics  a :Assignment ;
+  rdfs:label "Formal semantics exercise" ;
+  :sylSecId "SemanticsEx" ;
+  :dueDate "SEMANTICSEXDUE" ;
+  :moodleURL "A18LINK" ;
+  :hasDeadline :A18Due .
+
+:ExLogicD  a :Assignment ;
+  rdfs:label "Description logic exercise" ;
+  :sylSecId "DescLogicEx" ;
+  :dueDate "DESCLOGICEXDUE" ;
+  :moodleURL "A19LINK" ;
+  :hasDeadline :A19Due .
+
+:ExRDB  a :Assignment ;
+  rdfs:label "Relational modeling exercise" ;
+  :sylSecId "RDBEx" ;
+  :dueDate "RDBEXDUE" ;
+  :moodleURL "A16LINK" ;
+  :hasDeadline :A16Due .
+
+:ExUML  a :Assignment ;
+  rdfs:label "UML class diagram exercise" ;
+  :sylSecId "UMLEx" ;
+  :dueDate "UMLEXDUE" ;
+  :moodleURL "A15LINK" ;
+  :hasDeadline :A15Due .
+
+:ExSVG  a :Assignment ;
+  rdfs:label "SVG diagram exercise" ;
+  :sylSecId "SVGEx" ;
+  :dueDate "SVGEXDUE" ;
+  :moodleURL "A1LINK" ;
+  :hasDeadline :A1Due .
+
 
 :Week1 a :Week ;
   event:time [ a tl:Interval ;
