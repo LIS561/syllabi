@@ -25,6 +25,8 @@ define(PRES11DATE, March 27)dnl
 define(PRES12DATE, April 03)dnl
 define(PRES13DATE, April 10)dnl
 define(PRES14DATE, April 17)dnl
+define(PRES15DATE, April 24)dnl
+define(PRES16DATE, May 1)dnl
 define(A1LINK, https://courses.ischool.illinois.edu/mod/assign/view.php?id=252847)dnl
 define(A2LINK, https://courses.ischool.illinois.edu/mod/assign/view.php?id=252848)dnl
 define(A3LINK, https://courses.ischool.illinois.edu/mod/assign/view.php?id=252849)dnl

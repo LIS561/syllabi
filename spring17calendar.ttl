@@ -46,10 +46,10 @@
   :reqReading "UMLREADING" ;
   skos:prefLabel "Classes and Instances: UML"@en .
 
-:ClassesRDF a skos:Concept ;
+:RDF a skos:Concept ;
   skos:inScheme :LIS561concepts ;
   :reqReading "RDFREADING" ;
-  skos:prefLabel "Classes and Instances: the RDF model"@en .
+  skos:prefLabel "The RDF model and language"@en .
 
 :Sets a skos:Concept ;
   skos:inScheme :LIS561concepts ;
@@ -104,8 +104,15 @@
   rdfs:label "RDF description assignment" ;
   :sylSecId "RDFAsgt" ;
   :dueDate "RDFASGTDUE";
-  :moodleURL "A10LINK" ;
-  :hasDeadline :A10Due .
+  :moodleURL "A9LINK" ;
+  :hasDeadline :A9Due .
+
+:AsgtOWL  a :Assignment ;
+  rdfs:label "OWL ontology assignment" ;
+  :sylSecId "OWLAsgt" ;
+  :dueDate "OWLASGTDUE";
+  :moodleURL "A21LINK" ;
+  :hasDeadline :A21Due .
 
 :AsgtSets  a :Assignment ;
   rdfs:label "Set theory assignment" ;
@@ -146,8 +153,8 @@
   rdfs:label "Description logic assignment" ;
   :sylSecId "DescLogicAsgt" ;
   :dueDate "DESCLOGICASGTDUE" ;
-  :moodleURL "A9LINK" ;
-  :hasDeadline :A9Due .
+  :moodleURL "A10LINK" ;
+  :hasDeadline :A10Due .
 
 :AsgtRDB  a :Assignment ;
   rdfs:label "Relational modeling assignment" ;
@@ -270,12 +277,29 @@
   :dueDuring :Week13 ;
   :dueDate "PRES13DATE" .
 
+:A21Due a :Deadline ;
+  rdfs:label "**Graded Assignment 11**"@en ;
+  :dueDuring :Week15 ;
+  :dueDate "PRES15DATE" .
+
+:A22Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 11**"@en ;
+  :dueDuring :Week14 ;
+  :dueDate "PRES14DATE" .
+
 :ExRDF  a :Assignment ;
   rdfs:label "RDF description exercise" ;
   :sylSecId "RDFEx" ;
   :dueDate "RDFEXDUE";
-  :moodleURL "A20LINK" ;
-  :hasDeadline :A20Due .
+  :moodleURL "A19LINK" ;
+  :hasDeadline :A19Due .
+
+:ExOWL  a :Assignment ;
+  rdfs:label "OWL ontology exercise" ;
+  :sylSecId "OWLEx" ;
+  :dueDate "OWLEXDUE";
+  :moodleURL "A22LINK" ;
+  :hasDeadline :A22Due .
 
 :ExSets  a :Assignment ;
   rdfs:label "Set theory exercise" ;
@@ -323,8 +347,8 @@
   rdfs:label "Description logic exercise" ;
   :sylSecId "DescLogicEx" ;
   :dueDate "DESCLOGICEXDUE" ;
-  :moodleURL "A19LINK" ;
-  :hasDeadline :A19Due .
+  :moodleURL "A20LINK" ;
+  :hasDeadline :A20Due .
 
 :ExRDB  a :Assignment ;
   rdfs:label "Relational modeling exercise" ;
@@ -428,19 +452,28 @@
   event:time [ a tl:Interval ;
       tl:at "2017-04-02T00:00:00-5:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
-  dcterms:subject :LogicD ;
+  dcterms:subject :RDF ;
   rdfs:label "Week 12"@en .
 
 :Week13 a :Week ;
   event:time [ a tl:Interval ;
       tl:at "2017-04-09T00:00:00-5:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
-  dcterms:subject :Ontologies ;
+  dcterms:subject :LogicD ;        
   rdfs:label "Week 13"@en .
 
 :Week14 a :Week ;
   event:time [ a tl:Interval ;
       tl:at "2017-04-16T00:00:00-5:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Ontologies ;
+  rdfs:label "Week 14"@en .
+
+:Week15 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-04-23T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
   dcterms:subject :Conclusion ;
   rdfs:label "Week 14"@en .
+
+
