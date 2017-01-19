@@ -1,0 +1,400 @@
+<!doctype syllabus system "syllabus.dtd" [
+<!ENTITY % LaTeX "IGNORE">
+<!ENTITY % HTML "IGNORE">
+<![ %LaTeX; [
+<!entity % texentities system "tex_entities.ent">
+%texentities;
+]]>
+<![ %HTML; [
+<!entity % htmlentities system "html_entities.ent">
+%htmlentities;
+]]>
+<!ENTITY week1 "August 22">
+<!ENTITY week2 "August 29">
+<!ENTITY week3 "September 5"> <!-- Labor Day Holiday -->
+<!ENTITY week4 "September 12">
+<!ENTITY week5 "September 19"> 
+<!ENTITY week6 "September 26"> 
+<!ENTITY week7 "October 3">
+<!ENTITY week8 "October 10"> 
+<!ENTITY week9 "October 17"> 
+<!ENTITY week10 "October 24"> <!-- iSchool Research Showcase -->
+<!ENTITY week11 "October 31">
+<!ENTITY week12 "November 7">
+<!ENTITY week13 "November 14">
+<!ENTITY week14 "November 21"> <!-- Thanksgiving break --> 
+<!ENTITY week15 "November 28">
+<!ENTITY week16 "December 5"> <!-- Last regular class meeting --> 
+<!ENTITY read "https://www.zotero.org/groups/lis561/items/itemKey/">
+<!ENTITY uml "Q599NVA9">
+<!ENTITY rdfs "KWIBZS9F">
+<!ENTITY sets "SU5NRNJQ">
+<!ENTITY relation1 "2PAKI4Z6">
+<!ENTITY rdbms "Z9S4B55B">
+<!ENTITY proplogic "TRVM8A5Q">
+<!ENTITY predlogic "U5QI7QU9">
+<!ENTITY syntax "C6DP6USB">
+<!ENTITY semantics "3DVUEMJM">
+<!ENTITY dlogic "XDG6GU3I">
+<!ENTITY owl "RW27P2A9">
+<!ENTITY hwk "https://courses.ischool.illinois.edu/mod/assign/view.php?id=">
+<!ENTITY asgt1 "245805">
+<!ENTITY beforeclass "due at 1:00pm, central time">
+<!ENTITY ExamWeek "December 12">
+<!ENTITY TBA "(date TBA)">
+]>
+<syllabus>
+  <head>
+    <course>
+      <cname>Information Modeling</cname> <cnumber>LIS 561</cnumber> <dept>School
+      of Information Sciences</dept> <term>Fall 2016</term>
+    </course>
+    <sections>
+      <section>
+         <secid>Section A</secid>
+         <when>Monday 1:00 PM&ndash;3:50 PM</when>
+         <where>Room 126, LIS Building</where>
+      </section>
+   </sections>
+    <prof>
+      <pname>David Dubin
+      <poffice>LIS 330
+      <phours>Tuesday, 3:00 PM&ndash;5:00 PM Central, and by appointment
+      <pphone>217&ndash;244&ndash;3275 (217&ndash;BIG&ndash;EARL)
+      <pemail>ddubin
+      <pwww><weblink url="http://people.ischool.illinois.edu/~ddubin/">http://people.ischool.illinois.edu/&tilde;ddubin/</weblink>
+   </prof>
+ </head>
+<preamble>
+   <p>This document is Copyright &copy; 2014, 2016 by David Dubin and the
+Trustees of the University of Illinois. In addition to this syllabus,
+this course is governed by the rules and guidelines set forth in the
+<weblink url="http://www.illinois.edu/admin_manual/code/">Code of
+Policies and Regulations Applying to All Students</weblink> and 
+<em type="title">A Handbook for Graduate Students and Advisers</em> which
+graduate students receive upon admission to the program. Students
+should also consult, and take to heart, the <em type="title">Professional Guidelines and Codes of Ethics for Library
+and Information Science Professionals</em> available from the GSLIS
+main office. <p>This syllabus is provided to UIUC students as part of
+the materials for a particular class. However, it may be copied,
+redistributed, and modified under the terms of the 
+<weblink url="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons
+Attribution-ShareAlike license</weblink> (Version 2.0). The text of
+that license is available on the Worldwide Web at creativecommons.org.
+Resources that are linked to or referenced from within this syllabus
+(e.g., readings, outlines, discussions) are <em>not</em> covered by
+the license, unless specifically labeled as such.</p>
+</preamble>
+ <sylsec id="library">
+    <sectl>Library Resources</sectl>
+    <p>Library resources and information are available at the
+following online addresses:</p>
+<![ %HTML; [<itemize>
+<item><weblink url="http://www.library.illinois.edu/">University of Illinois Library</weblink></item>
+<item><weblink url="http://www.library.illinois.edu/lsx/">Library and Information Science Virtual Library</weblink></item>
+<item><weblink url="http://search.grainger.uiuc.edu/linker/">Journal and Article Locator</weblink></item>
+<item><weblink url="mailto:lislib@library.illinois.edu">LIS Librarian (email: lislib@library.illinois.edu, phone: 217-333-3804)</weblink></item>
+</itemize>]]><![ %LaTeX; [<itemize>
+<item>University of Illinois Library: http://www.library.illinois.edu/</item>
+<item>Library and Information Science Virtual Library: http://www.library.illinois.edu/lsx/</item>
+<item>Journal and Article Locator: http://search.grainger.uiuc.edu/linker/</item>
+<item>LIS Librarian (email: lislib@library.illinois.edu, phone: 217-333-3804)</item>
+</itemize>]]>
+  </sylsec>
+ <sylsec id="scope">
+    <sectl>Scope and Objectives</sectl>
+    <p>An introduction to the foundations of the information modeling
+methods used in current digital library applications as well as in
+information management in general. The specific methods considered are
+relational database design, conceptual modeling, markup systems, and
+ontologies. The basic concepts underlying these methods are,
+respectively, relations, entities, grammars, and logic.
+Implementations include relational database design, ER/EER/UML
+diagrams, XML markup languages, and RDF/OWL semantic web languages.
+First order logic is emphasized throughout as the foundational
+framework for information modeling in general, and for contemporary
+web-based information management and delivery systems (including
+semantic web technologies) in particular.</p>
+    <sylsubsec id="objectives">
+      <subtl>Objectives</subtl>
+      <p>Two sorts of students are anticipated and the course
+objectives are similar but slightly different for each group. In
+neither case is prior relevant knowledge assumed.</p>
+      <itemize>
+	<item>LIS561 prepares students anticipating generalist
+responsibilities (as directors, managers, general staff, etc.) to be
+effective leaders in making decisions about the design, development,
+and evaluation of information systems, services, and policies, helping
+their organizations and communities deal with all aspects of the
+difficult technology challenges ahead.
+</item>
+	<item>LIS561 prepares students anticipating careers as technology
+specialists to efficiently acquire and maintain superior information
+modeling skills throughout their careers and to play leadership roles
+in the design, development, and evaluation of information systems,
+services, and policies.</item>
+      </itemize>
+      <p>Consistent with the GSLIS goal of producing leaders
+and not just competent professionals we focus on
+developing a deep understanding that will have long-term benefits and
+prepare students to engage the hardest problems facing organizations
+and society.</p>
+      <p>Of course LIS561 alone cannot fully realize these objectives; it
+makes a partial contribution, focusing on the principles and concepts
+of information modeling. A partial contribution, but a necessary one:
+the connection between a deep understanding of information modeling
+concepts and the challenging information management problems facing us
+today is profound.</p>
+    </sylsubsec>
+    <sylsubsec>
+      <subtl>Strategy</subtl>
+      <p>The course examines the major modeling approaches currently
+in use in information management: relational modeling, conceptual
+modeling, XML markup, and ontologies, focusing on underlying concepts
+and principles. The course is thus simultaneously a foundations course
+and a survey course. There are several important cross-cutting
+themes:</p>
+      <itemize>
+	<item>Data independence through abstraction.</item>
+	<item>The interdefinability of fundamental modeling constructs.</item>
+	<item>Deep vs. superficial differences in modeling languages.</item>
+	<item>The expressiveness vs. tractability tradeoff.</item>
+	<item>The fundamental role of a very small set of inter-related concepts.</item>
+      </itemize>
+    </sylsubsec>
+  <sylsec id="syllabus">
+    <sectl>This Syllabus</sectl> 
+    <p>The official syllabus for this course is the SGML version that
+is linked off the class web page. Expressions of the syllabus in other
+formats are derived from the SGML version. The current SGML version
+should be consulted to resolve any inconsistencies among other
+renditions.</p>
+  </sylsec>
+  <sylsec id="inclusion">
+    <sectl>Statement of Inclusion</sectl>
+    <p>The following expression is adopted from the Chancellor's
+Commitment Statement of November 2012:</p>
+    <p>As the state's premier public university, the University of Illinois
+at Urbana-Champaign's core mission is to serve the interests of the
+diverse people of the state of Illinois and beyond. The institution
+thus values inclusion and a pluralistic learning and research
+environment, one which we respect the varied perspectives and lived
+experiences of a diverse community and global workforce. We support
+diversity of world views, histories, and cultural knowledge across a
+range of social groups including race, ethnicity, gender identity,
+sexual orientation, abilities, economic class, religion, and their
+intersections.</p>
+      <p>The readings and discussion topics for our class meetings are
+selected with the aim of encouraging reflection and discussion, but
+those choices are not socially or culturally neutral. Where we may be
+missing opportunities to align the class content and conduct with the
+values expressed in the inclusion statement, students are encouraged
+to call classmate and instructor attention to those issues.</p>
+  </sylsec>
+  <newpage>
+  <sylsec id="disability">
+    <sectl>Disability Statement</sectl>
+    <p>To obtain disability-related academic adjustments and/or auxiliary
+aids, students with disabilities must contact the course instructor
+and the Disability Resources and Educational Services (DRES) as soon
+as possible. To contact DRES you may visit 1207 S. Oak St., Champaign,
+call 217-333-4603 (V/TTY), or e-mail a message to disability@uiuc.edu.</p>
+  </sylsec>
+  <sylsec id="grading">
+    <sectl>Basis for Grading and Evaluation</sectl>
+    <p>The most important standards for success in a class like this
+one are the educational goals that students bring to the class. Your
+instructors hope that the activities, assignments, and presentations
+planned for this semester will be instrumental in your achieving the
+goals you set for yourself. Each exercise and assignment has been
+selected to provide an experience that will foster your own learning.
+Do not think that grading and evaluative feedback are meant as
+assesments of your success or failure in the class: they are provided
+as an incentive to engage with the material to the best of your
+ability, and as a diagnostic, to make sure we find out if you're not
+getting the benefits that the assignments should provide.
+</p>
+<p>Final grades will be calculated as follows:
+    <itemize>
+      <item>Homework Assignments: 90&percnt;</item>
+      <item>Class Participation: 10&percnt;</item>
+    </itemize>
+    <sylsubsec id="honesty">
+      <subtl>On Adapting the Work of Others</subtl>
+      <p>Criteria for grading homework assignments include (but are
+not limited to) creativity and the amount of original work
+demonstrated in the assignment. However, students are permitted to use
+and adapt the work of others, provided that the following guidelines
+are followed:
+<itemize>
+<item>Use of other people's material must not infringe the copyright
+of the original author, nor violate the terms of any licensing
+agreement. Know and respect the principles of fair use with respect to
+copyrighted material.
+<item>Students must scrupulously attribute the original source and
+author of whatever material has been adapted for the assignment.
+Summarize (e.g. using source code comments) the changes or adaptations
+that have been made. Make  plain how much of the assignment represents
+original work. 
+</itemize>
+    </sylsubsec>
+    <sylsubsec>
+      <subtl>Class Participation</subtl>
+      <p>The class participation grade is based on consistent attendance,
+contribution to in-class and/or online discussions, and providing assistance
+to classmates outside of class. Please alert the instructor if a classmate
+has been of help to you outside of class.</p>
+    </sylsubsec>
+  <chronlist id="calendar"> 
+    <cltitle>Semester Outline</cltitle>
+    <chronpart id="session1"> 
+      <cptitle>Introduction to the class</cptitle>
+      <dates>&week1;</dates>
+      <topics>Models and domains</topics>
+      <inclass>
+	<readings>Syllabus</readings>
+      </inclass>
+    </chronpart>
+    <newpage>
+    <chronpart id="session2"> 
+      <cptitle>Classes and instances</cptitle>
+      <dates>&week2;</dates>
+      <topics>UML</topics>
+      <inclass>
+	<readings><weblink url="&read;&uml;">UML class diagram reading</weblink></readings>
+      <required>
+	<req>
+	  <type><weblink url="&hwk;&asgt1;">Assignment 1</weblink></type>
+	  <due>&beforeclass;</due>
+	</req>
+      </required>
+    </chronpart>
+    <chronpart id="laborday"> 
+      <cptitle>Labor Day Holiday</cptitle>
+      <dates>&week3;</dates>
+    </chronpart>
+    <chronpart id="session3"> 
+      <cptitle>Classes and instances part 2</cptitle>
+      <dates>&week4;</dates>
+       <inclass>
+	<readings><weblink url="&read;&rdfs;">RDFS reading</weblink></readings>
+      <required>
+	<req>
+	  <type>Assignment 2</type>
+	  <due>&beforeclass;</due>
+	</req>
+      </required>
+    </chronpart>
+    <chronpart id="session4"> 
+      <cptitle>Set theory</cptitle>
+      <dates>&week5;</dates>
+      <inclass>
+	<readings><weblink url="&read;&sets;">Set theory reading</weblink></readings>
+    <chronpart id="session5"> 
+      <cptitle>Relational Algebra</cptitle>
+      <dates>&week6;</dates>
+     <inclass>
+	<readings><weblink url="&read;&relation1;">Relational Algebra reading</weblink></readings>
+      <required>
+	<req>
+	  <type>Assignment 3</type>
+	  <due>&beforeclass;</due>
+	</req>
+      </required>
+    </chronpart>
+    <chronpart id="session6"> 
+      <cptitle>Relational Database Design</cptitle>
+      <dates>&week7;</dates>
+        <required>
+	<req>
+	  <type>Assignment 4</type>
+	  <due>&beforeclass;</due>
+	</req>
+      <inclass>
+	<readings><weblink url="&read;&rdbms;">Relational database reading</weblink></readings>
+      </inclass>
+    </chronpart>
+    <chronpart id="session7"> 
+      <cptitle>Propositional logic</cptitle>
+      <dates>&week8;</dates>
+      <inclass>
+	<readings><weblink url="&read;&proplogic;">Propositional Logic reading</weblink></readings>
+      </inclass>
+      <required>
+	<req>
+	  <type>Assignment 5</type>
+	  <due>&beforeclass;</due>
+	</req>
+      </required>
+    </chronpart>
+    <chronpart id="session8">
+      <cptitle>Predicate Logic</cptitle>
+      <dates>&week9;</dates>
+      <inclass>
+	<readings><weblink url="&read;&predlogic;">Predicate Logic Reading</weblink></readings>
+      <required>
+	<req>
+	  <type>Assignment 6</type>
+	  <due>&beforeclass;</due>
+	</req>
+      </required>
+    <chronpart id="session9">
+      <cptitle><weblink url="http://ischool.illinois.edu/research/showcase">iSchool Research Showcase</weblink></cptitle>
+      <dates>&week10;</dates>
+    </chronpart>
+    <chronpart id="session10">
+      <cptitle>Syntax and Grammar</cptitle>
+      <dates>&week11;</dates>
+        <required>
+	<req>
+	  <type>Assignment 7</type>
+	  <due>&beforeclass;</due>
+	  </required>
+      <inclass>
+	<readings><weblink url="&read;&syntax;">Syntax reading</weblink>
+    <chronpart id="session11">
+      <cptitle>Semantics and Interpretation</cptitle>
+      <dates>&week12;</dates>
+      <inclass>
+	<readings><weblink url="&read;&semantics;">Formal semantics reading</weblink></readings>
+      <required>
+	<req>
+	  <type>Assignment 8</type>
+	  <due>&beforeclass;</due>
+	</req>
+      </required>
+    </chronpart>
+    <chronpart id="session12"> 
+      <cptitle>Description logics</cptitle>
+      <dates>&week13;</dates>
+        <required>
+	<req>
+	  <type>Assignment 9</type>
+	  <due>&beforeclass;</due>
+	  </required>
+      <inclass>
+	<readings><weblink url="&read;&dlogic;">Description logics reading</weblink></readings>
+    </chronpart>
+    <chronpart id="thanksgiving"> 
+      <cptitle>Thanksgiving break</cptitle>
+      <dates>&week14;</dates>
+    </chronpart>
+    <chronpart id="session13"> 
+      <cptitle>Ontologies</cptitle>
+      <dates>&week15;</dates>
+      <inclass>
+	<readings><weblink url="&read;&owl;">OWL 2 reading</weblink></readings>
+      </inclass>
+    </chronpart>
+    <chronpart id="session14"> 
+      <cptitle>Wrapup and evaluation</cptitle>
+      <dates>&week16;</dates>
+        <required>
+	<req>
+	  <type><!-- <weblink url="&hwk;10">-->Assignment 10</type>
+	  <due>&beforeclass;</due>
+	</req>
+	  </required>
+    </chronpart>
+</chronlist>
+</syllabus>

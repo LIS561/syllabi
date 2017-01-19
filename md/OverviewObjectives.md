@@ -16,7 +16,7 @@ neither case is prior relevant knowledge assumed.
   roles in the design, development, and evaluation of information
   systems, services, and policies.
 
-Consistent with the GSLIS goal of producing leaders and not just
+Consistent with the iSchool goal of producing leaders and not just
 competent professionals we focus on developing a deep understanding
 that will have long-term benefits and prepare students to engage the
 hardest problems facing organizations and society.
@@ -32,48 +32,18 @@ today is profound.
 
 The course examines the major modeling approaches currently
 in use in information management: relational modeling, conceptual
-modeling, XML markup, and ontologies, focusing on underlying concepts
+modeling, and ontologies, focusing on underlying concepts
 and principles. The course is thus simultaneously a foundations course
-and a survey course. There are several important cross-cutting
-themes:
-
-- Data independence through abstraction.
-- The interdefinability of fundamental modeling constructs.
-- Deep vs. superficial differences in modeling languages.
-- The expressiveness vs. tractability tradeoff.
-- The fundamental role of a very small set of inter-related concepts.
+and a survey course.
 
 
-> *This section of the syllabus includes goals and objectives.  [This
-> document](https://provost.asu.edu/sites/default/files/page/1595/student-learning-outcomes.pdf)
-> from the Arizona State University Provost Office suggests some
-> distinctions between learning goals, objectives, and outcomes.*
 
 ## Learning Objectives
 
-> *Objectives state things the students and instructor will do.*
+1. Develop fluency in reading and understanding formal definitions.
+2. Understand the role of abstraction in making .
+3. Contrast deep vs. superficial differences in modeling languages.
+4. Recognize practical implications of trading expressive power for tractability.
+5. Appreciate the fundamental role of a very small set of inter-related concepts.
 
-1. Objective A
-2. Objective B
-3. Objective C
-
-## Learning Outcomes
-
-> *Learning outcomes are much more detailed descriptions of the
-> competencies students will gain during the course.*
-
-Outcome A
-
-: In situation X, you will be able to *identify* some specific
-  property of a thing named in this sentence.
-
-Outcome B
-
-: Faced with some common professional problem, you will be able to
-  *explain* the difference between two possible diagnoses.
-
-Outcome C
-
-: After reading this sentence, you will be able to *recommend* a
-  different strong verb to cue with typographic emphasis.
 

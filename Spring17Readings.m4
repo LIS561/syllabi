@@ -1,4 +1,4 @@
-define(UMLREADING, [@seidl_class_2015])dnl
+define(UMLREADING, [@seidl_class_2015; @Teorey_1986])dnl
 define(RDFREADING, [@manola_rdf_2014])dnl
 define(SETREADING, [@partee_basic_2006])dnl
 define(RDBMSREADING, [@levene_relational_1999])dnl

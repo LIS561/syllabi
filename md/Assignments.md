@@ -1,48 +1,19 @@
 # Assignments and Evaluation
 
-> *This section should detail the grading policy (what constitutes an
-> A, B, C, etc.) and also delineate the differences among variable
-> credit assignments. Brief descriptions of assignments can be
-> included here. Instructors who employ a points system should explain
-> how these translate into letter grades. Information regarding what
-> should be included with assignments (name, page numbers, cover
-> sheets, etc.)  can also be included in this section.*
-
-> *Include information about incomplete grades. Students must
-> request an incomplete grade from the instructor. The instructor and
-> student will agree on a due date for completion of coursework and
-> the student must file an Incomplete Form signed by the student, the
-> instructor, and the student’s academic advisor with the School’s
-> records representative. More information on incompletes is available
-> here:*
-> <http://webdocs.ischool.illinois.edu/registration/incomplete_grade_form.pdf>
-
-> *Include a policy on late assignments. Describe requirements for
-> attendance, participation, and etiquette. Note any requirements
-> regarding excused absences. Consider linking to the student code,
-> which states that "Regular class attendance is expected of all
-> students at the University"*
-> <http://studentcode.illinois.edu/article1_part5_1-501.html>
-
-## Sample Policy Text
-
-All assignments are required for all students. Completing
-all assignments is not a guarantee of a passing grade.  All work must
-be completed in order to pass this class. Late or incomplete
-assignments will not be given full credit unless the student has
-contacted the instructor prior to the due date of the assignment (or
-in the case of emergencies, as soon as practicable).
+All assignments are required for all students. All work must be
+completed in order to pass this class. Late or incomplete assignments
+will not be given full credit unless the student has contacted the
+instructor prior to the due date of the assignment (or in the case of
+emergencies, as soon as practicable).
 
 **Assignments, Exercises & Grade Distribution:**
 
-- Assignment 1: First Assignment Title. Due SVGASGTDUE (N%).
-- Assignment 2: Second Assignment Title. Due SEMANTICSASGTDUE (N%).
-- Assignment 3: Third Assignment Title. Due A3DUE (N%).
-- Attendance and Class Participation (N%) 
+- Ten graded assignments: 5 points each.
+- Ten ungraded exercises: 2 points each for completion.
+- Five reading responses: 5 points each.
+- Attendance and participation in class and on forums: 5 points. 
 
 **Grading Scale:**
-
-The following is a sample grading scale.
 
 | 94-100 = A
 | 90-93 = A-
@@ -56,3 +27,19 @@ The following is a sample grading scale.
 | 63-66 = D
 | 60-62 = D-
 | 59 and below = F
+
+**Reading Responses**
+
+Up to twenty five points are available for five critical questions
+posted to the class discussion forum and identified in the subject
+line as a *reading response* together with a topic description. Critical questions are carefully worded
+descriptions of an obstacle to understanding and applying concepts and
+methods covered in the assigned readings. These need to be more than
+a simple request for clarifying a term or idea. Each question should be
+one to three paragraphs in length, and should include:
+
+- A one sentence summary of the question (citing the location of the anomalous passage in the reading);
+- A longer, lucid explanation of the question and the obstacle that it identifies;
+- A justification for why the question is important;
+- Some remarks on the context in which the question arose: how did you recognize that it was a problem?
+

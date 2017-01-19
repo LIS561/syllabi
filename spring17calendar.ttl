@@ -292,14 +292,14 @@
   :hasDeadline :A11Due .
 
 :ExLogic1  a :Assignment ;
-  rdfs:label "First predicate logic exercise" ;
+  rdfs:label "Predicate logic exercise 1" ;
   :sylSecId "Logic1Ex" ;
   :dueDate "LOGIC1EXDUE" ;
   :moodleURL "A12LINK" ;
   :hasDeadline :A12Due .
 
 :ExLogic2  a :Assignment ;
-  rdfs:label "Second predicate logic exercise" ;
+  rdfs:label "Predicate logic exercise 2" ;
   :sylSecId "Logic1Ex" ;
   :dueDate "LOGIC1EXDUE" ;
   :moodleURL "A13LINK" ;

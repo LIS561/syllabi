@@ -1,0 +1,216 @@
+@prefix : <http://courseweb.ischool.illinois.edu/lis/2016fa/lis501/> .
+@prefix hwk: <https://courses.ischool.illinois.edu/mod/assign/> .
+@prefix z: <http://www.zotero.org/namespaces/export#> .
+@prefix ad: <http://schemas.talis.com/2005/address/schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bib: <file:bib/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sam: <http://cirss.lis.illinois.edu/DataCon/SAM/> .
+@prefix sro: <http://salt.semanticauthoring.org/ontologies/sro#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dolce: <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xref: <http://id.crossref.org/contributor/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix resource: <http://purl.org/vocab/resourcelist/schema#> .
+@base <http://courseweb.ischool.illinois.edu/lis/2016fa/lis501/> .
+
+:SemesterFall2016 a :Semester ;
+  event:time [ a tl:Interval ;
+      tl:at "2016-08-22T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P70D"^^xsd:duration] ;
+  dcterms:subject :GenBackground ;
+  rdfs:label "Fall semester"@en .
+
+:Asgt3 a :Assignment ;
+  rdfs:label "Assignment 3: Research Design Proposal"@en ;
+  :moodleURL hwk:MOODLEASGT3 ;
+  :sylSecId "Asgt3" ;
+  :hasDeadline :A3M1, :A3M2, :A3M3, :A3D1, :A3D2, :A3D3 .
+
+:A3M1 a :Deadline ;
+  rdfs:label "Assignment 3 research question draft"@en ;
+  :dueDuring :Week3 ;
+  :dueDate "LAB3DATE" .
+
+:A3M2 a :Deadline ;
+  rdfs:label "Assignment 3 research methods draft"@en ;
+  :dueDuring :Week5 ;
+  :dueDate "LAB5DATE" .
+
+:A3M3 a :Deadline ;
+  rdfs:label "Assignment 3 resource list"@en ;
+  :dueDuring :Week7 ;
+  :dueDate "LAB7DATE" .
+
+:A3D1 a :Deadline ;
+  rdfs:label "Assignment 3 extended abstract"@en ;
+  :dueDuring :Week10 ;
+  :dueDate "LAB10DATE" .
+
+:A3D2 a :Deadline ;
+  rdfs:label "Assignment 3 annotated bibliography"@en ;
+  :dueDuring :Week10 ;
+  :dueDate "LAB10DATE" .
+
+:A3D3 a :Deadline ;
+  rdfs:label "Assignment 3 oral presentation"@en ;
+  :dueDuring :Week10 ;
+  :dueDate "LAB10DATE" .
+
+:Asgt2 a :Assignment ;
+  rdfs:label "Assignment 2 Digital Collections Assessment"@en ;
+  :moodleURL hwk:MOODLEASGT2 ;
+  :sylSecId "Asgt2" ;
+  :hasDeadline :A2D1 .
+
+:A2D1 a :Deadline ;
+  rdfs:label "Assignment 2 collections essay"@en ;
+  :dueDuring :Week6 ;
+  :dueDate "LAB6DATE" .
+
+:Asgt1 a :Assignment ;
+  rdfs:label "Assignment 1 Information Needs/Information Seeking Behavior"@en ;
+  :moodleURL hwk:MOODLEASGT1 ;
+  :sylSecId "Asgt1" ;
+  :hasDeadline :A1D1 .
+
+:A1D1 a :Deadline ;
+  rdfs:label "Assignment 1 information seeking behavior/needs essay"@en ;
+  :dueDuring :Week2 ;
+  :dueDate "LAB2DATE" .
+
+:Week1 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2016-08-22T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :LISEdProf ;
+  rdfs:label "Week 1"@en .
+
+:Week2 a :Week ;
+   event:time [ a tl:Interval ;
+     tl:at "2016-08-29T00:00:00-5:00"^^xsd:dateTime ;
+     tl:duration "P7D"^^xsd:duration] ;
+   dcterms:subject :UsersInfoNeeds ;
+  rdfs:label "Week 2"@en .
+
+:Week3 a :Week ;
+   event:time [ a tl:Interval ;
+     tl:at "2016-09-05T00:00:00-5:00"^^xsd:dateTime ;
+     tl:duration "P7D"^^xsd:duration] ;
+   dcterms:subject :ResearchMeth  ;
+  rdfs:label "Week 3"@en .
+
+:Week4 a :Week ;
+   event:time [ a tl:Interval ;
+     tl:at "2016-09-12T00:00:00-5:00"^^xsd:dateTime ;
+     tl:duration "P7D"^^xsd:duration] ;
+   dcterms:subject :StructStand  ;
+   rdfs:label "Week 4"@en .
+
+:Week5 a :Week ;
+   event:time [ a tl:Interval ;
+     tl:at "2016-09-19T00:00:00-5:00"^^xsd:dateTime ;
+     tl:duration "P7D"^^xsd:duration] ;
+   dcterms:subject :ApproachesOrg ;
+   rdfs:label "Week 5"@en .
+
+:Week6 a :Week ;
+   event:time [ a tl:Interval ;
+     tl:at "2016-09-26T00:00:00-5:00"^^xsd:dateTime ;
+     tl:duration "P7D"^^xsd:duration] ;
+   dcterms:subject :Collections ;
+   rdfs:label "Week 6"@en .
+
+:Week7 a :Week ;
+   event:time [ a tl:Interval ;
+     tl:at "2016-10-03T00:00:00-5:00"^^xsd:dateTime ;
+     tl:duration "P7D"^^xsd:duration] ;
+   dcterms:subject :Preservation ;
+   rdfs:label "Week 7"@en .
+
+:Week8 a :Week ;
+   event:time [ a tl:Interval ;
+     tl:at "2016-10-10T00:00:00-5:00"^^xsd:dateTime ;
+     tl:duration "P7D"^^xsd:duration] ;
+   dcterms:subject :SearchDisc ;
+   rdfs:label "Week 8"@en .
+
+:Week9 a :Week ;
+  event:time [ a tl:Interval ;
+     tl:at "2016-10-17T00:00:00-5:00"^^xsd:dateTime ;
+     tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :EvalSysServ ;
+  rdfs:label "Week 9"@en .
+
+:Week10 a :Week ;
+  event:time [ a tl:Interval ;
+     tl:at "2016-10-24T00:00:00-5:00"^^xsd:dateTime ;
+     tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :SubjAnLang ;
+  rdfs:label "Week 10"@en .
+
+:LISEdProf a skos:Concept ;
+  :backgroundReading bib:IntroductionBackground ;
+  :reqReading bib:IntroductionRequired ;
+  skos:prefLabel "LIS Education and professional life"@en.
+
+:UsersInfoNeeds a skos:Concept;
+  :backgroundReading bib:UseUsersBackground ;
+  :reqReading bib:UseUsersRequired ;
+  skos:prefLabel "Users and information needs"@en.
+
+:ResearchMeth a skos:Concept;
+  :backgroundReading bib:ResearchBackground ;
+  :reqReading bib:ResearchRequired ;
+  skos:prefLabel "Research Methods"@en.
+
+:StructStand a skos:Concept;
+  :backgroundReading bib:StructuresBackground ;
+  :reqReading bib:StructuresRequired ;
+  skos:prefLabel "Structures and Standards"@en.
+
+:ApproachesOrg a skos:Concept;
+  :backgroundReading bib:ApproachesBackground ;
+  :reqReading bib:ApproachesRequired ;
+  skos:prefLabel "Approaches to organizing information"@en.
+
+:Collections a skos:Concept;
+  :backgroundReading bib:CollectionsBackground ;
+  :reqReading bib:CollectionsRequired ;
+  skos:prefLabel "Collections"@en.
+
+:Preservation a skos:Concept;
+  :backgroundReading bib:PreservationBackground ;
+  :reqReading bib:PreservationRequired ;
+  skos:prefLabel "Preservation"@en.
+
+:SearchDisc a skos:Concept;
+  :backgroundReading bib:SearchBackground ;
+  :reqReading bib:SearchRequired ;
+  skos:prefLabel "Search and discovery"@en.
+
+:EvalSysServ a skos:Concept;
+  :backgroundReading bib:EvaluationBackground ;
+  :reqReading bib:EvaluationRequired ;
+  skos:prefLabel "Evaluation of systems and services"@en.
+
+:SubjAnLang a skos:Concept;
+  :backgroundReading bib:SubjLanguagesBackground ;
+  :reqReading bib:SubjLanguagesRequired ;
+  skos:prefLabel "Subject analysis and subject languages"@en.
+
+:GenBackground a skos:Concept;
+  :backgroundReading bib:GeneralBackground ;
+  skos:prefLabel "General Background Resources for the Semester"@en.
+
