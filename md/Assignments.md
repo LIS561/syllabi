@@ -4,12 +4,12 @@ All assignments are required for all students. All work must be
 completed in order to pass this class. Late or incomplete assignments
 will not be given full credit unless the student has contacted the
 instructor prior to the due date of the assignment (or in the case of
-emergencies, as soon as practicable). Graded assignments may be repeated for an improved grade with no penalty other than 4.5/5 being the highest possible grade for repeated assignments. Further arrangements for makeup work will be made as needed.
+emergencies, as soon as practicable). Completed, graded assignments may be repeated for an improved grade with no penalty other than 4.5/5 being the highest possible grade for repeated assignments. Further arrangements for makeup work will be made as needed.
 
 **Assignments, Exercises & Grade Distribution:**
 
-- Ten graded assignments: 5 points each (50 points total).
-- Ten ungraded exercises: 2 points each for completion (20 points total).
+- Ten graded assignments (due 1 hour before class meeting in the week they are due): 5 points each (50 points total).
+- Ten ungraded exercises (due 24 hours before class meeting in the week they are due): 2 points each for completion (20 points total).
 - Five reading responses: 5 points each (25 points total).
 - Attendance and participation in class and on forums: 5 points. 
 
