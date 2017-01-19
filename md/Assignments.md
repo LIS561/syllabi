@@ -30,7 +30,7 @@ emergencies, as soon as practicable).
 
 **Reading Responses**
 
-Up to twenty five points are available for five critical questions
+Up to twenty-five points are available for five critical questions
 posted to the class discussion forum and identified in the subject
 line as a *reading response* together with a topic description. Critical questions are carefully worded
 descriptions of an obstacle to understanding and applying concepts and
