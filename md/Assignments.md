@@ -9,7 +9,7 @@ emergencies, as soon as practicable). Completed, graded assignments may be repea
 **Assignments, Exercises & Grade Distribution:**
 
 - Ten graded assignments (due 1 hour before class meeting in the week they are due): 5 points each (50 points total).
-- Ten ungraded exercises (due 24 hours before class meeting in the week they are due): 2 points each for completion (20 points total).
+- Ten ungraded exercises (due 25 hours before class meeting in the week they are due): 2 points each for completion (20 points total).
 - Five reading responses: 5 points each (25 points total).
 - Attendance and participation in class and on forums: 5 points. 
 
