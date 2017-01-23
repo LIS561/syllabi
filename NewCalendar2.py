@@ -60,11 +60,13 @@ cldrfile.write("# Topic Schedule\n")
 
 wlist = weekstart.keys()
 wlist.sort()
-weeknum = 0
+
 for d in wlist:
         myweek = myconcept = required = background  = ''
 	for o in mygraph.objects(weekstart[d], RDFS.label):
 	      myweek = str(o)
+	for o in mygraph.objects(weekstart[d], l561.date):
+	      weekdate = str(o)
 	for s in mygraph.objects(weekstart[d],dc.subject):
 	      for p in mygraph.objects(s,skos.prefLabel):
                       myconcept = str(p)
@@ -72,8 +74,6 @@ for d in wlist:
                               background = str(q)
                       for r in mygraph.objects(s,l561.reqReading):
                               required = str(r)
-        weeknum += 1
-        weekdate = 'PRES' + str(weeknum) + 'DATE'
         cldrfile.write("\n")
         cldrfile.write("### " +  myweek + ": " + weekdate + ": " + myconcept + "\n")
         cldrfile.write("\n")

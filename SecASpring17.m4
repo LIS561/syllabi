@@ -13,7 +13,7 @@ define(INSTRUCTOR, AboutSchneider.md)dnl
 define(FINALSEC, # Readings)dnl
 define(PRES1DATE, January 19)dnl
 define(PRES2DATE, January 26)dnl
-define(PRES4DATE, February 02)dnl
+define(PRES3DATE, February 02)dnl
 define(PRES4DATE, February 09)dnl
 define(PRES5DATE, February 16)dnl
 define(PRES6DATE, February 23)dnl

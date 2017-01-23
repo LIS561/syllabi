@@ -2,7 +2,7 @@ include(Spring17Readings.m4)dnl
 include(SecLESpring17.defs)dnl
 define(MYSECDATA, Spring17LEdata.md)dnl
 define(COURSETITLE, Information Modeling)dnl
-define(ASSIGNMENTS, Assignments.md)dnl
+define(ASSIGNMENTS, AssignmentsLE.md)dnl
 define(CALENDAR, SecLESpring17.cldr)dnl
 define(OVERVIEW, OverviewObjectives.md)dnl
 define(METADATA, syllabib.md)dnl
