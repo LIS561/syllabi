@@ -1,0 +1,483 @@
+@prefix : <http://courseweb.ischool.illinois.edu/lis/2017sp/lis561/> .
+@prefix hwk: <https://courses.ischool.illinois.edu/mod/assign/> .
+@prefix z: <http://www.zotero.org/namespaces/export#> .
+@prefix ad: <http://schemas.talis.com/2005/address/schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sam: <http://cirss.lis.illinois.edu/DataCon/SAM/> .
+@prefix sro: <http://salt.semanticauthoring.org/ontologies/sro#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dolce: <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xref: <http://id.crossref.org/contributor/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix resource: <http://purl.org/vocab/resourcelist/schema#> .
+@base <http://courseweb.ischool.illinois.edu/lis/2016fa/lis501/> .
+
+:SemesterSpring2017 a :Semester ;
+  event:time [ a tl:Interval ;
+      tl:at "2016-08-22T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P70D"^^xsd:duration] ;
+  rdfs:label "Spring semester"@en .
+
+:LIS561concepts a skos:ConceptScheme ;
+  skos:prefLabel "LIS561 Concepts"@en .
+
+:ModelsDomains a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Models and Domains"@en.
+
+:PresentingModels a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Presenting Models"@en.
+
+:LookingAhead a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Looking Ahead"@en.
+
+
+:ClassesUML a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "UMLREADING" ;
+  skos:prefLabel "Classes and Instances: UML"@en .
+
+:RDF a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "RDFREADING" ;
+  skos:prefLabel "The RDF model and language"@en .
+
+:Sets a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SETREADING" ;
+  skos:prefLabel "Sets, relations, and functions"@en .
+
+:RDBMS a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "UMLREADING" ;
+  skos:prefLabel "UML and relational modeling"@en .
+
+:NormalForms a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "NORMALFORMREADING" ;
+  skos:prefLabel "Normal forms and normalization"@en .
+
+:Logic0 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGIC0READING" ;
+  skos:prefLabel "Propositional Logic"@en .
+
+:Logic1 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGIC1READING" ;
+  skos:prefLabel "Predicate Logic"@en .
+
+:LogicD a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGICDREADING" ;
+  skos:prefLabel "Description Logics"@en .
+
+:Syntax a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SYNTAXREADING" ;
+  skos:prefLabel "Syntax and Grammar"@en .
+
+:Semantics a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SEMANTICSREADING" ;
+  skos:prefLabel "Semantics and Interpretation"@en .
+
+:Ontologies a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "ONTOLOGYREADING" ;
+  skos:prefLabel "Ontologies"@en .
+
+:Conclusion a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Wrapup and Evaluation"@en .
+
+:AsgtRDF  a :Assignment ;
+  rdfs:label "RDF description assignment" ;
+  :sylSecId "RDFAsgt" ;
+  :dueDate "RDFASGTDUE";
+  :moodleURL "A9LINK" ;
+  :hasDeadline :A9Due .
+
+:AsgtOWL  a :Assignment ;
+  rdfs:label "OWL ontology assignment" ;
+  :sylSecId "OWLAsgt" ;
+  :dueDate "OWLASGTDUE";
+  :moodleURL "A21LINK" ;
+  :hasDeadline :A21Due .
+
+:AsgtSets  a :Assignment ;
+  rdfs:label "Set theory assignment" ;
+  :sylSecId "SetAsgt" ;
+  :dueDate "SETASGTDUE" ;
+  :moodleURL "A4LINK" ;
+  :hasDeadline :A4Due .
+
+:AsgtLogic0  a :Assignment ;
+  rdfs:label "Propositional logic assignment" ;
+  :sylSecId "Logic0Asgt" ;
+  :dueDate "LOGIC0ASGTDUE" ;
+  :moodleURL "A2LINK" ;
+  :hasDeadline :A2Due .
+
+:AsgtLogic1  a :Assignment ;
+  rdfs:label "Predicate logic assignment" ;
+  :sylSecId "Logic1Asgt" ;
+  :dueDate "LOGIC1ASGTDUE" ;
+  :moodleURL "A3LINK" ;
+  :hasDeadline :A3Due .
+
+:AsgtSyntax  a :Assignment ;
+  rdfs:label "Formal grammar assignment" ;
+  :sylSecId "SyntaxAsgt" ;
+  :dueDate "SYNTAXASGTDUE" ;
+  :moodleURL "A7LINK" ;
+  :hasDeadline :A7Due .
+
+:AsgtSemantics  a :Assignment ;
+  rdfs:label "Formal semantics assignment" ;
+  :sylSecId "SemanticsAsgt" ;
+  :dueDate "SEMANTICSASGTDUE" ;
+  :moodleURL "A8LINK" ;
+  :hasDeadline :A8Due .
+
+:AsgtLogicD  a :Assignment ;
+  rdfs:label "Description logic assignment" ;
+  :sylSecId "DescLogicAsgt" ;
+  :dueDate "DESCLOGICASGTDUE" ;
+  :moodleURL "A10LINK" ;
+  :hasDeadline :A10Due .
+
+:AsgtRDB  a :Assignment ;
+  rdfs:label "Relational modeling assignment" ;
+  :sylSecId "RDBAsgt" ;
+  :dueDate "RDBASGTDUE" ;
+  :moodleURL "A6LINK" ;
+  :hasDeadline :A6Due .
+
+:AsgtUML  a :Assignment ;
+  rdfs:label "UML class diagram assignment" ;
+  :sylSecId "UMLAsgt" ;
+  :dueDate "UMLASGTDUE" ;
+  :moodleURL "A5LINK" ;
+  :hasDeadline :A5Due .
+
+:AsgtSVG  a :Assignment ;
+  rdfs:label "SVG diagram assignment" ;
+  :sylSecId "SVGAsgt" ;
+  :dueDate "SVGASGTDUE" ;
+  :moodleURL "A1LINK" ;
+  :hasDeadline :A1Due .
+
+:A1Due a :Deadline ;
+  rdfs:label "**Graded Assignment 1**"@en ;
+  :dueDuring :Week2 ;
+  :dueDate "PRES2DATE" .
+
+:A2Due a :Deadline ;
+  rdfs:label "**Graded Assignment 2**"@en ;
+  :dueDuring :Week4 ;
+  :dueDate "PRES4DATE" .
+
+:A3Due a :Deadline ;
+  rdfs:label "**Graded Assignment 3**"@en ;
+  :dueDuring :Week5 ;
+  :dueDate "PRES5DATE" .
+
+:A4Due a :Deadline ;
+  rdfs:label "**Graded Assignment 4**"@en ;
+  :dueDuring :Week7 ;
+  :dueDate "PRES7DATE" .
+
+:A5Due a :Deadline ;
+  rdfs:label "**Graded Assignment 5**"@en ;
+  :dueDuring :Week8 ;
+  :dueDate "PRES8DATE" .
+
+:A6Due a :Deadline ;
+  rdfs:label "**Graded Assignment 6**"@en ;
+  :dueDuring :Week9 ;
+  :dueDate "PRES9DATE" .
+
+:A7Due a :Deadline ;
+  rdfs:label "**Graded Assignment 7**"@en ;
+  :dueDuring :Week11 ;
+  :dueDate "PRES11DATE" .
+
+:A8Due a :Deadline ;
+  rdfs:label "**Graded Assignment 8**"@en ;
+  :dueDuring :Week12 ;
+  :dueDate "PRES12DATE" .
+
+:A9Due a :Deadline ;
+  rdfs:label "**Graded Assignment 9**"@en ;
+  :dueDuring :Week13 ;
+  :dueDate "PRES13DATE" .
+
+:A10Due a :Deadline ;
+  rdfs:label "**Graded Assignment 10**"@en ;
+  :dueDuring :Week14 ;
+  :dueDate "PRES14DATE" .
+
+:A11Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 1**"@en ;
+  :dueDuring :Week3 ;
+  :dueDate "PRES3DATE" .
+
+:A12Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 2**"@en ;
+  :dueDuring :Week4 ;
+  :dueDate "PRES4DATE" .
+
+:A13Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 3**"@en ;
+  :dueDuring :Week5 ;
+  :dueDate "PRES5DATE" .
+
+:A14Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 4**"@en ;
+  :dueDuring :Week6 ;
+  :dueDate "PRES6DATE" .
+
+:A15Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 5**"@en ;
+  :dueDuring :Week7 ;
+  :dueDate "PRES7DATE" .
+
+:A16Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 6**"@en ;
+  :dueDuring :Week8 ;
+  :dueDate "PRES8DATE" .
+
+:A17Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 7**"@en ;
+  :dueDuring :Week9 ;
+  :dueDate "PRES9DATE" .
+
+:A18Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 8**"@en ;
+  :dueDuring :Week11 ;
+  :dueDate "PRES11DATE" .
+
+:A19Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 9**"@en ;
+  :dueDuring :Week12 ;
+  :dueDate "PRES12DATE" .
+
+:A20Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 10**"@en ;
+  :dueDuring :Week13 ;
+  :dueDate "PRES13DATE" .
+
+:A21Due a :Deadline ;
+  rdfs:label "**Graded Assignment 11**"@en ;
+  :dueDuring :Week15 ;
+  :dueDate "PRES15DATE" .
+
+:A22Due a :Deadline ;
+  rdfs:label "**Ungraded Exercise 11**"@en ;
+  :dueDuring :Week14 ;
+  :dueDate "PRES14DATE" .
+
+:ExRDF  a :Assignment ;
+  rdfs:label "RDF description exercise" ;
+  :sylSecId "RDFEx" ;
+  :dueDate "RDFEXDUE";
+  :moodleURL "A19LINK" ;
+  :hasDeadline :A19Due .
+
+:ExOWL  a :Assignment ;
+  rdfs:label "OWL ontology exercise" ;
+  :sylSecId "OWLEx" ;
+  :dueDate "OWLEXDUE";
+  :moodleURL "A22LINK" ;
+  :hasDeadline :A22Due .
+
+:ExSets  a :Assignment ;
+  rdfs:label "Set theory exercise" ;
+  :sylSecId "SetEx" ;
+  :dueDate "SETEXDUE" ;
+  :moodleURL "A14LINK" ;
+  :hasDeadline :A14Due .
+
+:ExLogic0  a :Assignment ;
+  rdfs:label "Propositional logic exercise" ;
+  :sylSecId "Logic0Ex" ;
+  :dueDate "LOGIC0EXDUE" ;
+  :moodleURL "A11LINK" ;
+  :hasDeadline :A11Due .
+
+:ExLogic1  a :Assignment ;
+  rdfs:label "Predicate logic exercise 1" ;
+  :sylSecId "Logic1Ex" ;
+  :dueDate "LOGIC1EXDUE" ;
+  :moodleURL "A12LINK" ;
+  :hasDeadline :A12Due .
+
+:ExLogic2  a :Assignment ;
+  rdfs:label "Predicate logic exercise 2" ;
+  :sylSecId "Logic1Ex" ;
+  :dueDate "LOGIC1EXDUE" ;
+  :moodleURL "A13LINK" ;
+  :hasDeadline :A13Due .
+
+:ExSyntax  a :Assignment ;
+  rdfs:label "Formal grammar exercise" ;
+  :sylSecId "SyntaxEx" ;
+  :dueDate "SYNTAXEXDUE" ;
+  :moodleURL "A17LINK" ;
+  :hasDeadline :A17Due .
+
+:ExSemantics  a :Assignment ;
+  rdfs:label "Formal semantics exercise" ;
+  :sylSecId "SemanticsEx" ;
+  :dueDate "SEMANTICSEXDUE" ;
+  :moodleURL "A18LINK" ;
+  :hasDeadline :A18Due .
+
+:ExLogicD  a :Assignment ;
+  rdfs:label "Description logic exercise" ;
+  :sylSecId "DescLogicEx" ;
+  :dueDate "DESCLOGICEXDUE" ;
+  :moodleURL "A20LINK" ;
+  :hasDeadline :A20Due .
+
+:ExRDB  a :Assignment ;
+  rdfs:label "Relational modeling exercise" ;
+  :sylSecId "RDBEx" ;
+  :dueDate "RDBEXDUE" ;
+  :moodleURL "A16LINK" ;
+  :hasDeadline :A16Due .
+
+:ExUML  a :Assignment ;
+  rdfs:label "UML class diagram exercise" ;
+  :sylSecId "UMLEx" ;
+  :dueDate "UMLEXDUE" ;
+  :moodleURL "A15LINK" ;
+  :hasDeadline :A15Due .
+
+:ExSVG  a :Assignment ;
+  rdfs:label "SVG diagram exercise" ;
+  :sylSecId "SVGEx" ;
+  :dueDate "SVGEXDUE" ;
+  :moodleURL "A1LINK" ;
+  :hasDeadline :A1Due .
+
+:Week2 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-01-22T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :ModelsDomains ;
+  rdfs:label "Week 2"@en .
+
+:Week3 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-01-29T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Logic0 ;
+  rdfs:label "Week 3"@en .
+
+:Week4 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-02-05T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Logic1 ;
+  rdfs:label "Week 4"@en .
+
+:Week5 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-02-12T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Logic1 ;
+  rdfs:label "Week 5"@en .
+
+:Week6 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-02-19T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Sets ;
+  rdfs:label "Week 6"@en .
+
+:Week7 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-02-26T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :RDBMS ;
+  rdfs:label "Week 7"@en .
+
+:Week8 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-03-05T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :NormalForms ;
+  rdfs:label "Week 8"@en .
+
+:Week9 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-03-12T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Syntax ;
+  rdfs:label "Week 9"@en .
+
+:Week10 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-03-19T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  rdfs:label "Week 10: Spring Break"@en .
+
+:Week11 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-03-26T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Semantics ;
+  rdfs:label "Week 11"@en .
+
+:Week12 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-04-02T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :RDF ;
+  rdfs:label "Week 12"@en .
+
+:Week13 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-04-09T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :LogicD ;        
+  rdfs:label "Week 13"@en .
+
+:Week14 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-04-16T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Ontologies ;
+  rdfs:label "Week 14"@en .
+
+:Week15 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-04-23T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :LookingAhead ;
+  rdfs:label "Week 15"@en .
+
+:Week16 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-04-23T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Conclusion ;
+  rdfs:label "Week 16"@en .
+
+
