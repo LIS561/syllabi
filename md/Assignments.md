@@ -32,9 +32,11 @@ emergencies, as soon as practicable). Completed, graded assignments may be repea
 
 **Reading Responses**
 
-Up to twenty points are available for four critical questions
-posted to the class discussion forum and identified in the subject
-line as a *reading response* together with a topic description. Critical questions are carefully worded
+Up to twenty points (5 points each) are available for 4 reading responses, posted to the class discussion forum. You may submit more than 4 reading responses; the best 4 will be counted. Please identify them in the subject line as a *reading response* together with a topic description. 
+
+Canonical reading responses include:
+
+(1) *Critical questions*: carefully worded
 descriptions of an obstacle to understanding and applying concepts and
 methods covered in the assigned readings. These need to be more than
 a simple request for clarifying a term or idea. Each question should be
@@ -44,4 +46,13 @@ one to three paragraphs in length, and should include:
 - A longer, lucid explanation of the question and the obstacle that it identifies;
 - A justification for why the question is important;
 - Some remarks on the context in which the question arose: how did you recognize that it was a problem?
+
+(2) Lucid responses: carefully worded responses to a colleague's critical question. These should include:
+
+A brief restatement of the question;
+A brief summary of your approach -- this could resolve the problem or show it in a new light;
+A longer, lucid explanation of your approach;
+A justification for your approach.
+
+We are open to other ways for you to engage with the reading and with your fellow classmates in the forums and we may discover other forms of reading response as we go.
 
