@@ -41,7 +41,7 @@ and a survey course.
 ## Learning Objectives
 
 1. Develop fluency in reading and understanding formal definitions.
-2. Understand the role of abstraction in making .
+2. Understand the role of abstraction in making systems design choices.
 3. Contrast deep vs. superficial differences in modeling languages.
 4. Recognize practical implications of trading expressive power for tractability.
 5. Appreciate the fundamental role of a very small set of inter-related concepts.
