@@ -16,9 +16,9 @@ export M4PATH
 	pandoc -s --bibliography=LIS561.bib -o $*.html $*.md
 
 %.cldr : %.ttl 
-	./NewCalendar2.py $*.ttl
+	 python NewCalendar2.py $*.ttl
 
 %.defs : %.ttl 
-	./NewCalendar2.py $*.ttl
+	 python NewCalendar2.py $*.ttl
 
 
