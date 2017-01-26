@@ -158,7 +158,7 @@ Jubien's examples of relation(ships) include:
 # Propositions are language-independent
   - It's Thursday.
   - C'est jeudi.
-  - t\'{a} s\'{e} D\'{e}ardaoin.
+  - tá sé Déardaoin
 
   
 # States of Affairs (1)
