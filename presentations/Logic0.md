@@ -46,17 +46,17 @@ Table: 2.15 from van Benthem, et al.
  
 # Semantics of the operators
 
-  $\phi$   $\neg\phi$
- -------- ------------
-    0           1
-    1           0	
+  $\varphi$   $\neg\varphi$
+ ----------- ---------------
+      0            1
+      1            0	
 
-  $\phi$   $\psi$   $\phi \wedge \psi$   $\phi \vee \psi$   $\phi \rightarrow \psi$   $\phi \leftrightarrow \psi$
- -------- -------- -------------------- ------------------ ------------------------- ----------------------------- 
-    0         0            0                    0                        1                         1                          
-    0         1            0                    1                        1                         0                          
-    1         0            0                    1                        0                         0                          
-    1         1            1                    1                        1                         1                           
+  $\varphi$   $\psi$   $\varphi \wedge \psi$   $\varphi \vee \psi$   $\varphi \rightarrow \psi$   $\varphi \leftrightarrow \psi$
+ ----------- -------- ----------------------- --------------------- ---------------------------- -------------------------------- 
+      0         0               0                       0                        1                         1                          
+      0         1               0                       1                        1                         0                          
+      1         0               0                       1                        0                         0                          
+      1         1               1                       1                        1                         1                           
 
 Table: 2.18 from van Benthem, et al.
 
@@ -67,9 +67,7 @@ You are given the information that $p$-or-$q$ and (not-$p$)-or-$r$. What can you
 about $q$ and $r$? What is the strongest valid conclusion you can draw? (A statement is stronger than
 another statement if it rules out more possibilities.)
 
-
 # Drawing truth tables for expressions
-
 
 \begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
 p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
@@ -84,10 +82,7 @@ p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 0 & 0 & 0 &  &  & 1 & \textcolor{red}{0} & 1 & \textcolor{red}{0} &  & 0 & \textcolor{red}{0} & \\
 \end{tabular}
 
-
-
 # Drawing truth tables for expressions
-
 
 \begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
 p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
@@ -126,103 +121,25 @@ p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 \begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
 p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 \hline 
-1 & 1 & 1 &  &  & \textcolor{red}{0} & \textcolor{red}{1} & 1 & \textcolor{red}{1} &  & 1 & 1 & \\
-1 & 1 & 0 &  &  & \textcolor{red}{0} & \textcolor{red}{1} & 1 & \textcolor{red}{1} &  & 0 & 0 & \\
-1 & 0 & 1 &  &  & \textcolor{red}{0} & \textcolor{red}{1} & 0 & \textcolor{red}{0} &  & 1 & 1 & \\
-1 & 0 & 0 &  &  & \textcolor{red}{0} & \textcolor{red}{1} & 0 & \textcolor{red}{0} &  & 1 & 0 & \\
-0 & 1 & 1 &  &  & \textcolor{red}{1} & \textcolor{red}{0} & 1 & \textcolor{red}{1} &  & 1 & 1 & \\
-0 & 1 & 0 &  &  & \textcolor{red}{1} & \textcolor{red}{0} & 1 & \textcolor{red}{1} &  & 0 & 0 & \\
-0 & 0 & 1 &  &  & \textcolor{red}{1} & \textcolor{red}{0} & 1 & \textcolor{red}{0} &  & 1 & 1 & \\
-0 & 0 & 0 &  &  & \textcolor{red}{1} & \textcolor{red}{0} & 1 & \textcolor{red}{0} &  & 0 & 0 & \\
+1 & 1 & 1 &  &  & 0 & 1 & \textcolor{green}{1} & 1 &  & \textcolor{red}{1} & \textcolor{green}{1} & \\
+1 & 1 & 0 &  &  & 0 & 1 & \textcolor{green}{1} & 1 &  & \textcolor{red}{0} & \textcolor{green}{0} & \\
+1 & 0 & 1 &  &  & 0 & 1 & \textcolor{green}{0} & 0 &  & \textcolor{red}{1} & \textcolor{green}{1} & \\
+1 & 0 & 0 &  &  & 0 & 1 & \textcolor{green}{0} & 0 &  & \textcolor{red}{1} & \textcolor{green}{0} & \\
+0 & 1 & 1 &  &  & 1 & 0 & \textcolor{green}{1} & 1 &  & \textcolor{red}{1} & \textcolor{green}{1} & \\
+0 & 1 & 0 &  &  & 1 & 0 & \textcolor{green}{1} & 1 &  & \textcolor{red}{0} & \textcolor{green}{0} & \\
+0 & 0 & 1 &  &  & 1 & 0 & \textcolor{green}{1} & 0 &  & \textcolor{red}{1} & \textcolor{green}{1} & \\
+0 & 0 & 0 &  &  & 1 & 0 & \textcolor{green}{1} & 0 &  & \textcolor{red}{0} & \textcolor{green}{0} & \\
 \end{tabular}
 
-
-
-# Drawing truth tables for expressions
-
-
-\begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
-p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
-\hline 
-1 & 1 & 1 &  &  & 0 & 1 & 1 & 1 &  & 1 & 1 & \\
-1 & 1 & 0 &  &  & 0 & 1 & 1 & 1 &  & 0 & 0 & \\
-1 & 0 & 1 &  &  & 0 & 1 & 0 & 0 &  & 1 & 1 & \\
-1 & 0 & 0 &  &  & 0 & 1 & 0 & 0 &  & 1 & 0 & \\
-0 & 1 & 1 &  &  & 1 & 0 & 1 & 1 &  & 1 & 1 & \\
-0 & 1 & 0 &  &  & 1 & 0 & 1 & 1 &  & 0 & 0 & \\
-0 & 0 & 1 &  &  & 1 & 0 & 1 & 0 &  & 1 & 1 & \\
-0 & 0 & 0 &  &  & 1 & 0 & 1 & 0 &  & 0 & 0 & \\
-\end{tabular}
-
-
-# Drawing truth tables for expressions
-
-~~~~~~~~~~
-   (~p v q) -> r
--------------------
-     0   0     0
-     0   0     1
-     0   1     0
-     0   1     1
-     1   0     0
-     1   0     1
-     1   1     0
-     1   1     1
-~~~~~~~~~~
-
-# Drawing truth tables for expressions
-
-~~~~~~~~~~
-   (~p v q) -> r
--------------------
-    10   0     0
-    10   0     1
-    10   1     0
-    10   1     1
-    01   0     0
-    01   0     1
-    01   1     0
-    01   1     1
-~~~~~~~~~~
-
-# Drawing truth tables for expressions
-
-~~~~~~~~~~
-   (~p v q) -> r
--------------------
-    10 1 0     0
-    10 1 0     1
-    10 1 1     0
-    10 1 1     1
-    01 0 0     0
-    01 0 0     1
-    01 1 1     0
-    01 1 1     1
-~~~~~~~~~~
-
-# Drawing truth tables for expressions
-
-~~~~~~~~~~
-   (~p v q) -> r
--------------------
-    10 1 0  0  0
-    10 1 0  1  1
-    10 1 1  0  0
-    10 1 1  1  1
-    01 0 0  1  0
-    01 0 0  1  1
-    01 1 1  0  0
-    01 1 1  1  1
-~~~~~~~~~~
 
 # Grammar of propositional logic
 
 Let $P$ be a set of proposition letters and let $p \in P$. 
 
 The following expression defines the recursive grammar for a logical
-expression $\phi$ in [Backus–Naur Form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form):
+expression $\varphi$ in [Backus–Naur Form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form):
 
-$\phi \Coloneqq p|\neg\phi|(\phi \wedge \phi)|(\phi \vee \phi)|(\phi \rightarrow \phi)|(\phi \leftrightarrow \phi)$
+$\varphi \Coloneqq p|\neg\varphi|(\varphi \wedge \varphi)|(\varphi \vee \varphi)|(\varphi \rightarrow \varphi)|(\varphi \leftrightarrow \varphi)$
 
 # Syntactically conforming expressions
 
@@ -262,24 +179,24 @@ These conforming expressions are all consistent with ${\neg}p \vee q \rightarrow
 
 - Valuations are functions from expressions to truth values.
 
-- "$V(\phi) = 1$" means the formula (or sentence) $\phi$ is true in the state
-  of affairs represented by the function $V$. "$V(\phi) = 0$" means that $\phi$ is false in
+- "$V(\varphi) = 1$" means the formula (or sentence) $\varphi$ is true in the state
+  of affairs represented by the function $V$. "$V(\varphi) = 0$" means that $\varphi$ is false in
   the state of affairs represented by the function $V$.
 
-- For "$V(\phi) = 1$" we also write "$V \models \phi$" read as "V is a model of $\phi$"
-  or "V satisfies $\phi$."
+- For "$V(\varphi) = 1$" we also write "$V \models \varphi$" read as "V is a model of $\varphi$"
+  or "V satisfies $\varphi$."
 
-- If V doesn't satisfy $\phi$ we write "$V \not\models \phi$". In other words $V(\phi) = 0$.
+- If V doesn't satisfy $\varphi$ we write "$V \not\models \varphi$". In other words $V(\varphi) = 0$.
 
 # Logical truth and logical falsity.
 
-- A statement $\phi$ is logically true if it is true in every state of
+- A statement $\varphi$ is logically true if it is true in every state of
   affairs generated by its propositional variables.
 
-- A statement $\phi$ is logically false if it is false in every state of
+- A statement $\varphi$ is logically false if it is false in every state of
   affairs generated by its propositional variables.
 
-- If a statement $\phi$ is neither logically true or logically false then
+- If a statement $\varphi$ is neither logically true or logically false then
   it is contingent.
 
 - Examples:
@@ -300,8 +217,8 @@ These conforming expressions are all consistent with ${\neg}p \vee q \rightarrow
 
 - A conclusion is \emph{valid} with respect to a set of premises if the conclusion
   is true in every sitation where the premises are true (van Benthem, et al, page 2-4).
-- One can validly infer a conclusion $\phi$ from a set of premises
-  $P$ if the negation of $\phi$ is inconsistent with the set of statements
+- One can validly infer a conclusion $\varphi$ from a set of premises
+  $P$ if the negation of $\varphi$ is inconsistent with the set of statements
   $P$.
 
 
