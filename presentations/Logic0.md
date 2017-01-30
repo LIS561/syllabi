@@ -1,6 +1,6 @@
 ---
 title: Propositional Logic
-author: Dave Dubin
+author: Dave Dubin and Jodi Schneider
 date: October 10, 2016
 header-includes:
   - \usepackage[utf8]{inputenc}
@@ -109,14 +109,14 @@ p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 \begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
 p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 \hline 
-1 & 1 & 1 &  &  & \textcolor{red}{0} & \textcolor{red}{1} & 1 & \textcolor{red}{1} &  & 1 & 1 & \\
-1 & 1 & 0 &  &  & \textcolor{red}{0} & \textcolor{red}{1} & 1 & \textcolor{red}{1} &  & 0 & 0 & \\
-1 & 0 & 1 &  &  & \textcolor{red}{0} & \textcolor{red}{1} & 0 & \textcolor{red}{0} &  & 1 & 1 & \\
-1 & 0 & 0 &  &  & \textcolor{red}{0} & \textcolor{red}{1} & 0 & \textcolor{red}{0} &  & 1 & 0 & \\
-0 & 1 & 1 &  &  & \textcolor{red}{1} & \textcolor{red}{0} & 1 & \textcolor{red}{1} &  & 1 & 1 & \\
-0 & 1 & 0 &  &  & \textcolor{red}{1} & \textcolor{red}{0} & 1 & \textcolor{red}{1} &  & 0 & 0 & \\
-0 & 0 & 1 &  &  & \textcolor{red}{1} & \textcolor{red}{0} & 1 & \textcolor{red}{0} &  & 1 & 1 & \\
-0 & 0 & 0 &  &  & \textcolor{red}{1} & \textcolor{red}{0} & 1 & \textcolor{red}{0} &  & 0 & 0 & \\
+1 & 1 & 1 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{1} & \textcolor{green}{1} &  & 1 & 1 & \\
+1 & 1 & 0 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{1} & \textcolor{green}{1} &  & 0 & 0 & \\
+1 & 0 & 1 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{0} & \textcolor{green}{0} &  & 1 & 1 & \\
+1 & 0 & 0 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{0} & \textcolor{green}{0} &  & 1 & 0 & \\
+0 & 1 & 1 &  &  & \textcolor{green}{1} & 0 & \textcolor{red}{1} & \textcolor{green}{1} &  & 1 & 1 & \\
+0 & 1 & 0 &  &  & \textcolor{green}{1} & 0 & \textcolor{red}{1} & \textcolor{green}{1} &  & 0 & 0 & \\
+0 & 0 & 1 &  &  & \textcolor{green}{1} & 0 & \textcolor{red}{1} & \textcolor{green}{0} &  & 1 & 1 & \\
+0 & 0 & 0 &  &  & \textcolor{green}{1} & 0 & \textcolor{red}{1} & \textcolor{green}{0} &  & 0 & 0 & \\
 \end{tabular}
 
 
