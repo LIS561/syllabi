@@ -1,7 +1,7 @@
 ---
 title: Propositional Logic
-author: Dave Dubin and Jodi Schneider
-date: October 10, 2016
+author: Dave Dubin
+date: January 30, 2017
 header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
@@ -40,7 +40,7 @@ Table: 2.15 from van Benthem, et al.
 
  - A sentence constructed from proposition letters and operators is true
    or false in each state of affairs.
- - Consider, for example: $({\neg}p \vee q) \rightarrow r$
+ - Consider, for example: $(({\neg}p \vee q) \rightarrow r)$
  - The sentence is mapped to a truth value via the following tables
 
  
@@ -60,12 +60,23 @@ Table: 2.15 from van Benthem, et al.
 
 Table: 2.18 from van Benthem, et al.
 
+# Exercise 2.6
 
-# Exercise 2.3
-
-You are given the information that $p$-or-$q$ and (not-$p$)-or-$r$. What can you conclude
-about $q$ and $r$? What is the strongest valid conclusion you can draw? (A statement is stronger than
-another statement if it rules out more possibilities.)
+- "I will only go to school if I get a cookie now."
+- Compare with "I will go to school if I get a cookie"
+- The latter is cookie implies school, but the former is school implies cookie.
+- You want $(s \rightarrow c)$
+- Gloss: s =  "I will go to school" and c =  "I get a cookie."
+- John and Mary are running
+- $(j \wedge m)$
+- A foreign national is entitled to social security if he has legal
+  employment or if he has had such less than three years ago, unless
+  he is currently also employed abroad.
+- $(((e \vee l) \wedge {\neg}a) \rightarrow s)$
+- $e =$ "A foreign national has legal employment."
+- $l =$  "He has had legal employment less than three years ago."
+- $a =$  "He is currently employed abroad."
+- $s =$ "He is entitled to social security."
 
 # Drawing truth tables for expressions
 
@@ -132,6 +143,32 @@ p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 \end{tabular}
 
 
+# Exercise 2.11
+
+\begin{tabular}{@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{}c@{ }}
+p & q & ( & ( & p & $\rightarrow$ & q & ) & $\lor$ & ( & q & $\rightarrow$ & p & ) & )\\
+\hline 
+1 & 1 &  &  & 1 & 1 & 1 &  & \textcolor{red}{1} &  & 1 & 1 & 1 &  & \\
+1 & 0 &  &  & 1 & 0 & 0 &  & \textcolor{red}{1} &  & 0 & 1 & 1 &  & \\
+0 & 1 &  &  & 0 & 1 & 1 &  & \textcolor{red}{1} &  & 1 & 0 & 0 &  & \\
+0 & 0 &  &  & 0 & 1 & 0 &  & \textcolor{red}{1} &  & 0 & 1 & 0 &  & \\
+\end{tabular}
+
+# Exercise 2.11
+
+\begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{}c@{}@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{}@{}c@{ }}
+p & q & r & ( & ( & ( & p & $\lor$ & $\sim$ & q & ) & $\&$ & r & ) & $\leftrightarrow$ & ( & $\sim$ & ( & p & $\&$ & r & ) & $\lor$ & q & ) & )\\
+\hline 
+1 & 1 & 1 &  &  &  & 1 & 1 & 0 & 1 &  & 1 & 1 &  & \textcolor{red}{1} &  & 0 &  & 1 & 1 & 1 &  & 1 & 1 &  & \\
+1 & 1 & 0 &  &  &  & 1 & 1 & 0 & 1 &  & 0 & 0 &  & \textcolor{red}{0} &  & 1 &  & 1 & 0 & 0 &  & 1 & 1 &  & \\
+1 & 0 & 1 &  &  &  & 1 & 1 & 1 & 0 &  & 1 & 1 &  & \textcolor{red}{0} &  & 0 &  & 1 & 1 & 1 &  & 0 & 0 &  & \\
+1 & 0 & 0 &  &  &  & 1 & 1 & 1 & 0 &  & 0 & 0 &  & \textcolor{red}{0} &  & 1 &  & 1 & 0 & 0 &  & 1 & 0 &  & \\
+0 & 1 & 1 &  &  &  & 0 & 0 & 0 & 1 &  & 0 & 1 &  & \textcolor{red}{0} &  & 1 &  & 0 & 0 & 1 &  & 1 & 1 &  & \\
+0 & 1 & 0 &  &  &  & 0 & 0 & 0 & 1 &  & 0 & 0 &  & \textcolor{red}{0} &  & 1 &  & 0 & 0 & 0 &  & 1 & 1 &  & \\
+0 & 0 & 1 &  &  &  & 0 & 1 & 1 & 0 &  & 1 & 1 &  & \textcolor{red}{1} &  & 1 &  & 0 & 0 & 1 &  & 1 & 0 &  & \\
+0 & 0 & 0 &  &  &  & 0 & 1 & 1 & 0 &  & 0 & 0 &  & \textcolor{red}{0} &  & 1 &  & 0 & 0 & 0 &  & 1 & 0 &  & \\
+\end{tabular}
+
 # Grammar of propositional logic
 
 Let $P$ be a set of proposition letters and let $p \in P$. 
@@ -171,6 +208,16 @@ These conforming expressions are all consistent with ${\neg}p \vee q \rightarrow
 - ${\neg}((p \vee q) \rightarrow r)$
 - $({\neg}p \vee (q \rightarrow r))$
 - ${\neg}(p \vee (q \rightarrow r))$
+
+
+# Exercise 2.7
+
+Which of the following are formulas in propositional logic?
+
+- $p \rightarrow {\neg}q$
+- ${\neg}{\neg} \wedge q \vee p$
+- $p{\neg}q$
+
 
 # More on semantics
 
