@@ -107,9 +107,12 @@ header-includes:
 # Domain diagram
 ![Domain](psalm41g.eps)\ 
 
-# Domain diagram
-![Domain](atTheGym.eps)\ 
 
 # Domain diagram
 ![Domain](atTheGymB.eps)\ 
+
+
+# Domain diagram
+![Domain](atTheGym.eps)\ 
+
 
