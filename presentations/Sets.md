@@ -60,10 +60,22 @@ themes:
   different times.
 - When specifying a set in predicate notation, different descriptions may
   pick out exactly the same set.
-- But properties are not defined by their instances. Therefore, classes and
+- But properties are not defined by their instances. Therefore, properties and
   sets are different.
 
-# Classes are not sets
+
+# Elements vs. subsets
+
+- We use the $\in$ operator to relate an element to the set it belongs to.
+- For example, $b \in \{a,b,c\}$
+- $\{a,b\} \in \{\{a,b\}, \{b,c,d\}, \{a,f,g\}\}$
+- But $\{a,b\} \subseteq \{a,b,c\}$
+- $\{b\} \subseteq \{a,b,c\}$
+- $\{a,c\} \subseteq \{a,b,c\}$
+- $\{\{a,b\}, \{a,f,g\}\} \subseteq \{\{a,b\}, \{b,c,d\}, \{a,f,g\}\}$
+- $\emptyset \subseteq \{a,b,c\}$ but $\emptyset \notin \{a,b,c\}$
+
+# Sets and properties are different things
 
 - The property of being an odd integer less than 8 and greater than 2
   is different from the property of being a prime integer less than 8
@@ -72,7 +84,7 @@ themes:
 - But the set of odd integers between 2 and 8 is the same as the set
   of primes between 2 and 8. This is not just any equivalence
   relationship: we're talking about only one set.
-- You might specify a class "students enrolled at the iSchool," but its
+- You might specify a category "students enrolled at the iSchool," but its
    *extension* would be different sets at different times.
    
 # Key definitions from the Partee reading
