@@ -21,8 +21,6 @@ header-includes:
 - Inference: a conclusion is \emph{valid} with respect to a set of premises if the conclusion
   is true in every sitation where the premises are true (van Benthem, et al, section 2-4).
 
-
-
 # From our syllabus
 
 The course is thus simultaneously a foundations course
@@ -34,6 +32,15 @@ themes:
 - Deep vs. superficial differences in modeling languages.
 - The expressiveness vs. tractability tradeoff.
 - The fundamental role of a very small set of inter-related concepts.
+
+# Formal set-theoretic accounts
+
+- It's important to our authors that we can reduce complex concepts to simpler ones.
+- They're willing to sacrifice conceptual richness and subtlety for precision and rigor.
+- They aim to capture common sense understanding and domain knowledge without appeal to either of those.
+- Sometimes a demonstration that we *can* account for something in terms of simple sets is seen as
+  valuable, even if it's not convenient or practical to ever use the reduction again.
+
 
 # From the Partee reading
 
@@ -86,20 +93,37 @@ themes:
   relationship: we're talking about only one set.
 - You might specify a category "students enrolled at the iSchool," but its
    *extension* would be different sets at different times.
-   
-# Key definitions from the Partee reading
+
+
+# Set operations
+
+- Union: $A \cup B =_{def} \{x | x \in A$ or $x \in B\}$
+- Intersection: $A \cap B =_{def} \{x | x \in A$ and $x \in B\}$
+- Complement:  $A' =_{def} \{x | x \notin A\}$
+- Relative Complement:  $A - B =_{def} \{x | x \in A$ and $x \notin B\}$
+
+
+# Tuples are ordered sets
 
 - $\langle a,b \rangle =_{def} \{\{a\},\{a,b\}\}$
-- $A \times B =_{def} \{\langle x,y \rangle\ |\ x \in A\ and\ y \in B\}$
 - $\langle a,b,c \rangle =_{def} \langle\langle a,b \rangle,c\rangle$
-- $A \times B \times C =_{def} ((A \times B) \times C)$
+- Cartesian products are sets of tuples.
+- $A \times B =_{def} \{\langle x,y \rangle\ |\ x \in A\ and\ y \in B\}$
+- Relations are subsets of cartesian products.
 - If $A$ and $B$ are sets and $R \subseteq A \times B$ we say that $R$ is a binary relation from $A$ to $B$.
+- $A \times B \times C =_{def} ((A \times B) \times C)$
+
+
+# Domain, range, functions, and composition.
+
 - The set \textbf{dom} $R = \{a\ |\ \langle a,b \rangle \in R$ for some $b\}$ is called the \emph{domain}
   of the relation $R$ and \ldots
 - \ldots the set \textbf{range} $R = \{b\ |\ \langle a,b \rangle \in R$ for some $a\}$ is called the
    \emph{range} of relation $R$.
 - If  $A$ and $B$ are sets and $R \subseteq A \times B$ we say that $R^{-1} \subseteq B \times A$ is the
   \emph{inverse} of $R$, where $R^{-1} =_{def} \{\langle b,a \rangle\ |\ \langle a,b \rangle \in R\}$.
+- Given relations $R \subseteq A \times B$ and $S \subseteq B \times C$ the composite of $R$ and $S$,
+  written $S \circ R =_{def} \{\langle x,z \rangle |$ for some $y, \langle x,y \rangle \in R$ and $\langle y,z \rangle \in S \}$
 - A relation $F \subseteq A \times B$ is a \emph{function} (or mapping) $F:A \rightarrow B$ if and only if
   the domain of $F$ is $A$ and $F$ pairs every element in that domain with exactly one element in the range,
   i.e. $\langle a,b \rangle \in F$ and $\langle a,c \rangle \in F$ implies $b = c$.
