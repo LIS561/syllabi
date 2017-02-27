@@ -8,10 +8,14 @@ header-includes:
   - \usepackage{mathtools}
 ---
 
+# Review from last week
+- Last week we considered sets, relations, and formalization.
+
+
 # UML Class Diagram
 ![UML](UML1.eps)\ 
 
-# Entitty-Relationship Diagram
+# Entity-Relationship Diagram
 ![ER](ER1.eps)\ 
 
 
