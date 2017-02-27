@@ -9,10 +9,13 @@ header-includes:
 ---
 
 # This week
+
+- Last week we considered sets, relations, and formalization.
 - This week you read about two types of diagram: the *entity-relationship diagram* and the *UML class diagram*.
+- Tonight I'll show you the connections between last week's discussion and this week's readings.
 
 # Review from last week
-- Last week we considered sets, relations, and formalization.
+
 - Tuples are ordered sets
 - Cartesian products are sets of tuples.
 - $A \times B =_{def} \{\langle x,y \rangle\ |\ x \in A\ and\ y \in B\}$
@@ -50,6 +53,7 @@ header-includes:
 - $\langle a, c \rangle \in (C \times O), \langle a, d \rangle \in (C \times O), \langle b, c \rangle \in (C \times O), \langle b, d \rangle \in (C \times O)$
 - $\langle a, c \rangle \in H$ but $\langle a, d \rangle \notin H$
 - $\langle b, d \rangle \in H$ but $\langle b, c \rangle \notin H$
+- In predicate logic we'd say $Hbd \wedge {\neg}Hbc$
 
 # Classes vs. properties
 
@@ -63,7 +67,7 @@ header-includes:
   invented for software engineering.
 - Therefore, some of their notational conventions will make sense only
   for purposes of writing code or defining database schemas.
-- Unfortunately, that stop people from using those conventions
+- Unfortunately, that doesn't stop people from using those conventions
   imprecisely for illustrating domain models.
 - We will focus on those conventions important for modeling our
   domains of interest.
@@ -75,3 +79,19 @@ header-includes:
 ![ER](ER1.eps)\ 
 
 
+# Common to the ER diagram and the UML class diagram
+
+1. Rectangles representing domain categories ("entity sets" and "classes")
+2. Arrows between the rectangles representing hierarchical structure on the categories ("generalization")
+3. Connections between the rectangles representing domain relationships ("relationships" and "associations")
+4. The arity or "degree" of the relationship (typically binary)
+5. The cardinality or multiplicity of the relationship
+6. Scalar attributes or features of the classes
+
+# Not common to both diagrams
+
+1. Directionality of the relationship
+2. "Weak entity" distinction
+3. Identifying vs. descriptive attributes
+4. Meronymic vs. non-meronymic associations
+5. \ldots and many things covered in the readings, but not used in these examples
