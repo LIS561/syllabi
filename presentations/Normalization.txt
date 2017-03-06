@@ -1,0 +1,52 @@
+×∈⊆∉⊈σΠ
+
+## Important definitions from the Kent reading
+
+- Under second and third normal forms, a nonkey field must provide a
+  fact about the key, the whole key, and nothing but the key.
+
+- Third normal form is violated when a nonkey field is a fact about
+  another nonkey field.
+
+- A field Y is "functionally dependent" on a field (or fields) X if it
+  is invalid to have two records with the same X value but different Y
+  values.
+
+## Recall from Partee
+
+- A relation F ⊆ (A × B) is a function (or mapping) F:A→B if and only
+  if the domain of F is A and F pairs every element in that domain
+  with exactly one element in the range.
+
+-------------------------
+
+
+(Course, Name, CRN, Schedule, Location, Instructor)
+
+LIS202AD1, Social Aspects Info Tech, 53432, Th: 2:00 - 2:50 p.m., 1040 FLB (Foreign Lang. Bldg), Takazawa Kendall
+LIS202AD2, Social Aspects Info Tech, 53433, Th: 3:00 - 3:50 p.m., 1110 FLB (Foreign Lang. Bldg), Ju Kendall
+LIS202AD3, Social Aspects Info Tech, 53434, Th: 4:00 - 4:50 p.m., 1110 FLB (Foreign Lang. Bldg), Takazawa, Kendall 
+LIS202AD4, Social Aspects Info Tech, 53435, F: 9:00 - 9:50 a.m., 1024 FLB (Foreign Lang. Bldg), Ju Kendall 
+LIS202AD5, Social Aspects Info Tech, 53436, F: 10:00 - 10:50 a.m., 1040 FLB (Foreign Lang. Bldg), Liu Kendall 
+LIS202AD6, Social Aspects Info Tech, 53437, F: 11:00 - 11:50 a.m., 1040 FLB (Foreign Lang. Bldg), Liu Kendall
+LIS202AE1 3 hours, Social Aspects Info Tech, 36561, Tu,Th: 1:00 - 1:50 p.m., 126 LISB Kendall
+LIS505LE 4 hours Online, Adm Mgt of Libs Info Centers [Administration & Management of Libraries and Information Centers],
+41031, Tu: 6:00 - 8:00 p.m.,Online, Healey, 
+See LIS 505 for course description
+https://ischool.illinois.edu/academics/courses/catalog#500level
+Restricted to graduate students in the School of Information
+Sciences. All other students need department approval. Email
+ischool-advising@illinois.edu.
+
+
+
+LIS202	Social Aspects Info Tech
+Credit: 3 UG hours
+Description: [Same as INFO 202 (controlling dept) and MACS 202]
+Explores the way in which information technologies have and are
+transforming society and how these affect a range of social, political
+and economic issues from the individual to societal levels. [This
+course satisfies the General Education Criteria for a UIUC Social
+Sciences course.] [Title change effective Spring 2011; formerly known
+as "Social Aspects Info Sys"]
+Prerequisites: Sophomore, junior or senior.
