@@ -1,6 +1,9 @@
-×∈⊆∉⊈σΠ
+×∈⊆∉⊈σΠ⋈
 
 ## Important definitions from the Kent reading
+
+- Under first normal form, all occurrences of a record
+   type must contain the same number of fields.
 
 - Under second and third normal forms, a nonkey field must provide a
   fact about the key, the whole key, and nothing but the key.
@@ -19,6 +22,18 @@
   with exactly one element in the range.
 
 -------------------------
+Define set D as our application domain.
+ - Define C ⊆ D as a set of courses;
+ - Define N ⊆ D as a set of course titles;
+ - Define R ⊆ D as a set of CRN identifiers;
+ - Define S ⊆ D as a set of meeting times;
+ - Define L ⊆ D as a set of campus classrooms;
+ - Define I ⊆ D as a set of instructors;
+ - Define V ⊆ (C × N × R × S × L × I) as our domain relation.
+ 
+ ## Clarifications
+ 1. Set D is part of the real world. The other sets are actual things in the world that we're modeling. 
+
 
 
 (Course, Name, CRN, Schedule, Location, Instructor)
@@ -39,7 +54,76 @@ Sciences. All other students need department approval. Email
 ischool-advising@illinois.edu.
 
 
+(Course, Section, Name, CRN, Schedule, Location, Instructor)
+LIS202, AD1, Social Aspects Info Tech, 53432, Th: 2:00 - 2:50 p.m., 1040 FLB (Foreign Lang. Bldg), Takazawa
+LIS202, AD1, Social Aspects Info Tech, 53432, Th: 2:00 - 2:50 p.m., 1040 FLB (Foreign Lang. Bldg), Kendall
+LIS202, AD2, Social Aspects Info Tech, 53433, Th: 3:00 - 3:50 p.m., 1110 FLB (Foreign Lang. Bldg), Ju
+LIS202, AD2, Social Aspects Info Tech, 53433, Th: 3:00 - 3:50 p.m., 1110 FLB (Foreign Lang. Bldg), Kendall
+LIS202, AD3, Social Aspects Info Tech, 53434, Th: 4:00 - 4:50 p.m., 1110 FLB (Foreign Lang. Bldg), Takazawa
+LIS202, AD3, Social Aspects Info Tech, 53434, Th: 4:00 - 4:50 p.m., 1110 FLB (Foreign Lang. Bldg), Kendall 
+LIS202, AD4, Social Aspects Info Tech, 53435, F: 9:00 - 9:50 a.m., 1024 FLB (Foreign Lang. Bldg), Ju
+LIS202, AD4, Social Aspects Info Tech, 53435, F: 9:00 - 9:50 a.m., 1024 FLB (Foreign Lang. Bldg), Kendall 
+LIS202, AD5, Social Aspects Info Tech, 53436, F: 10:00 - 10:50 a.m., 1040 FLB (Foreign Lang. Bldg), Liu
+LIS202, AD5, Social Aspects Info Tech, 53436, F: 10:00 - 10:50 a.m., 1040 FLB (Foreign Lang. Bldg), Kendall 
+LIS202, AD6, Social Aspects Info Tech, 53437, F: 11:00 - 11:50 a.m., 1040 FLB (Foreign Lang. Bldg), Liu
+LIS202, AD6, Social Aspects Info Tech, 53437, F: 11:00 - 11:50 a.m., 1040 FLB (Foreign Lang. Bldg), Kendall
+LIS202, AE1 3 hours, Social Aspects Info Tech, 36561, Tu,Th: 1:00 - 1:50 p.m., 126 LISB Kendall
+LIS505, LE 4 hours Online, Adm Mgt of Libs Info Centers [Administration & Management of Libraries and Information Centers],
+41031, Tu: 6:00 - 8:00 p.m.,Online, Healey, 
+See LIS 505 for course description
+https://ischool.illinois.edu/academics/courses/catalog#500level
+Restricted to graduate students in the School of Information
+Sciences. All other students need department approval. Email
+ischool-advising@illinois.edu.
 
+-----------------------------
+
+Timetable = Π(Course#, Section, Name, CRN,....) ((Course ⋈ Sessions) ⋈ Teaches)
+
+
+Sessions(CRN, Course#, Section, Schedule, Location)
+Teaches(CRN, Instructor)
+Course(Course#, Name, CreditHrs)
+
+
+
+Course
+<LIS202, Social Aspects Info Tech, 3 hours>
+
+Sessions
+<53432, LIS202, AD1, Th: 2:00 - 2:50 p.m., 1040 FLB (Foreign Lang. Bldg)>
+<53433, LIS202, AD2,  Th: 3:00 - 3:50 p.m., 1110 FLB (Foreign Lang. Bldg)>
+
+
+
+Teaches
+<53432, Takazawa>
+<53432, Kendall>
+<53433, Ju>
+<53433, Kendall>
+<53434, Takazawa>
+<53434, Kendall> 
+<53435,  Ju>
+<53435, Kendall>
+<53436, Liu>
+<53436, Kendall> 
+<53437, Liu>
+<53437, Kendall>
+<36561, Kendall>
+
+
+Join
+
+<LIS202, Social Aspects Info Tech, 3 hours, 53432, LIS202, AD1, Th: 2:00 - 2:50 p.m., 1040 FLB (Foreign Lang. Bldg)>
+<LIS202, Social Aspects Info Tech, 3 hours, 53433, LIS202, AD2,  Th: 3:00 - 3:50 p.m., 1110 FLB (Foreign Lang. Bldg)>
+
+SQL:
+Select (Course#, Section, Name, CRN,....)
+From  Course x Sessions
+Where Course.Course# = Sessions.Course#
+
+
+-----------------------------
 LIS202	Social Aspects Info Tech
 Credit: 3 UG hours
 Description: [Same as INFO 202 (controlling dept) and MACS 202]
