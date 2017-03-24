@@ -134,3 +134,11 @@ course satisfies the General Education Criteria for a UIUC Social
 Sciences course.] [Title change effective Spring 2011; formerly known
 as "Social Aspects Info Sys"]
 Prerequisites: Sophomore, junior or senior.
+------------------------------------------------------
+
+Sessions(YearSem,CRN, Course#, Section, MeetingTime, Location)
+Teaches(CRN, Instructor)
+Course(Course#, Name, CreditHrs)
+
+
+
