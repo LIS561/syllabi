@@ -24,6 +24,8 @@ header-includes:
 
 # Bottom-up parse
 
+\small
+
 -   ${\forall}wx ((Fxw \wedge Aw) \rightarrow {\exists}yz ((Pxy \wedge Ay) \wedge (Fxz \wedge Dz)))$
 - ${\forall}\textbf{vv} ((F\textbf{vv} \wedge A\textbf{v}) \rightarrow {\exists}\textbf{vv} ((P\textbf{vv} \wedge A\textbf{v}) \wedge (F\textbf{vv} \wedge D\textbf{v})))$
 - ${\forall}\textbf{vv} ((\textbf{Pvv} \wedge \textbf{Pv}) \rightarrow {\exists}\textbf{vv} ((\textbf{Pvv} \wedge \textbf{Pv}) \wedge (\textbf{Pvv} \wedge \textbf{Pv})))$
@@ -37,6 +39,43 @@ header-includes:
 - ${\forall}\textbf{vv} (\varphi \rightarrow \varphi)$
 - ${\forall}\textbf{vv}\varphi$
 - $\varphi$
+
+\normalsize
+
+# Parsing is a search through a space of possible solutions
+
+We can go wrong!
+
+-   ${\forall}wx ((Fxw \wedge Aw) \rightarrow {\exists}yz ((Pxy \wedge  Ay) \wedge (Fxz \wedge Dz)))$
+- ${\forall}\textbf{vv} ((F\textbf{vv} \wedge A\textbf{v}) \rightarrow {\exists}\textbf{vv} ((P\textbf{vv} \wedge A\textbf{v}) \wedge (F\textbf{vv} \wedge D\textbf{v})))$
+- ${\forall}\textbf{vv} ((\textbf{Pvv} \wedge \textbf{Pv}) \rightarrow {\exists}\textbf{vv} ((\textbf{Pvv} \wedge \textbf{Pv}) \wedge (\textbf{Pvv} \wedge \textbf{Pv})))$
+- ${\forall}\textbf{tt} ((\textbf{Ptt} \wedge \textbf{Pt}) \rightarrow {\exists}\textbf{tt} ((\textbf{Ptt} \wedge \textbf{Pt}) \wedge (\textbf{Ptt} \wedge \textbf{Pt})))$
+- ${\forall}\textbf{tt}((\textbf{Atom} \wedge \textbf{Atom})\rightarrow{\exists}\textbf{tt}((\textbf{Atom} \wedge \textbf{Atom}) \wedge (\textbf{Atom} \wedge \textbf{Atom})))$
+- ${\forall}\textbf{tt} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{tt} ((\varphi \wedge \varphi) \wedge (\varphi \wedge \varphi)))$
+- ${\forall}\textbf{tt} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{tt} ((\varphi \wedge \varphi) \wedge \varphi))$
+- ${\forall}\textbf{tt} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{tt} (\varphi \wedge \varphi))$
+- ${\forall}\textbf{tt} (\varphi \rightarrow {\exists}\textbf{tt} (\varphi \wedge \varphi))$
+- ${\forall}\textbf{tt} (\varphi \rightarrow {\exists}\textbf{tt}\varphi)$
+- Stuck! No rule applies, so we must backtrack.
+- A conforming expression should have some path to our start symbol.
+
+# Top-down derivation
+
+Derivation is parsing in reverse.
+
+- $\varphi$
+- ${\forall}\textbf{v}\varphi$
+- ${\forall}\textbf{v} (\varphi \leftrightarrow \varphi)$
+- ${\forall}\textbf{v} (\varphi \leftrightarrow {\exists}\textbf{v}\varphi)$
+- ${\forall}\textbf{v} (\textbf{Atom} \leftrightarrow {\exists}\textbf{v}\varphi)$
+- ${\forall}\textbf{v} (\textbf{Atom} \leftrightarrow {\exists}\textbf{v} \textbf{Atom})$
+- ${\forall}\textbf{v} (\textbf{Pt} \leftrightarrow {\exists}\textbf{v} \textbf{Atom})$
+- ${\forall}\textbf{v} (\textbf{Pt} \leftrightarrow {\exists}\textbf{v} \textbf{Ptt})$
+- ${\forall}\textbf{v} (\textbf{Pv} \leftrightarrow {\exists}\textbf{v} \textbf{Pvv})$
+- ${\forall}\textbf{v} (\textbf{Pv} \leftrightarrow {\exists}\textbf{v} L\textbf{vv})$
+- ${\forall}\textbf{v} (V\textbf{v} \leftrightarrow {\exists}\textbf{v} L\textbf{vv})$
+- ${\forall}\textbf{v} (V\textbf{v} \leftrightarrow {\exists}z L\textbf{v}z)$
+- ${\forall}x (Vx \leftrightarrow {\exists}z Lxz)$
 
 
 # Rosen on vocabularies
