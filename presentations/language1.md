@@ -78,6 +78,7 @@ Derivation is parsing in reverse.
 - ${\forall}x (Vx \leftrightarrow {\exists}z Lxz)$
 
 
+
 # Rosen on vocabularies
 
 > A *vocabulary* (or *alphabet*) $V$ is a finite nonempty set of
