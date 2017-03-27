@@ -8,6 +8,17 @@ header-includes:
   - \usepackage{mathtools}
 ---
 
+# Key concepts for language topics
+
+1. Syntax governs the *form* expressions of a language may take.
+2. Semantics governs the *relationship* between language expressions and the *domain* we're modeling.
+3. We have the usual formalist agenda of reducing our accounts of language to simple mathematical objects.
+4. That agenda is partly in the service of understanding, but also our aim to process language expressions using software.
+5. The cost of processing language is measured in processing time and memory.
+6. The more expressive our language, the more expensive it will be to run our software over it.
+7. Classifications of languages (like the Chomsky hierarchy) help us recognize what kind of software we need to
+   accomplish our processing goals.
+
 # Grammars for artificial languages
 
 - We've seen grammars in earlier presentations.
@@ -168,7 +179,7 @@ Derivation (a term you read in Rosen) is parsing in reverse.
 
 
 
-# Rosen on vocabularies
+# Formalization: Rosen on vocabularies
 
 > A *vocabulary* (or *alphabet*) $V$ is a finite nonempty set of
 > elements, called *symbols*.  A *word* (or *sentence*) over $V$ is a
@@ -185,6 +196,23 @@ Derivation (a term you read in Rosen) is parsing in reverse.
 > $P$. The set $V - T$ is denoted by $N$. Elements of $N$ are
 > called *nonterminal symbols.* Every production in $P$ must contain
 > at least one nonterminal on its left side.
+
+# Phrase-structure grammar
+
+~~~~~~~~~~
+<protocol> ::= http://
+<letter>   ::= a|b|c|d|e|f|g|h|i|j|k|l|m
+<letter>   ::= n|o|p|q|r|s|t|u|v|w|x|y|z
+<slash>    ::= /
+<dot>      ::= .
+<string>   ::= <letter><string>|<letter>
+<host>     ::= <string><dot><host>|<string><dot>
+<domain>   ::= com|org|edu
+<site>     ::= <host><domain><slash>
+<dir>      ::= <string><slash>
+<body>     ::= <dir><body>|<dir>
+<url>      ::= <protocol><site><body>|<protocol><site>
+~~~~~~~~~~
 
 # Rosen on languages and derivability
 
@@ -225,11 +253,40 @@ Per Rosen, section 10.1:
   $w_{2} = a$, where $A$ and $B$ are nonterminal symbols and $a$ is a
   terminal symbol, or with $w_{1} = S$ and $w_{2} = \lambda$.
 
-# Regular Expressions
+# Chomsky hierarchy implications
+
+- Regular languages (like our URL subset) can be summarized using DFAs, NFAs, and
+  regular expressions.
+- Therefore, their expressions can be parsed in very little time,
+  using little memory.
+- Our grammars for propositional and predicate logic are *not*
+  regular, but they are context free.
+- No regular expression is powerful enough to recognize any arbitrary
+  logic expression, because logics admit arbitrarily deep levels of
+  nesting: we can always open up a new set of parentheses, just as
+  with Boolean search languages.
+- Parsing non-regular, context free languages like our logic grammar
+  always requires a stack memory, and often requires backtracking.
+- We can usually tell that a language is not regular by seeing whether its productions meet Rosen's constraints.
+
+# Context free, non-regular grammars
+
+- $\textbf{v} \Coloneqq x|y|z|\ldots$
+- $\textbf{c} \Coloneqq a|b|c|\ldots$
+- $\textbf{t} \Coloneqq \textbf{v}|\textbf{c}$
+- $\textbf{P} \Coloneqq P|Q|R|\ldots$
+- $\textbf{Atom} \Coloneqq \textbf{Pt}_{1}\ldots\textbf{t}_{n}$ where $n$ is the arity of \textbf{P}
+- $\varphi \Coloneqq \textbf{Atom}|\neg\varphi|(\varphi \wedge \varphi)|(\varphi \vee \varphi)|(\varphi \rightarrow \varphi)|(\varphi \leftrightarrow \varphi)|{\forall}\textbf{v} \varphi|{\exists}\textbf{v} \varphi$
+
+# Caveats for the Rosen definitions
+
+- Being regular and being context-free are really properties of languages, not grammars.
+- Some grammars that don't satisfy Rosen's type 3 definition still summarize regular languages.
+- It can be challenging to verify whether a language is regular just by looking at the productions.
+
+# The URL subset is a regular language
 
 ~~~~~~~~~~
-(http://)(([a-z]+)\.)+(com|org|edu)/(([a-z]+)/)*
-
 <protocol> ::= http://
 <letter>   ::= a|b|c|d|e|f|g|h|i|j|k|l|m
 <letter>   ::= n|o|p|q|r|s|t|u|v|w|x|y|z
@@ -250,20 +307,6 @@ Per Rosen, section 10.1:
 - ${\langle}var{\rangle}   \Coloneqq q|r|s|t|u|v|w|x|y|z$
 - ${\langle}pred{\rangle}  \Coloneqq A|B|C|D|E|F|G|H|I|J|K|L|M$
 - ${\langle}pred{\rangle}  \Coloneqq N|O|P|Q|R|S|T|U|V|W|X|Y|Z$
-- ${\langle}quant{\rangle} \Coloneqq {\forall}|{\exists}$
-- ${\langle}not{\rangle}   \Coloneqq \neg$
-- ${\langle}binop{\rangle} \Coloneqq {\wedge}|{\vee}|{\rightarrow}|{\leftrightarrow}$
-- ${\langle}term{\rangle}  \Coloneqq {\langle}const{\rangle}|{\langle}var{\rangle}$
-- ${\langle}atom{\rangle}  \Coloneqq {\langle}pred{\rangle}{\langle}term{\rangle}|{\langle}atom{\rangle}{\langle}term{\rangle}$
-- ${\langle}phi{\rangle}   \Coloneqq {\langle}atom{\rangle}|{\langle}not{\rangle}{\langle}phi{\rangle}|{\langle}quant{\rangle}{\langle}var{\rangle}{\langle}phi{\rangle}$
-- ${\langle}phi{\rangle}   \Coloneqq ({\langle}phi{\rangle}{\langle}binop{\rangle}{\langle}phi{\rangle})$
-
-# Context free, non-regular grammars
-
-- ${\langle}const{\rangle} \Coloneqq a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p$
-- ${\langle}var{\rangle}   \Coloneqq q|r|s|t|u|v|w|x|y|z$
-- ${\langle}pred{\rangle}  \Coloneqq A|B|C|D|E|F|G|H|I|J|K|L|M$
-- ${\langle}pred{\rangle}  \Coloneqq N|O|P|Q|R|S|T|U|V|W|X|Y|Z$
 - ${\langle}lp{\rangle}    \Coloneqq ($
 - ${\langle}rp{\rangle}    \Coloneqq )$
 - ${\langle}quant{\rangle} \Coloneqq {\forall}|{\exists}$
@@ -273,6 +316,21 @@ Per Rosen, section 10.1:
 - ${\langle}atom{\rangle}  \Coloneqq {\langle}pred{\rangle}{\langle}term{\rangle}|{\langle}atom{\rangle}{\langle}term{\rangle}$
 - ${\langle}phi{\rangle}   \Coloneqq {\langle}atom{\rangle}|{\langle}not{\rangle}{\langle}phi{\rangle}|{\langle}quant{\rangle}{\langle}var{\rangle}{\langle}phi{\rangle}$
 - ${\langle}phi{\rangle}   \Coloneqq {\langle}lp{\rangle}{\langle}phi{\rangle}{\langle}binop{\rangle}{\langle}phi{\rangle}{\langle}rp{\rangle}$
+
+
+# Parsing context free languages
+
+- Adding a stack memory to our NFA gives us a *push down automaton* (PDA).
+- We only access a stack at one end: pushing a symbol on top, or
+  popping one off and discarding it.
+- We can't search for a symbol in the middle of a stack, but that
+  means that stack access is always independent of how much material
+  is stored there.
+- Transitions on the next diagram include requirements for the next
+  input symbol (just like the NFA), operations on the stack, or both.
+- `-/-` means leave the stack unchanged;
+- `/$` means push `$` on the top of the stack;
+- `$/` means pop `$` off the top of the stack;
 
 
 # Pushdown Automaton
