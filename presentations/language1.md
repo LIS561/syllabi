@@ -62,7 +62,7 @@ We can go wrong!
 # Parsing as search
 
 - Grammars like the ones we've seen typically have the parsing problem of which rules to apply in which order.
-- Parsing software explores one path of choices, and if no rule applies will back up and try a different path.
+- Nondeterministic parsing software explores one path of choices, and if no rule applies will back up and try a different path.
 - If all possible paths are exhausted for an expression, then the parse fails because the expression doesn't conform to the grammar.
 - The time required to explore all those possibilities is expensive, even for very fast computers.
 - Rules of thumb (heuristics) for ordering the productions can save time, but only on average.
@@ -99,9 +99,38 @@ Consider this simple syntax for a subset of URL web addresses:
 
 \normalsize
 
+
+# Regular expressions
+
+- We can summarize the URL subset grammar using *regular expression* notation.
+- Not all grammars can be encoded this way, but those that can will admit the kind of efficient,
+  left-to-right parsing shown on the previous slide.
+- Most popular programming languages, and many text editors include support for regular expressions.
+- The full grammar is expressed as `(http://)(([a-z]+)\.)+(com|org|edu)/(([a-z]+)/)*`
+- `[a-z]` means any single lower case letter.
+- `[a-z]+` means a string of one or more lower case letters.
+- `\.` means a literal period.
+- `(([a-z]+)\.)+` means one or more sequences of lower case letter strings separated by periods.
+
+# Regular expressions
+
+~~~~~~~~~~
+(http://)(([a-z]+)\.)+(com|org|edu)/(([a-z]+)/)*
+~~~~~~~~~~
+
+- `(com|org|edu)` means one of either `com`, `org`, or `edu`.
+- `(([a-z]+)/)*` means zero or more lower case letter strings separated by slashes.
+- So \small `(http://)(([a-z]+)\.)+(com|org|edu)/(([a-z]+)/)*` \normalsize means:
+    - `http://` followed by
+    - one or more strings of lower case letters, separated by periods, followed by
+    - one of either `com`, `org`, or `edu`,
+    - followed by a slash, followed by
+    - zero or more lower case letter strings separated by slashes.
+
+
 # Abstract state machines
 
-- We can diagram the rules for that URL subset grammar as a state transition diagram.
+- We can diagram the rules for the URL subset grammar as a state transition diagram.
 - States (circles) are situations or configurations of the parser.
 - As we parse the string from left to right, we try to move from the start state (circle number 1) to the goal state (circle 7).
 - If our input matches the label on an arc, we can follow that arrow.
@@ -193,7 +222,7 @@ Per Rosen, section 10.1:
   terminal symbol.
 - A *type 3* (regular) grammar can have productions only of the form $w_{1}
   \rightarrow w_{2}$ with $w_{1} = A$, and either $w_{2} = aB$ or
-  $w_{2} = a$, where $A$ and $B$ are nonterminalsymbols and $a$ is a
+  $w_{2} = a$, where $A$ and $B$ are nonterminal symbols and $a$ is a
   terminal symbol, or with $w_{1} = S$ and $w_{2} = \lambda$.
 
 # Regular Expressions
@@ -214,3 +243,7 @@ Per Rosen, section 10.1:
 <body>     ::= <dir><body>|<dir>
 <url>      ::= <protocol><site><body>|<protocol><site>
 ~~~~~~~~~~
+
+# Pushdown Automaton
+
+![PDA Parser for the predicate logic grammar](pda6.eps)
