@@ -1,5 +1,5 @@
 ---
-title: Artificial Languages, Part 1
+title: Artificial Languages, Part 1 (Syntax)
 author: Dave Dubin
 date: March 27, 2017
 header-includes:
@@ -57,11 +57,34 @@ We can go wrong!
 - ${\forall}\textbf{tt} (\varphi \rightarrow {\exists}\textbf{tt} (\varphi \wedge \varphi))$
 - ${\forall}\textbf{tt} (\varphi \rightarrow {\exists}\textbf{tt}\varphi)$
 - Stuck! No rule applies, so we must backtrack.
-- A conforming expression should have some path to our start symbol.
+- A conforming expression should have *some* path to our start symbol, but how do we program software to make the right choices?
+
+# Parsing as search
+
+- Grammars like the ones we've seen typically have the parsing problem of which rules to apply in which order.
+- Parsing software explores one path of choices, and if no rule applies will back up and try a different path.
+- If all possible paths are exhausted for an expression, then the parse fails because the expression doesn't conform to the grammar.
+- The time required to explore all those possibilities is expensive, even for very fast computers.
+- Rules of thumb (heuristics) for ordering the productions can save time, but only on average.
+- Ideally we'd like an efficient and deterministic path through the search space that allows us to quit early if the expression doesn't conform.
+- It turns out that some languages are easy to parse: consider, for example, the set of strings consisting of the letter 'b'.
+
+# An easy URL subset grammar
+
+Consider this simple syntax for a subset of URL web addresses:
+
+- Conforming expressions will all begin with `http://`
+- followed by strings of one or more lower case letters that are separated by periods,
+- the last such string will be one of `com`, `org`, or `edu`,
+- then there's a slash,
+- then zero or more strings of lower case letters that are separated by slashes
+- with one of those slashes being the rightmost character.
+- We can easily parse this from left to right, and quit right away if one of the rules is broken.
+
 
 # Top-down derivation
 
-Derivation is parsing in reverse.
+Derivation (a term you read in Rosen) is parsing in reverse.
 
 - $\varphi$
 - ${\forall}\textbf{v}\varphi$
