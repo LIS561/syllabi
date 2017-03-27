@@ -244,6 +244,26 @@ Per Rosen, section 10.1:
 <url>      ::= <protocol><site><body>|<protocol><site>
 ~~~~~~~~~~
 
+# Context free, non-regular grammars
+
+~~~~~~~~~~
+<protocol> ::= http://
+<letter>   ::= a|b|c|d|e|f|g|h|i|j|k|l|m
+<letter>   ::= n|o|p|q|r|s|t|u|v|w|x|y|z
+<slash>    ::= /
+<dot>      ::= .
+<string>   ::= <letter><string>|<letter>
+<host>     ::= <string><dot><host>|<string><dot>
+<domain>   ::= com|org|edu
+<site>     ::= <host><domain><slash>
+<dir>      ::= <string><slash>
+<body>     ::= <dir><body>|<dir>
+<url>      ::= <protocol><site><body>|<protocol><site>
+~~~~~~~~~~
+
+
+
+
 # Pushdown Automaton
 
 ![PDA Parser for the predicate logic grammar](pda6.eps)
