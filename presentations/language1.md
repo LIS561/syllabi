@@ -81,6 +81,43 @@ Consider this simple syntax for a subset of URL web addresses:
 - with one of those slashes being the rightmost character.
 - We can easily parse this from left to right, and quit right away if one of the rules is broken.
 
+# Parsing a URL
+
+\small
+
+- `http://www.whatever.something.com/abc/cba/wxy/qrs/`
+- **http://**`www.whatever.something.com/abc/cba/wxy/qrs/`
+- **http://www.**`whatever.something.com/abc/cba/wxy/qrs/`
+- **http://www.whatever.**`something.com/abc/cba/wxy/qrs/`
+- **http://www.whatever.something.**`com/abc/cba/wxy/qrs/`
+- **http://www.whatever.something.com/**`abc/cba/wxy/qrs/`
+- **http://www.whatever.something.com/abc/**`cba/wxy/qrs/`
+- **http://www.whatever.something.com/abc/cba/**`wxy/qrs/`
+- **http://www.whatever.something.com/abc/cba/wxy/**`qrs/`
+- **http://www.whatever.something.com/abc/cba/wxy/qrs/**
+- **Success!**
+
+\normalsize
+
+# Abstract state machines
+
+- We can diagram the rules for that URL subset grammar as a state transition diagram.
+- States (circles) are situations or configurations of the parser.
+- As we parse the string from left to right, we try to move from the start state (circle number 1) to the goal state (circle 7).
+- If our input matches the label on an arc, we can follow that arrow.
+- Otherwise we look for a default arc labeled with an asterisk.
+- Our first diagram is almost deterministic, but may still require some backtracking.
+- The second diagram adds some additional states and arcs, but is completely deterministic.
+
+# Nondeterministic Finite State Automaton
+
+![NFA Parser for URL grammar](nfa5.eps)
+
+
+# Deterministic Finite State Automaton
+
+![DFA Parser for URL grammar](dfa5b.eps)
+
 
 # Top-down derivation
 
@@ -177,12 +214,3 @@ Per Rosen, section 10.1:
 <body>     ::= <dir><body>|<dir>
 <url>      ::= <protocol><site><body>|<protocol><site>
 ~~~~~~~~~~
-
-# Nondeterministic Finite State Automaton
-
-![Parser for URL grammar](nfa5.eps)
-
-
-# Deterministic Finite State Automaton
-
-![Parser for URL grammar](dfa5b.eps)
