@@ -246,22 +246,33 @@ Per Rosen, section 10.1:
 
 # Context free, non-regular grammars
 
-~~~~~~~~~~
-<protocol> ::= http://
-<letter>   ::= a|b|c|d|e|f|g|h|i|j|k|l|m
-<letter>   ::= n|o|p|q|r|s|t|u|v|w|x|y|z
-<slash>    ::= /
-<dot>      ::= .
-<string>   ::= <letter><string>|<letter>
-<host>     ::= <string><dot><host>|<string><dot>
-<domain>   ::= com|org|edu
-<site>     ::= <host><domain><slash>
-<dir>      ::= <string><slash>
-<body>     ::= <dir><body>|<dir>
-<url>      ::= <protocol><site><body>|<protocol><site>
-~~~~~~~~~~
+- ${\langle}const{\rangle} \Coloneqq a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p$
+- ${\langle}var{\rangle}   \Coloneqq q|r|s|t|u|v|w|x|y|z$
+- ${\langle}pred{\rangle}  \Coloneqq A|B|C|D|E|F|G|H|I|J|K|L|M$
+- ${\langle}pred{\rangle}  \Coloneqq N|O|P|Q|R|S|T|U|V|W|X|Y|Z$
+- ${\langle}quant{\rangle} \Coloneqq {\forall}|{\exists}$
+- ${\langle}not{\rangle}   \Coloneqq \neg$
+- ${\langle}binop{\rangle} \Coloneqq {\wedge}|{\vee}|{\rightarrow}|{\leftrightarrow}$
+- ${\langle}term{\rangle}  \Coloneqq {\langle}const{\rangle}|{\langle}var{\rangle}$
+- ${\langle}atom{\rangle}  \Coloneqq {\langle}pred{\rangle}{\langle}term{\rangle}|{\langle}atom{\rangle}{\langle}term{\rangle}$
+- ${\langle}phi{\rangle}   \Coloneqq {\langle}atom{\rangle}|{\langle}not{\rangle}{\langle}phi{\rangle}|{\langle}quant{\rangle}{\langle}var{\rangle}{\langle}phi{\rangle}$
+- ${\langle}phi{\rangle}   \Coloneqq ({\langle}phi{\rangle}{\langle}binop{\rangle}{\langle}phi{\rangle})$
 
+# Context free, non-regular grammars
 
+- ${\langle}const{\rangle} \Coloneqq a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p$
+- ${\langle}var{\rangle}   \Coloneqq q|r|s|t|u|v|w|x|y|z$
+- ${\langle}pred{\rangle}  \Coloneqq A|B|C|D|E|F|G|H|I|J|K|L|M$
+- ${\langle}pred{\rangle}  \Coloneqq N|O|P|Q|R|S|T|U|V|W|X|Y|Z$
+- ${\langle}lp{\rangle}    \Coloneqq ($
+- ${\langle}rp{\rangle}    \Coloneqq )$
+- ${\langle}quant{\rangle} \Coloneqq {\forall}|{\exists}$
+- ${\langle}not{\rangle}   \Coloneqq \neg$
+- ${\langle}binop{\rangle} \Coloneqq {\wedge}|{\vee}|{\rightarrow}|{\leftrightarrow}$
+- ${\langle}term{\rangle}  \Coloneqq {\langle}const{\rangle}|{\langle}var{\rangle}$
+- ${\langle}atom{\rangle}  \Coloneqq {\langle}pred{\rangle}{\langle}term{\rangle}|{\langle}atom{\rangle}{\langle}term{\rangle}$
+- ${\langle}phi{\rangle}   \Coloneqq {\langle}atom{\rangle}|{\langle}not{\rangle}{\langle}phi{\rangle}|{\langle}quant{\rangle}{\langle}var{\rangle}{\langle}phi{\rangle}$
+- ${\langle}phi{\rangle}   \Coloneqq {\langle}lp{\rangle}{\langle}phi{\rangle}{\langle}binop{\rangle}{\langle}phi{\rangle}{\langle}rp{\rangle}$
 
 
 # Pushdown Automaton
