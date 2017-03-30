@@ -6,7 +6,15 @@ header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
   - \usepackage{mathtools}
+  - \usepackage{mathabx}  
 ---
+
+# Language and the mind
+![Cognitive view](semantics1.eps)\ 
+
+# Language and the world
+![Platonistic view](semantics2.eps)\ 
+
 
 
 # Bach on Semantics
