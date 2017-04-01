@@ -63,7 +63,7 @@ ${\langle}wff{\rangle} \Coloneqq {\exists}{\langle}var{\rangle}\ {\langle}wff{\r
 - In other words, $(Pab \wedge {\neg}Qbc)$ is the same as $(P(a,b)\ \&\ {-Q}(b,c))$.
 - van Benthem, et al. use $D$ for the domain set and $I$ for the interpretation function.
 - But Bach calls the domain set $E$ (entities) and the interpretation function $D$ (denotes).
-- I will bring in some details from the van Bentham readings, but use Bach's notation in this
+- I will bring in some details from the van Benthem readings, but use Bach's notation in this
   presentation.
 - Bach calls his structure an interpretation, so I'll use $I$ for that.
 
@@ -80,6 +80,23 @@ van Benthem, et al. write:
 Recall that the only non-language view of the world or domain that we needed consisted of
 truth values and propositions that concerned domain entities. Now we're going to include
 domain elements themselves in our model, not just propositions concerning them.
+
+
+# Language and the world
+![Cognitive view](semantics3a.eps)\ 
+
+# Language and the world
+![Cognitive view](semantics3b.eps)\ 
+
+# Language and the world
+![Cognitive view](semantics3c.eps)\ 
+
+# Language and the world
+![Cognitive view](semantics3d.eps)\ 
+
+# Language and the world
+![Cognitive view](semantics3e.eps)\ 
+
 
 
 # Models and interpretations
