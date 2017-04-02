@@ -196,3 +196,30 @@ words, $\varphi$ is true in interpretation $I$ under assignment $g$).
 - $I\ {\models_g}\ (\varphi_1 \vee \varphi_2)$ iff $I\ {\models_g}\ \varphi_1$ or $I\ {\models_g}\ \varphi_2$
 - $I\ {\models_g}\ {\forall}v \varphi$ iff for all $e \in E$ it holds that $I\ {\models_{g[v{\coloneqq}e]}}\ \varphi$
 - $I\ {\models_g}\ {\exists}v \varphi$ iff for at least one $e \in E$ it holds that $I\ {\models_{g[v{\coloneqq}e]}}\ \varphi$
+
+# Possible worlds and modal logics
+
+- Bach's M2 model structure includes a set of times and a set of possible worlds.
+- Possible worlds are part of the semantics of modal logics such as:
+    - Alethic logics, in which necessary truth and falsehood are distinguished from contingent truth and falsehood.
+    - Deontic logics, which concern things that permissible and obligatory.
+    - Epistemic logic, which concern what must or might be true, based on what we know.
+- Modal logics use predicate logic notation, along with two new symbols:
+    - The $\Box$ operator is read "necessarily."
+    - The $\Diamond$ operator is read "possibly."
+    - For example, ${\forall}x {\Diamond\exists}y (Px \vee {\neg\Box}Ryx)$
+
+# Modal logics and information modeling
+
+- We'll revisit alethic modal logic when we discuss best practices for
+  designing ontologies and other RDF vocabularies.
+
+- Deontic logic is beyond the scope of this course, but can be useful
+  for modeling constraints like those listed in these quotes from the
+  Harvard Personnel Manual:
+    1. "The Commonwealth of Massachusetts requires all employees under
+        the age of 18 to secure and present an educational certificate."
+    2. "Applicable state and federal laws provide that employees under
+       18 years of age may not: [...] work more than 9 hours per day."
+    3. "New employees must present a Social Security number at the
+       time of hire or immediately thereafter."
