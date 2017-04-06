@@ -37,18 +37,20 @@ header-includes:
 
 \small
 
--   ${\forall}wx ((Fxw \wedge Aw) \rightarrow {\exists}yz ((Pxy \wedge Ay) \wedge (Fxz \wedge Dz)))$
-- ${\forall}\textbf{vv} ((F\textbf{vv} \wedge A\textbf{v}) \rightarrow {\exists}\textbf{vv} ((P\textbf{vv} \wedge A\textbf{v}) \wedge (F\textbf{vv} \wedge D\textbf{v})))$
-- ${\forall}\textbf{vv} ((\textbf{Pvv} \wedge \textbf{Pv}) \rightarrow {\exists}\textbf{vv} ((\textbf{Pvv} \wedge \textbf{Pv}) \wedge (\textbf{Pvv} \wedge \textbf{Pv})))$
-- ${\forall}\textbf{vv} ((\textbf{Ptt} \wedge \textbf{Pt}) \rightarrow {\exists}\textbf{vv} ((\textbf{Ptt} \wedge \textbf{Pt}) \wedge (\textbf{Ptt} \wedge \textbf{Pt})))$
-- ${\forall}\textbf{vv}((\textbf{Atom} \wedge \textbf{Atom})\rightarrow{\exists}\textbf{vv}((\textbf{Atom} \wedge \textbf{Atom}) \wedge (\textbf{Atom} \wedge \textbf{Atom})))$
-- ${\forall}\textbf{vv} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{vv} ((\varphi \wedge \varphi) \wedge (\varphi \wedge \varphi)))$
-- ${\forall}\textbf{vv} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{vv} ((\varphi \wedge \varphi) \wedge \varphi))$
-- ${\forall}\textbf{vv} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{vv} (\varphi \wedge \varphi))$
-- ${\forall}\textbf{vv} (\varphi \rightarrow {\exists}\textbf{vv} (\varphi \wedge \varphi))$
-- ${\forall}\textbf{vv} (\varphi \rightarrow {\exists}\textbf{vv}\varphi)$
-- ${\forall}\textbf{vv} (\varphi \rightarrow \varphi)$
-- ${\forall}\textbf{vv}\varphi$
+- ${\forall}w{\forall}x ((Fxw \wedge Aw) \rightarrow {\exists}y{\exists}z ((Pxy \wedge Ay) \wedge (Fxz \wedge Dz)))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} ((F\textbf{vv} \wedge A\textbf{v}) \rightarrow {\exists}\textbf{v}{\exists}\textbf{v} ((P\textbf{vv} \wedge A\textbf{v}) \wedge (F\textbf{vv} \wedge D\textbf{v})))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} ((\textbf{Pvv} \wedge \textbf{Pv}) \rightarrow {\exists}\textbf{v}{\exists}\textbf{v} ((\textbf{Pvv} \wedge \textbf{Pv}) \wedge (\textbf{Pvv} \wedge \textbf{Pv})))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} ((\textbf{Ptt} \wedge \textbf{Pt}) \rightarrow {\exists}\textbf{v}{\exists}\textbf{v} ((\textbf{Ptt} \wedge \textbf{Pt}) \wedge (\textbf{Ptt} \wedge \textbf{Pt})))$
+- ${\forall}\textbf{v}{\forall}\textbf{v}((\textbf{Atom} \wedge \textbf{Atom})\rightarrow{\exists}\textbf{v}{\exists}\textbf{v}((\textbf{Atom} \wedge \textbf{Atom}) \wedge (\textbf{Atom} \wedge \textbf{Atom})))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{v}{\exists}\textbf{v} ((\varphi \wedge \varphi) \wedge (\varphi \wedge \varphi)))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{v}{\exists}\textbf{v} ((\varphi \wedge \varphi) \wedge \varphi))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{v}{\exists}\textbf{v} (\varphi \wedge \varphi))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} (\varphi \rightarrow {\exists}\textbf{v}{\exists}\textbf{v} (\varphi \wedge \varphi))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} (\varphi \rightarrow {\exists}\textbf{v}{\exists}\textbf{v}\varphi)$
+- ${\forall}\textbf{v}{\forall}\textbf{v} (\varphi \rightarrow {\exists}\textbf{v}\varphi)$
+- ${\forall}\textbf{v}{\forall}\textbf{v} (\varphi \rightarrow \varphi)$
+- ${\forall}\textbf{v}{\forall}\textbf{v}\varphi$
+- ${\forall}\textbf{v}\varphi$
 - $\varphi$
 
 \normalsize
@@ -57,16 +59,16 @@ header-includes:
 
 We can go wrong!
 
--   ${\forall}wx ((Fxw \wedge Aw) \rightarrow {\exists}yz ((Pxy \wedge  Ay) \wedge (Fxz \wedge Dz)))$
-- ${\forall}\textbf{vv} ((F\textbf{vv} \wedge A\textbf{v}) \rightarrow {\exists}\textbf{vv} ((P\textbf{vv} \wedge A\textbf{v}) \wedge (F\textbf{vv} \wedge D\textbf{v})))$
-- ${\forall}\textbf{vv} ((\textbf{Pvv} \wedge \textbf{Pv}) \rightarrow {\exists}\textbf{vv} ((\textbf{Pvv} \wedge \textbf{Pv}) \wedge (\textbf{Pvv} \wedge \textbf{Pv})))$
-- ${\forall}\textbf{tt} ((\textbf{Ptt} \wedge \textbf{Pt}) \rightarrow {\exists}\textbf{tt} ((\textbf{Ptt} \wedge \textbf{Pt}) \wedge (\textbf{Ptt} \wedge \textbf{Pt})))$
-- ${\forall}\textbf{tt}((\textbf{Atom} \wedge \textbf{Atom})\rightarrow{\exists}\textbf{tt}((\textbf{Atom} \wedge \textbf{Atom}) \wedge (\textbf{Atom} \wedge \textbf{Atom})))$
-- ${\forall}\textbf{tt} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{tt} ((\varphi \wedge \varphi) \wedge (\varphi \wedge \varphi)))$
-- ${\forall}\textbf{tt} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{tt} ((\varphi \wedge \varphi) \wedge \varphi))$
-- ${\forall}\textbf{tt} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{tt} (\varphi \wedge \varphi))$
-- ${\forall}\textbf{tt} (\varphi \rightarrow {\exists}\textbf{tt} (\varphi \wedge \varphi))$
-- ${\forall}\textbf{tt} (\varphi \rightarrow {\exists}\textbf{tt}\varphi)$
+-   ${\forall}w{\forall}x ((Fxw \wedge Aw) \rightarrow {\exists}y{\exists}z ((Pxy \wedge  Ay) \wedge (Fxz \wedge Dz)))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} ((F\textbf{vv} \wedge A\textbf{v}) \rightarrow {\exists}\textbf{v}{\exists}\textbf{v} ((P\textbf{vv} \wedge A\textbf{v}) \wedge (F\textbf{vv} \wedge D\textbf{v})))$
+- ${\forall}\textbf{v}{\forall}\textbf{v} ((\textbf{Pvv} \wedge \textbf{Pv}) \rightarrow {\exists}\textbf{v}{\exists}\textbf{v} ((\textbf{Pvv} \wedge \textbf{Pv}) \wedge (\textbf{Pvv} \wedge \textbf{Pv})))$
+- ${\forall}\textbf{t}{\forall}\textbf{t} ((\textbf{Ptt} \wedge \textbf{Pt}) \rightarrow {\exists}\textbf{t}{\exists}\textbf{t} ((\textbf{Ptt} \wedge \textbf{Pt}) \wedge (\textbf{Ptt} \wedge \textbf{Pt})))$
+- ${\forall}\textbf{t}{\forall}\textbf{t}((\textbf{Atom} \wedge \textbf{Atom})\rightarrow{\exists}\textbf{t}{\exists}\textbf{t}((\textbf{Atom} \wedge \textbf{Atom}) \wedge (\textbf{Atom} \wedge \textbf{Atom})))$
+- ${\forall}\textbf{t}{\forall}\textbf{t} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{t}{\exists}\textbf{t} ((\varphi \wedge \varphi) \wedge (\varphi \wedge \varphi)))$
+- ${\forall}\textbf{t}{\forall}\textbf{t} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{t}{\exists}\textbf{t} ((\varphi \wedge \varphi) \wedge \varphi))$
+- ${\forall}\textbf{t}{\forall}\textbf{t} ((\varphi \wedge \varphi) \rightarrow {\exists}\textbf{t}{\exists}\textbf{t} (\varphi \wedge \varphi))$
+- ${\forall}\textbf{t}{\forall}\textbf{t} (\varphi \rightarrow {\exists}\textbf{t}{\exists}\textbf{t} (\varphi \wedge \varphi))$
+- ${\forall}\textbf{t}{\forall}\textbf{t} (\varphi \rightarrow {\exists}\textbf{t}{\exists}\textbf{t}\varphi)$
 - Stuck! No rule applies, so we must backtrack.
 - A conforming expression should have *some* path to our start symbol, but how do we program software to make the right choices?
 
