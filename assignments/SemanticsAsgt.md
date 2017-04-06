@@ -13,9 +13,9 @@ direct your attention to the fragment illustrated below:
 For this assignment you are to consider what it would mean for an
 expression in EAC-CPF to be correct, and to what extent a
 denotation-based semantics like the one presented in the Bach chapters
-would be useful in formalizing the meaning of EAC-CPF. Answer
-the following questions (with each answer 1-2 paragraphs long). Upload
-your assignment here.
+would be useful in formalizing the meaning of EAC-CPF. Answer the
+following questions in precise English (with each answer 1-2
+paragraphs long). Upload your assignment here.
 
 1. Consider the `<level>` element nested within the
    `<structureOrGenealogy>` element. Would it make sense for a
