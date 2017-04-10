@@ -40,6 +40,17 @@ header-includes:
 # Instances with classes
 ![Classes and instances](rdfex2.eps)
 
+
+# IRIs are the new URIs
+
+- URIs include URL web addresses and URNs: Uniform Resource Names.
+- IRIs are *internationalized* identifiers (we have more lexical options).
+- Identifiers for resources in RDF look like web addresses.
+- Considering RDF in isolation, we can pretend that this resemblance is purely coincidental.
+- Of course, it's not just a coincidence: the web architecture has everything to do with RDF applications.
+- But we run the risk of blurring a role distinction in our minds: IRIs as identifiers vs. URLs as addresses.
+
+
 # Instance relationships in RDF
 
 \small
@@ -60,6 +71,16 @@ header-includes:
 Compare with: $((((Aa \wedge Sab) \wedge Ead) \wedge Oag) \wedge Par)$
 
 Compare with: $Abdgr$ 
+
+# RDF serialization formats
+
+RDF can be serialized in a variety of different formats. Each is a concrete syntax for RDF.
+
+- RDF/XML
+- Turtle
+- N-Triples
+- JSON-LD
+- \ldots and others.
 
 
 # Class declarations in RDF
