@@ -18,7 +18,7 @@ header-includes:
 5. Other modeling languages use RDF as a basis.
 
 # An RDF example from an earlier presentation
-![A state of affairs diagram](rdfex1.eps)
+![A state of affairs diagram](rdfex3.eps)
 
 # Abstract vs. concrete syntax
 
@@ -40,9 +40,6 @@ header-includes:
 # Instances with classes
 ![Classes and instances](rdfex2.eps)
 
-# Instance diagram
-![Instance diagram](rdfex3.eps)
-
 # Instance relationships in RDF
 
 \small
@@ -59,6 +56,11 @@ header-includes:
 ~~~~~~~ 
 
 \normalsize
+
+Compare with: $((((Aa \wedge Sab) \wedge Ead) \wedge Oag) \wedge Par)$
+
+Compare with: $Abdgr$ 
+
 
 # Class declarations in RDF
 
@@ -81,9 +83,6 @@ org:Post rdf:type rdfs:Class ;
 
 \normalsize
 
-
-# Instances with classes
-![Classes and instances](rdfex2.eps)
 
 # Using remote classes
 
