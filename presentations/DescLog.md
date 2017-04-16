@@ -88,18 +88,20 @@ Table: Correspondences between description logics and first order logic.
 
 # More syntax examples
 
-Description Logic                                                                                       Predicate Logic
-----------------------------------------                             --------------------------------------------------
-$Father \sqcup Mother$                                                                                   $(Fx \vee Mx)$
-$Female \sqcap {\neg}Married$                                                                    $(Fx \wedge {\neg}Mx)$
-$\top \sqsubseteq Male \sqcup Female$                                                         ${\forall}x (Mx \vee Fx)$
-$Male \sqcap Female \sqsubseteq \bot$                                                 ${\forall}x {\neg}(Mx \wedge Fx)$
-$Parent \equiv {\exists}parentOf.\top$                                ${\forall}x (Px \leftrightarrow {\exists}y(Rxy))$
-${\forall}parentOf.Female$                                                            ${\forall}y (Rxy \rightarrow Fy)$
-${\exists}sonOf.\top \sqsubseteq Male$                                     ${\forall}x ({\exists}y Sxy \rightarrow Mx)$
-$\top \sqsubseteq {\forall}sonOf.Parent$                                    ${\forall}x{\forall}y (Sxy \rightarrow Px)$
+Description Logic                                                         Predicate Logic English
+--------------------------------------  ------------------------------------------------- -----------------------------------------------------
+$Father \sqcup Mother$                                                     $(Fx \vee Mx)$ \tiny Fathers or mothers \normalsize
+$Female \sqcap {\neg}Married$                                      $(Fx \wedge {\neg}Mx)$ \tiny Unmarried females \normalsize
+$\top \sqsubseteq Male \sqcup Female$                           ${\forall}x (Mx \vee Fx)$ \tiny Everything is either male or female \normalsize
+$Male \sqcap Female \sqsubseteq \bot$                   ${\forall}x {\neg}(Mx \wedge Fx)$ \tiny Nothing is both male and female \normalsize
+$Parent \equiv {\exists}parentOf.\top$  ${\forall}x (Px \leftrightarrow {\exists}yRxy)$   \tiny Parents are parents of something \normalsize
+${\forall}parentOf.Female$                              ${\forall}y (Rxy \rightarrow Fy)$ \tiny Parents of only female children \normalsize
+${\exists}sonOf.\top \sqsubseteq Male$       ${\forall}x ({\exists}y Sxy \rightarrow Mx)$ \tiny Sons of anything are male \normalsize
+$\top \sqsubseteq {\forall}sonOf.Parent$      ${\forall}x{\forall}y (Sxy \rightarrow Px)$ \tiny You can only be son of a parent \normalsize
 
 Table: Not all description logics let you use all these features.
+
+
 
 # Existential quantification
 
@@ -113,18 +115,24 @@ Table: Not all description logics let you use all these features.
    - $GermanBorn \equiv {\exists}bornIn.\{germany\}$
    - $GermanNative \equiv GermanResident \sqcap GermanBorn$
 
-# Grammar and semantics for DLs
+# Grammar for DLs
 
 
 The grammar for a DL will provide most (but not all) of its expressive
-constraints. $\mathcal{SROIQ}$, for example, has these grammars for
-role and concept expressions:
+constraints. $\mathcal{SROIQ}$, for example, has this grammar for
+role and concept expressions and axioms, where $U$ is the universal role that
+links all pairs of individuals, $n$ is the set of integers, and $N_{I}, N_{C}, N_{R}$
+are sets of individual, concept, and role names, respectively:
 
 - $R \Coloneqq U|N_{R}|N_{R}^{-}$
 - $C \Coloneqq N_{C}|C \sqcup C|C \sqcap C|{\neg}C|\top|\bot|{\exists}R.C$
 - $C \Coloneqq {\forall}R.C|{\geqslant}n\ R.C|{\leqslant}n\ R.C|{\exists}R.self|\{N_{I}\}$
+- $ABox \Coloneqq C(N_{I})|R(N_{I},N_{I})|N_{I} \approx N_{I}|N_{I} \napprox N_{I}$
+- $TBox \Coloneqq C \sqsubseteq C|C \equiv C$
+- $RBox \Coloneqq R \sqsubseteq R|R \equiv R|R \circ R \sqsubseteq R|Disjoint(R,R)$
+- $\varphi \Coloneqq ABox|TBox|RBox$
 
-. . .
+# DL Semantics
 
 A DL interpretation $\mathcal{I} = {\langle}\Delta^{\mathcal{I}}, \cdot^{\mathcal{I}}{\rangle}$ where:
 
@@ -135,15 +143,15 @@ A DL interpretation $\mathcal{I} = {\langle}\Delta^{\mathcal{I}}, \cdot^{\mathca
      - a concept $A \rightarrow A^{\mathcal{I}} \subseteq \Delta^{\mathcal{I}}$
      - a role $R \rightarrow R^{\mathcal{I}} \subseteq \Delta^{\mathcal{I}} \times \Delta^{\mathcal{I}}$
      - a name $a \rightarrow a^{\mathcal{I}} \in \Delta^{\mathcal{I}}$
-
-# Models and open world reasoning
-
 - An interpretation *satisfies* a statement if it is true in
   that interpretation: $\mathcal{I}\ {\models}\ \varphi$.  
 - An interpretation $\mathcal{I}$ satisfying every statement in a
   set $\mathcal{O}$, is a *model* of $\mathcal{O}$.
 - If **at least one** model exists for a set of DL statements
   then those statements are *consistent.*
+
+# Models and open world reasoning
+
 - We're used to concluding that a proposition is false if we cannot
   demonstrate that it is true.
 - That's because our systems are understood to contain complete
