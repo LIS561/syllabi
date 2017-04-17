@@ -24,9 +24,7 @@ header-includes:
 
 - Decidability is a complex topic, but it's basically about our
   ability to use general-purpose algorithms to answer questions.
-- In information processing applications, we're interested in
-  questions about information we've collected in a database. In
-  deductive applications, we care about more than just retrieving
+- In deductive applications we care about more than just retrieving
   answers we've explicitly stored. Typically we store logical rules or
   definitions that act on individual facts and records. A typical
   query would be asking for a list of individuals that are instances
@@ -92,10 +90,10 @@ Description Logic                                                         Predic
 --------------------------------------  ------------------------------------------------- -----------------------------------------------------
 $Father \sqcup Mother$                                                     $(Fx \vee Mx)$ \tiny Fathers or mothers \normalsize
 $Female \sqcap {\neg}Married$                                      $(Fx \wedge {\neg}Mx)$ \tiny Unmarried females \normalsize
+${\forall}parentOf.Female$                              ${\forall}y (Rxy \rightarrow Fy)$ \tiny Parents of only female children \normalsize
 $\top \sqsubseteq Male \sqcup Female$                           ${\forall}x (Mx \vee Fx)$ \tiny Everything is either male or female \normalsize
 $Male \sqcap Female \sqsubseteq \bot$                   ${\forall}x {\neg}(Mx \wedge Fx)$ \tiny Nothing is both male and female \normalsize
 $Parent \equiv {\exists}parentOf.\top$  ${\forall}x (Px \leftrightarrow {\exists}yRxy)$   \tiny Parents are parents of something \normalsize
-${\forall}parentOf.Female$                              ${\forall}y (Rxy \rightarrow Fy)$ \tiny Parents of only female children \normalsize
 ${\exists}sonOf.\top \sqsubseteq Male$       ${\forall}x ({\exists}y Sxy \rightarrow Mx)$ \tiny Sons of anything are male \normalsize
 $\top \sqsubseteq {\forall}sonOf.Parent$      ${\forall}x{\forall}y (Sxy \rightarrow Px)$ \tiny You can only be son of a parent \normalsize
 
