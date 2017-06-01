@@ -1,0 +1,476 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Information Modeling},
+            pdfauthor={University of Illinois School of Information Sciences},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\title{Information Modeling}
+\author{University of Illinois School of Information Sciences}
+\date{Last updated Wed, May 31, 2017 9:10:04 PM}
+
+\begin{document}
+\maketitle
+
+LIS561-LE\\
+Spring 2017\\
+Mondays, 5:30-7:30 PM, online\\
+4 GR hours
+
+Instructor: David Dubin\\
+Email: ddubin@illinois.edu\\
+Office: LIS 330\\
+Office Hour: Tuesdays, 3-5pm and by appointment\\
+Phone: (217) 244-3275
+
+\section{Course Description}\label{course-description}
+
+An introduction to the foundations of information modeling methods used
+in current information management applications. The specific methods
+considered include relational database design, conceptual modeling, and
+ontologies. The basic concepts underlying these methods are sets,
+relations, entities, and logics. Applications considered include
+relational database design and RDF/OWL semantic web languages. Set
+theory and logic are emphasized as the foundational frameworks for
+information modeling in general, and for contemporary web-based
+information management and delivery systems (including semantic web
+technologies) in particular.
+
+\subsection{Pre- and Co-requisites}\label{pre--and-co-requisites}
+
+None.
+
+\section{Course Overview}\label{course-overview}
+
+Two sorts of students are anticipated and the course objectives are
+similar but slightly different for each group. In neither case is prior
+relevant knowledge assumed.
+
+\begin{itemize}
+\tightlist
+\item
+  LIS561 prepares students anticipating generalist responsibilities (as
+  directors, managers, general staff, etc.) to be effective leaders in
+  making decisions about the design, development, and evaluation of
+  information systems, services, and policies, helping their
+  organizations and communities deal with all aspects of the difficult
+  technology challenges ahead.
+\item
+  LIS561 prepares students anticipating careers as technology
+  specialists to efficiently acquire and maintain superior information
+  modeling skills throughout their careers and to play leadership roles
+  in the design, development, and evaluation of information systems,
+  services, and policies.
+\end{itemize}
+
+Consistent with the iSchool goal of producing leaders and not just
+competent professionals we focus on developing a deep understanding that
+will have long-term benefits and prepare students to engage the hardest
+problems facing organizations and society.
+
+Of course LIS561 alone cannot fully realize these objectives; it makes a
+partial contribution, focusing on the principles and concepts of
+information modeling. A partial contribution, but a necessary one: the
+connection between a deep understanding of information modeling concepts
+and the challenging information management problems facing us today is
+profound.
+
+\subsection{Strategy}\label{strategy}
+
+The course examines the major modeling approaches currently in use in
+information management: relational modeling, conceptual modeling, and
+ontologies, focusing on underlying concepts and principles. The course
+is thus simultaneously a foundations course and a survey course.
+
+\subsection{Learning Objectives}\label{learning-objectives}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Develop fluency in reading and understanding formal definitions.
+\item
+  Understand the role of abstraction in making systems design choices.
+\item
+  Contrast deep vs.~superficial differences in modeling languages.
+\item
+  Recognize practical implications of trading expressive power for
+  tractability.
+\item
+  Appreciate the fundamental role of a very small set of inter-related
+  concepts.
+\end{enumerate}
+
+\section{Course Materials}\label{course-materials}
+
+All required readings for this class are available online. They are
+listed in the references section at the end of this syllabus.
+
+\section{About Dave Dubin}\label{about-dave-dubin}
+
+David Dubin is a Research Associate Professor at the School of
+Information Sciences. His research explores the foundations of
+information representation and description as well as issues of
+expression and encoding in documents and digital information resources.
+
+\section{Library Resources}\label{library-resources}
+
+http://www.library.illinois.edu/lis/\\
+lislib@library.illinois.edu\\
+Phone: (217) 300-8439
+
+\section{Writing and Bibliographic Style
+Resources}\label{writing-and-bibliographic-style-resources}
+
+The iSchool has a Writing Resources Moodle site
+\url{https://courses.ischool.illinois.edu/course/view.php?id=1705} and
+iSchool writing coaches also offer free consultations. We highly
+recommend this!
+
+The campus-wide Writers Workshop also provides free consultations. For
+more information see \url{http://www.cws.illinois.edu/workshop/}
+
+\section{Academic Integrity}\label{academic-integrity}
+
+Please review and reflect on the academic integrity policy of the
+University of Illinois,
+\url{http://admin.illinois.edu/policy/code/article1_part4_1-401.html} to
+which we subscribe. By turning in materials for review, you certify that
+all work presented is your own and has been done by you independently,
+or as a member of a designated group for group assignments. If, in the
+course of your writing, you use the words or ideas of another writer,
+proper acknowledgment must be given (using APA, Chicago, or MLA style).
+Not to do so is to commit plagiarism, a form of academic dishonesty. If
+you are not absolutely clear on what constitutes plagiarism and how to
+cite sources appropriately, now is the time to learn. Please ask me!
+Please be aware that the consequences for plagiarism or other forms of
+academic dishonesty will be severe. Students who violate university
+standards of academic integrity are subject to disciplinary action,
+including a reduced grade, failure in the course, and suspension or
+dismissal from the University.
+
+\section{Statement of Inclusion}\label{statement-of-inclusion}
+
+\href{http://www.inclusiveillinois.illinois.edu/supporting_docs/Inclusive\%20Illinois\%20Diversity\%20Statement.pdf}{Inclusive
+Illinois Committee Diversity Statement}
+
+As the state's premier public university, the University of Illinois at
+Urbana-Champaign's core mission is to serve the interests of the diverse
+people of the state of Illinois and beyond. The institution thus values
+inclusion and a pluralistic learning and research environment, one which
+we respect the varied perspectives and lived experiences of a diverse
+community and global workforce. We support diversity of worldviews,
+histories, and cultural knowledge across a range of social groups
+including race, ethnicity, gender identity, sexual orientation,
+abilities, economic class, religion, and their intersections.
+
+\section{Accessibility Statement}\label{accessibility-statement}
+
+To obtain accessibility-related academic adjustments and/or auxiliary
+aids, students with disabilities must contact the course instructor and
+the \href{http://disability.illinois.edu/}{Disability Resources and
+Educational Services} (DRES) as soon as possible. To contact DRES you
+may visit 1207 S. Oak St., Champaign, call (217) 333-4603 (V/TTY), or
+e-mail a message to disability@illinois.edu.
+
+\subsection{Emergency response: Run, Hide,
+Fight}\label{emergency-response-run-hide-fight}
+
+Emergencies can happen anywhere and at any time. It is important that we
+take a minute to prepare for a situation in which our safety or even our
+lives could depend on our ability to react quickly. When we're faced
+with any kind of emergency -- like fire, severe weather or if someone is
+trying to hurt you -- The
+\href{http://police.illinois.edu/safe}{University of Illinois Police
+Department} recommends three options:
+\href{http://police.illinois.edu/dpsapp/wp-content/uploads/2016/08/syllabus-attachment.pdf}{Run,
+hide or fight}.
+
+\section{Assignments and Evaluation}\label{assignments-and-evaluation}
+
+All assignments are required for all students. All work must be
+completed in order to pass this class. Late or incomplete assignments
+will not be given full credit unless the student has contacted the
+instructor prior to the due date of the assignment (or in the case of
+emergencies, as soon as practicable).
+
+\textbf{Assignments, Exercises \& Grade Distribution:}
+
+\begin{itemize}
+\tightlist
+\item
+  Eleven graded assignments (due 1 hour before class meeting in the week
+  they are due): 5 points each (55 points total).
+\item
+  Eleven ungraded exercises (due 25 hours before class meeting in the
+  week they are due): 2 points each for completion (22 points total).
+\item
+  Four reading responses: 5 points each (20 points total).
+\item
+  Attendance and participation in class and on forums: 3 points.
+\end{itemize}
+
+\textbf{Grading Scale:}
+
+94-100 = A\\
+90-93 = A-\\
+87-89 = B+\\
+83-86 = B\\
+80-82 = B-\\
+77-79 = C+\\
+73-76 = C\\
+70-72 = C-\\
+67-69 = D+\\
+63-66 = D\\
+60-62 = D-\\
+59 and below = F
+
+\textbf{Reading Responses}
+
+Up to twenty points are available for four critical questions posted to
+the class discussion forum and identified in the subject line as a
+\emph{reading response} together with a topic description. Critical
+questions are carefully worded descriptions of an obstacle to
+understanding and applying concepts and methods covered in the assigned
+readings. These need to be more than a simple request for clarifying a
+term or idea. Each question should be one to three paragraphs in length,
+and should include:
+
+\begin{itemize}
+\tightlist
+\item
+  A one sentence summary of the question (citing the location of the
+  anomalous passage in the reading);
+\item
+  A longer, lucid explanation of the question and the obstacle that it
+  identifies;
+\item
+  A justification for why the question is important;
+\item
+  Some remarks on the context in which the question arose: how did you
+  recognize that it was a problem?
+\end{itemize}
+
+\section{Topic Schedule}\label{topic-schedule}
+
+\subsubsection{Week 2: January 23: Models and
+Domains}\label{week-2-january-23-models-and-domains}
+
+\subsubsection{Week 3: January 30: Propositional
+Logic}\label{week-3-january-30-propositional-logic}
+
+\textbf{Required Readings:} Benthem et al. 2014a
+
+\textbf{Due:} \textbf{Graded Assignment 1}, SVG diagram exercise
+
+\textbf{Due:} \textbf{Ungraded Exercise 1}, Propositional logic exercise
+
+\subsubsection{Week 4: February 06: Predicate
+Logic}\label{week-4-february-06-predicate-logic}
+
+\textbf{Required Readings:} Benthem et al. 2014b
+
+\textbf{Due:} \textbf{Ungraded Exercise 2}, Predicate logic exercise 1
+
+\textbf{Due:} \textbf{Graded Assignment 2}, Propositional logic
+assignment
+
+\subsubsection{Week 5: February 13: Predicate
+Logic}\label{week-5-february-13-predicate-logic}
+
+\textbf{Required Readings:} Benthem et al. 2014b
+
+\textbf{Due:} \textbf{Ungraded Exercise 3}, Predicate logic exercise 2
+
+\textbf{Due:} \textbf{Graded Assignment 3}, Predicate logic assignment
+
+\subsubsection{Week 6: February 20: Sets, relations, and
+functions}\label{week-6-february-20-sets-relations-and-functions}
+
+\textbf{Required Readings:} Partee 2006
+
+\textbf{Due:} \textbf{Ungraded Exercise 4}, Set theory exercise
+
+\subsubsection{Week 7: February 27: UML and relational
+modeling}\label{week-7-february-27-uml-and-relational-modeling}
+
+\textbf{Required Readings:} Seidl et al. 2015; Teorey et al. 1986
+
+\textbf{Due:} \textbf{Ungraded Exercise 5}, UML class diagram exercise
+
+\textbf{Due:} \textbf{Graded Assignment 4}, Set theory assignment
+
+\subsubsection{Week 8: March 06: Normal forms and
+normalization}\label{week-8-march-06-normal-forms-and-normalization}
+
+\textbf{Required Readings:} Kent 1983
+
+\textbf{Due:} \textbf{Ungraded Exercise 6}, Relational modeling exercise
+
+\textbf{Due:} \textbf{Graded Assignment 5}, UML class diagram assignment
+
+\subsubsection{Week 9: March 13: Syntax and
+Grammar}\label{week-9-march-13-syntax-and-grammar}
+
+\textbf{Required Readings:} Rosen 1988
+
+\textbf{Due:} \textbf{Ungraded Exercise 7}, Formal grammar exercise
+
+\textbf{Due:} \textbf{Graded Assignment 6}, Relational modeling
+assignment
+
+\subsubsection{Week 10: Spring Break: March
+20:}\label{week-10-spring-break-march-20}
+
+\subsubsection{Week 11: March 27: Semantics and
+Interpretation}\label{week-11-march-27-semantics-and-interpretation}
+
+\textbf{Required Readings:} Bach 1989
+
+\textbf{Due:} \textbf{Graded Assignment 7}, Formal grammar assignment
+
+\textbf{Due:} \textbf{Ungraded Exercise 8}, Formal semantics exercise
+
+\subsubsection{Week 12: April 03: The RDF model and
+language}\label{week-12-april-03-the-rdf-model-and-language}
+
+\textbf{Required Readings:} Manola et al. 2014
+
+\textbf{Due:} \textbf{Ungraded Exercise 9}, RDF description exercise
+
+\textbf{Due:} \textbf{Graded Assignment 8}, Formal semantics assignment
+
+\subsubsection{Week 13: April 10: Description
+Logics}\label{week-13-april-10-description-logics}
+
+\textbf{Required Readings:} Krötzsch et al. 2012
+
+\textbf{Due:} \textbf{Graded Assignment 9}, RDF description assignment
+
+\textbf{Due:} \textbf{Ungraded Exercise 10}, Description logic exercise
+
+\subsubsection{Week 14: April 17:
+Ontologies}\label{week-14-april-17-ontologies}
+
+\textbf{Required Readings:} Hitzler et al. 2012; Manola et al. 2014
+
+\textbf{Due:} \textbf{Ungraded Exercise 11}, OWL ontology exercise
+
+\textbf{Due:} \textbf{Graded Assignment 10}, Description logic
+assignment
+
+\subsubsection{Week 15: April 24: Looking
+Ahead}\label{week-15-april-24-looking-ahead}
+
+\textbf{Due:} \textbf{Graded Assignment 11}, OWL ontology assignment
+
+\subsubsection{Week 16: May 1: Wrapup and
+Evaluation}\label{week-16-may-1-wrapup-and-evaluation}
+
+\section*{Readings}\label{readings}
+\addcontentsline{toc}{section}{Readings}
+
+\hypertarget{refs}{}
+\hypertarget{ref-bachux5fbackgroundux5f1989}{}
+Bach, E. 1989. ``Background and Beginning, Worlds Enough and Time.'' In
+\emph{Informal Lectures on Formal Semantics}. Albany, NY, 1--32.
+\url{https://uofi.box.com/s/lfqsrzjkhzdzml9d2g5w0ndtyvn0ndom}.
+
+\hypertarget{ref-vanux5fbenthemux5fchapterux5f2014}{}
+Benthem, J van, Ditmarsch, H van, Eijck, J van, and Jaspars, J. 2014a.
+``Chapter 2: Propositional Logic''. In \emph{Logic in Action}.
+Amsterdam, NL, 2.1--2.37.
+\url{http://www.logicinaction.org/docs/ch2.pdf}.
+
+\hypertarget{ref-vanux5fbenthemux5fchapterux5f2014-1}{}
+Benthem, J van, Ditmarsch, H van, Eijck, J van, and Jaspars, J. 2014b.
+``Chapter 4: The World According to Predicate Logic''. In \emph{Logic in
+Action}. Amsterdam, NL, 4.1--4.53.
+\url{http://www.logicinaction.org/docs/ch4.pdf}.
+
+\hypertarget{ref-hitzlerux5fowlux5f2012}{}
+Hitzler, P, Krötzsch, M, Parsia, B, Patel-Schneider, P F, and Rudolph,
+S. 2012. ``OWL 2 Web Ontology Language Primer''.
+\url{http://www.w3.org/TR/owl2-primer/}.
+
+\hypertarget{ref-kentux5fsimpleux5f1983}{}
+Kent, W. 1983. ``A Simple Guide to Five Normal Forms in Relational
+Database Theory''. \emph{Commun. ACM} 26.2, 120--125.
+\url{http://doi.acm.org.proxy2.library.illinois.edu/10.1145/358024.358054}.
+
+\hypertarget{ref-krotzschux5fdescriptionux5f2012}{}
+Krötzsch, M, Simancík, F, and Horrocks, I. 2012. ``A Description Logic
+Primer''. \emph{arXiv preprint arXiv:1201.4089}.
+\url{http://arxiv.org/abs/1201.4089}.
+
+\hypertarget{ref-manolaux5frdfux5f2014}{}
+Manola, F, Miller, E, and McBride, B. 2014. ``RDF 1.1 Primer''.,
+Cambridge, MA.
+\url{https://www.w3.org/TR/2014/NOTE-rdf11-primer-20140624/}.
+
+\hypertarget{ref-parteeux5fbasicux5f2006}{}
+Partee, B H. 2006. ``Basic Concepts of Set Theory, Functions and
+Relations''.
+\url{http://people.umass.edu/partee/NZ_2006/Set\%20Theory\%20Basics.pdf}.
+
+\hypertarget{ref-rosenux5flanguagesux5f1988}{}
+Rosen, K H. 1988. ``Languages and Grammars''. In \emph{Discrete
+Mathematics and its Applications}. New York, 552--563.
+\url{https://uofi.box.com/s/nomrry0e4cone88xvnciaf14gg93t68h}.
+
+\hypertarget{ref-seidlux5fclassux5f2015}{}
+Seidl, M, Scholz, M, Huemer, C, and Kappel, G. 2015. ``The Class
+Diagram''. In \emph{UML @ Classroom: An Introduction to Object-Oriented
+Modeling}. Eds. M. Seidl, M. Scholz, C. Huemer, and G. Kappel. Cham,
+49--84. \url{http://dx.doi.org/10.1007/978-3-319-12742-2_4}.
+
+\hypertarget{ref-Teoreyux5f1986}{}
+Teorey, T J, Yang, D, and Fry, J P. 1986. ``A logical design methodology
+for relational databases using the extended entity-relationship model''.
+\emph{ACM Comput. Surv.} 18.2, 197--222.
+\url{http://doi.acm.org/10.1145/7474.7475}.
+
+\end{document}
