@@ -1,0 +1,12 @@
+
+** TODO Review Jonathan's assignments
+** TODO List of in-class exercises
+** TODO Revist topic order
+** TODO List of specific competencies
+** TODO Training at Animal Sciences
+** TODO TA consultation with Linda
+** TODO Conceptual overview diagram
+** TODO Unit-based syllabus architecture
+** TODO Assess dia as an alternative to Inkscape
+** DONE Share normalization presentation with Jonathan
+   CLOSED: [2017-07-10 Mon 18:42] DEADLINE: <2017-07-10 Mon>
