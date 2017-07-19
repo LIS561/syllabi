@@ -5,8 +5,11 @@
 ** TODO List of specific competencies
 ** TODO Training at Animal Sciences
 ** TODO TA consultation with Linda
-** TODO Conceptual overview diagram
+** DONE Conceptual overview diagram
+   CLOSED: [2017-07-19 Wed 15:17]
+   [[/home/Dave Dubin/Projects/Teaching/InfoModeling/syllabi/planning/overview.svg]]
 ** TODO Unit-based syllabus architecture
 ** TODO Assess dia as an alternative to Inkscape
 ** DONE Share normalization presentation with Jonathan
    CLOSED: [2017-07-10 Mon 18:42] DEADLINE: <2017-07-10 Mon>
+** TODO Outline what information modeling really is
