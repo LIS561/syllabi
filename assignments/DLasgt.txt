@@ -1,0 +1,27 @@
+¬→∀∃∆⊑⊓⊔⁻≡
+⊤⊥∘
+
+⊤⊑ ¬∃familyMember.Self
+
+marriedTo ⊑ familyMember
+marriedTo ≡ marriedTo⁻
+dating ≡ dating⁻
+engagedTo ≡ engagedTo⁻
+residesWith ≡ residesWith⁻
+datingOrEngaged ≡ dating ⊔ engagedTo
+datingOrEngaged ⊓ residesWith  ⊑ familyMember
+parentOf ⊑ familyMember
+parentOf ≡ childOf⁻
+childOf ⊑ familyMember
+parentOf ∘ childOf ⊑ familyMember
+parentOf ∘ parentOf ⊑ familyMember
+marriedTo ∘ parentOf ⊑ familyMember
+childOf ∘ marriedTo ⊑ familyMember
+childOf ∘ parentOf ⊑ familyMember
+childOf ∘ childOf ⊑ familyMember
+guardianOf ≡ hasGuardian⁻
+guardianOf ⊔ hasGuardian ⊑ familyMember
+
+⊤⊑ ∀id.Self  ⊓ ∃id.Self
+familyNotMe ≡ familyMember ⊓ ¬id
+

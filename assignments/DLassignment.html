@@ -1,0 +1,37 @@
+<html>
+<p>The Harvard Personnel Manual section on domestic violence leave (http://hr.harvard.edu/staff-personnel-manual/time-away-work/domestic-violence-leave) defines the following categories of family members:</p>
+<ul>
+<li>Persons who are married to one another;</li>
+<li>Persons in a substantive dating or engagement relationship and who reside together;</li>
+<li>Persons having a child in common, regardless of whether they have ever married or resided together;</li>
+<li>A parent, step-parent, child, step-child, sibling, grandparent or grandchild;</li>
+<li>Persons in a guardianship relationship.</li>
+</ul>
+<p>I propose to model the family relationships using these description logic axioms:</p>
+<ol>
+<li>marriedTo ⊑ familyMember</li>
+<li>marriedTo ≡ marriedTo⁻</li>
+<li>dating ≡ dating⁻</li>
+<li>engagedTo ≡ engagedTo⁻</li>
+<li>residesWith ≡ residesWith⁻</li>
+<li>datingOrEngaged ≡ dating ⊔ engagedTo</li>
+<li>datingOrEngaged ⊓ residesWith ⊑ familyMember</li>
+<li>parentOf ⊑ familyMember</li>
+<li>parentOf ≡ childOf⁻</li>
+<li>childOf ⊑ familyMember</li>
+<li>parentOf ∘ childOf ⊑ familyMember</li>
+<li>parentOf ∘ parentOf ⊑ familyMember</li>
+<li>marriedTo ∘ parentOf ⊑ familyMember</li>
+<li>childOf ∘ marriedTo ⊑ familyMember</li>
+<li>childOf ∘ parentOf ⊑ familyMember</li>
+<li>childOf ∘ childOf ⊑ familyMember</li>
+<li>guardianOf ≡ hasGuardian⁻</li>
+<li>guardianOf ⊔ hasGuardian ⊑ familyMember</li>
+</ol>
+<p>I'd like to add the constraint that for purposes of these definitions, no one is a family member to himself or herself (e.g., sister to herself, her own parent, married to himself, etc.). My first thought is to add the following axiom as number 19:</p>
+<p>⊤⊑ ¬∃familyMember.Self</p>
+<p>But when I add that axiom, I find that no model will satisfy my combined A-Box, T-Box, and R-Box assertions. Why is that the case?</p>
+<p>Using precise natural language (and description logic notation if useful) explain five specific inconsistencies that can arise from adding that last proposed axiom. Upload your answers here.  </p>
+<p> It turns out that some A-Box configurations (such as an empty A-Box) admit interpretations that satisfy all 19 axioms. <strong>Optional</strong>: for one point of extra credit, describe a non-empty A-Box that would be consistent with all the axioms (including the problematic 19th).</p>
+<p>Although I could add individual constraints that rule out being your own brother, spouse, parent, etc., I'd like to take care of all of them, either by modifying the proposed 19th, replacing it with an axiom that works better, or adding just a few additional axioms to solve the problem.  <strong>Optional</strong>: for one point of extra credit, propose a simple solution that gives me those anti-reflexive constraints.</p>
+</html>

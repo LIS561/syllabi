@@ -1,0 +1,16 @@
+EquivalentClasses(
+  :EngagedPerson
+  ObjectSomeValuesFrom( :engagedTo :Person )
+)
+
+EquivalentClasses(
+  :DatingPerson
+  ObjectSomeValuesFrom( :dating :Person )
+)
+
+EquivalentClasses(
+  :DatingOrEngagedPerson
+   ObjectUnionOf( :DatingPerson :EngagedPerson )
+)
+
+
