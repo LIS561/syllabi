@@ -1,12 +1,30 @@
 ---
 title: Propositional Logic
 author: Dave Dubin
-date: January 30, 2017
+date: Fall Semester, 2017
 header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
+  - \usepackage{syllogism}  
   - \usepackage{mathtools}
 ---
+
+# "Bene disserere est finis logices"
+
+- Most logic books (including your assigned reading) introduce propositional
+  logic as a tool or system for analyzing the validity and soundness of reasoning.
+
+- van Benthem, et al. contrast arguments like this invalid one:
+
+. . .
+
+\syllog[(2.4)]{If you take my medication, you will get better}{But you are not taking my medication}{So, you will not get better.}
+
+. . .
+
+- \ldots and this valid argument:
+
+\syllog[(2.6)]{If you take my medication, you will get better}{But you are not getting better}{So, you have not taken my medication.}
 
 # Concepts from earlier in the semester
 
