@@ -111,7 +111,7 @@ Table: 2.18 from van Benthem, et al.
 # Drawing truth tables for expressions
 
 \begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
-p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
+p & q & r & ( & ( & $\neg$ & p & $\vee$ & q & ) & $\rightarrow$ & r & )\\
 \hline 
 1 & 1 & 1 &  &  & 0 & \textcolor{red}{1} & 1 & \textcolor{red}{1} &  & 1 & \textcolor{red}{1} & \\
 1 & 1 & 0 &  &  & 0 & \textcolor{red}{1} & 1 & \textcolor{red}{1} &  & 0 & \textcolor{red}{0} & \\
@@ -126,7 +126,7 @@ p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 # Drawing truth tables for expressions
 
 \begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
-p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
+p & q & r & ( & ( & $\neg$ & p & $\vee$ & q & ) & $\rightarrow$ & r & )\\
 \hline 
 1 & 1 & 1 &  &  & \textcolor{red}{0} & \textcolor{green}{1} & 1 & 1 &  & 1 & 1 & \\
 1 & 1 & 0 &  &  & \textcolor{red}{0} & \textcolor{green}{1} & 1 & 1 &  & 0 & 0 & \\
@@ -143,7 +143,7 @@ p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 
 
 \begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
-p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
+p & q & r & ( & ( & $\neg$ & p & $\vee$ & q & ) & $\rightarrow$ & r & )\\
 \hline 
 1 & 1 & 1 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{1} & \textcolor{green}{1} &  & 1 & 1 & \\
 1 & 1 & 0 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{1} & \textcolor{green}{1} &  & 0 & 0 & \\
@@ -160,7 +160,7 @@ p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 
 
 \begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
-p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
+p & q & r & ( & ( & $\neg$ & p & $\vee$ & q & ) & $\rightarrow$ & r & )\\
 \hline 
 1 & 1 & 1 &  &  & 0 & 1 & \textcolor{green}{1} & 1 &  & \textcolor{red}{1} & \textcolor{green}{1} & \\
 1 & 1 & 0 &  &  & 0 & 1 & \textcolor{green}{1} & 1 &  & \textcolor{red}{0} & \textcolor{green}{0} & \\
@@ -176,7 +176,7 @@ p & q & r & ( & ( & $\sim$ & p & $\lor$ & q & ) & $\rightarrow$ & r & )\\
 # Exercise 2.11
 
 \begin{tabular}{@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{}c@{ }}
-p & q & ( & ( & p & $\rightarrow$ & q & ) & $\lor$ & ( & q & $\rightarrow$ & p & ) & )\\
+p & q & ( & ( & p & $\rightarrow$ & q & ) & $\vee$ & ( & q & $\rightarrow$ & p & ) & )\\
 \hline 
 1 & 1 &  &  & 1 & 1 & 1 &  & \textcolor{red}{1} &  & 1 & 1 & 1 &  & \\
 1 & 0 &  &  & 1 & 0 & 0 &  & \textcolor{red}{1} &  & 0 & 1 & 1 &  & \\
@@ -187,7 +187,7 @@ p & q & ( & ( & p & $\rightarrow$ & q & ) & $\lor$ & ( & q & $\rightarrow$ & p &
 # Exercise 2.11
 
 \begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{}c@{}@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{}@{}c@{ }}
-p & q & r & ( & ( & ( & p & $\lor$ & $\sim$ & q & ) & $\&$ & r & ) & $\leftrightarrow$ & ( & $\sim$ & ( & p & $\&$ & r & ) & $\lor$ & q & ) & )\\
+p & q & r & ( & ( & ( & p & $\vee$ & $\neg$ & q & ) & $\wedge$ & r & ) & $\leftrightarrow$ & ( & $\neg$ & ( & p & $\wedge$ & r & ) & $\vee$ & q & ) & )\\
 \hline 
 1 & 1 & 1 &  &  &  & 1 & 1 & 0 & 1 &  & 1 & 1 &  & \textcolor{red}{1} &  & 0 &  & 1 & 1 & 1 &  & 1 & 1 &  & \\
 1 & 1 & 0 &  &  &  & 1 & 1 & 0 & 1 &  & 0 & 0 &  & \textcolor{red}{0} &  & 1 &  & 1 & 0 & 0 &  & 1 & 1 &  & \\
