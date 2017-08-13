@@ -22,11 +22,23 @@ header-includes:
 
 . . .
 
-- \ldots and this valid argument:
+- \ldots with this valid argument:
 
 \syllog[(2.6)]{If you take my medication, you will get better}{But you are not getting better}{So, you have not taken my medication.}
 
-# Concepts from earlier in the semester
+
+# Reasoning vs. representation
+
+- In this class we'll give some attention to logical reasoning and inference.
+- The same rules that govern valid argumentation also enable information systems to answer interesting questions.
+- But it takes an entire semester course in logic before you start to get good at logical inference.
+- This semester we'll focus mainly on logic as a means to describe a *domain* (some part of the world we're interested in).
+
+# Propositions, statements, and sentences
+![Platonistic view](propositions1.eps)\ 
+
+
+# Propositions, statements, and sentences
 
 - Propositions are the bearers of truth values: the kinds of things that can be
   true or false.
@@ -289,7 +301,7 @@ Which of the following are formulas in propositional logic?
 
 # Computation and expressive power
 
-(From van Bentham, et al., chapter 2)
+(From van Benthem, et al., chapter 2)
 
 1. Computing a truth value for a formula takes linear time.
 2. Computing a truth table for validity takes exponential time.
