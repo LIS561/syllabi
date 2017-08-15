@@ -1,6 +1,6 @@
 Propose a relational database design (a set of relation schemata) for the online food ordering and delivery application illustrated in this UML class diagram:
 
-UML diagram
+UML diagram: https://github.com/LIS561/syllabi/blob/master/labs/UML6.pdf
 
 The proposed design must satisfy the constraints of third normal form, as described in the Kent reading, but you don't need to include attributes for handling every use scenario. Concentrate on what you consider the 3-5 most important attributes of each class, and focus on the following modeling problems:
 
