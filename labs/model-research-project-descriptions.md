@@ -6,11 +6,11 @@ Note that each project has its own web page that includes information not on the
 
 I propose that we model research project descriptions using sets and relations, starting with the following definitions:
 
-P = {p|p is a research project}.
-A = {a|a is an active research project}. A ⊆ P.
-C = {c|c is a completed research project}. C ⊆ P.
-Q = {q|q is a faculty member or graduate student}.
-I = {<q,p>|q is an investigator for project p}. I ⊆ (Q × P).
+* P = {p|p is a research project}.
+* A = {a|a is an active research project}. A ⊆ P.
+* C = {c|c is a completed research project}. C ⊆ P.
+* Q = {q|q is a faculty member or graduate student}.
+* I = {<q,p>|q is an investigator for project p}. I ⊆ (Q × P).
 Answer the following questions:
 
 1. What definitions would you add to these to model project funding and timeframe information?
