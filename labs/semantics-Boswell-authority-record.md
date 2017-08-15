@@ -1,5 +1,6 @@
 The focus for this assignment is an authority record for the Beinecke Rare Book and Manuscript Library at Yale. It is encoded in an XML-based artificial language called EAC-CPF (for Encoded Archival Context - Corporate bodies, Persons and Families). The complete file can be retrieved at this link and viewed with any text editor. But most editors won't show you the hierarchical structure, so we direct your attention to the fragment illustrated below:
 
+https://github.com/LIS561/syllabi/blob/master/labs/cpfExample.png
 file structure
 
 For this assignment you are to consider what it would mean for an expression in EAC-CPF to be correct, and to what extent a denotation-based semantics like the one presented in the Bach chapters (Bach, E. 1989. “Background and Beginning, Worlds Enough and Time.” In Informal Lectures on Formal Semantics. Albany, NY, 1–32.) would be useful in formalizing the meaning of EAC-CPF. Answer the following questions in precise English (with each answer 1-2 paragraphs long). Upload your assignment here.
