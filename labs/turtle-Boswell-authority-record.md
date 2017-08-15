@@ -1,0 +1,4 @@
+1. Select at least five interrelated pieces of information from Assignment 8's EAC-CPF record that you can represent using RDF. By 'interrelated' we mean that the RDF graph that expresses them is at least weakly connected (i.e., no vertex is completely disconnected from the others).
+2. Encode the statements you have chosen using the turtle syntax for RDF. Store the description in a UTF-8 text file. Most text editors offer a menu or dialog box option to save in this format.
+3. Confirm that your RDF description conforms to the turtle syntax by converting it to RDF/XML using the EasyRDF converter http://www.easyrdf.org/converter  Save the resulting RDF/XML file as a UTF-8 file.
+4. Upload both RDF files here. If you have questions or observations about this exercise, include them in a separate file.
