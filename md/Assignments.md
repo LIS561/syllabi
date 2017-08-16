@@ -8,12 +8,10 @@ emergencies, as soon as practicable). Completed, graded assignments may be repea
 
 **Assignments, Exercises & Grade Distribution:**
 
-- Eleven graded assignments (due 1 hour before class meeting in the week they are due): 5 points each (55 points total).
-- Eleven ungraded exercises (due 25 hours before class meeting in the week they are due): 2 points each for completion (22 points total).
-- Four reading responses: 5 points each (20 points total).
-- Attendance and participation in class and on forums: 3 points. 
-
-
+- Comprehension quizes (usually due on QUIZDUEDAY):    35% 
+- Group classroom exercises:                           22%
+- Modeling scenario memoranda:                         40%
+- Participation and engagement in class and on forums: 3%
 
 **Grading Scale:**
 
@@ -30,29 +28,9 @@ emergencies, as soon as practicable). Completed, graded assignments may be repea
 | 60-62 = D-
 | 59 and below = F
 
-**Reading Responses**
+**Modeling Scenario Memoranda**
 
-Up to twenty points (5 points each) are available for 4 reading responses, posted to the class discussion forum. You may submit more than 4 reading responses; the best 4 will be counted. Please identify them in the subject line as a *reading response* together with a topic description. 
+If this paragraph explained what we exect from you in the graded
+memoranda, this section of the syllabus would be complete.
 
-Canonical reading responses include:
-
-(1) *Critical questions*: carefully worded
-descriptions of an obstacle to understanding and applying concepts and
-methods covered in the assigned readings. These need to be more than
-a simple request for clarifying a term or idea. Each question should be
-one to three paragraphs in length, and should include:
-
-- A one sentence summary of the question (citing the location of the anomalous passage in the reading);
-- A longer, lucid explanation of the question and the obstacle that it identifies;
-- A justification for why the question is important;
-- Some remarks on the context in which the question arose: how did you recognize that it was a problem?
-
-(2) Lucid responses: carefully worded responses to a colleague's critical question. These should include:
-
-A brief restatement of the question;
-A brief summary of your approach -- this could resolve the problem or show it in a new light;
-A longer, lucid explanation of your approach;
-A justification for your approach.
-
-We are open to other ways for you to engage with the reading and with your fellow classmates in the forums and we may discover other forms of reading response as we go.
-
+Here's a good link, though: [Tone in Business Writing](https://owl.english.purdue.edu/owl/resource/652/1/)

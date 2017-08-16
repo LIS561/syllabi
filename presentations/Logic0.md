@@ -16,8 +16,6 @@ header-includes:
 
 - van Benthem, et al. contrast arguments like this invalid one:
 
-. . .
-
 \syllog[(2.4)]{If you take my medication, you will get better}{But you are not taking my medication}{So, you will not get better.}
 
 . . .
