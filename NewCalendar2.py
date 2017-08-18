@@ -69,11 +69,11 @@ for d in wlist:
 	      weekdate = str(o)
 	for s in mygraph.objects(weekstart[d],dc.subject):
 	      for p in mygraph.objects(s,skos.prefLabel):
-                      myconcept = str(p)
+                      myconcept += str(p) + ' '
                       for q in mygraph.objects(s,l561.backgroundReading):
                               background = str(q)
                       for r in mygraph.objects(s,l561.reqReading):
-                              required = str(r)
+                              required += str(r) + ' '
         cldrfile.write("\n")
         cldrfile.write("### " +  myweek + ": " + weekdate + ": " + myconcept + "\n")
         cldrfile.write("\n")
