@@ -67,28 +67,29 @@ for d in wlist:
 	      myweek = str(o)
 	for o in mygraph.objects(weekstart[d], l561.date):
 	      weekdate = str(o)
+        cldrfile.write("\n")
+        cldrfile.write("### " +  myweek + ": " + weekdate + "\n")
 	for s in mygraph.objects(weekstart[d],dc.subject):
 	      for p in mygraph.objects(s,skos.prefLabel):
-                      myconcept += str(p) + ' '
+                      myconcept = str(p)
                       for q in mygraph.objects(s,l561.backgroundReading):
                               background = str(q)
                       for r in mygraph.objects(s,l561.reqReading):
-                              required += str(r) + ' '
-        cldrfile.write("\n")
-        cldrfile.write("### " +  myweek + ": " + weekdate + ": " + myconcept + "\n")
-        cldrfile.write("\n")
-        rstring = "**Required Readings:** "
-        if required:
-          cldrfile.write(rstring + " " + required + "\n")
-          cldrfile.write("\n")
-        dstring = ""
-        if weekstart[d] in deadlines.keys():
-                cldrfile.write(dstring + " " + deadlines[weekstart[d]] + "\n")
+                              required = str(r)
+              cldrfile.write("- " + myconcept + "\n")  
+              rstring = "    - **Required Readings:** "
+              if required:
+                cldrfile.write(rstring + " " + required + "\n")
                 cldrfile.write("\n")
-        bstring = "**Further Background:** "
-        if background:
-          cldrfile.write(bstring + " " + background + "\n")
-          cldrfile.write("\n")
+              dstring = ""
+              if weekstart[d] in deadlines.keys():
+                     cldrfile.write(dstring + " " + deadlines[weekstart[d]] + "\n")
+                     cldrfile.write("\n")
+              bstring = "    - **Further Background:** "
+              if background:
+                cldrfile.write(bstring + " " + background + "\n")
+                cldrfile.write("\n")
+              myconcept = background = required = ''
 
 if newdefs:
         for k in newdefs.keys():

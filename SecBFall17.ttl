@@ -252,7 +252,7 @@
 
 :Week16 a :Week ;
   event:time [ a tl:Interval ;
-      tl:at "2012-10-23T00:00:00-5:00"^^xsd:dateTime ;
+      tl:at "2017-12-10T00:00:00-5:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
   dcterms:subject :Conclusion ;
   :date "PRES16DATE" ;    
