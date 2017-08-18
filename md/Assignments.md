@@ -34,3 +34,4 @@ If this paragraph explained what we exect from you in the graded
 memoranda, this section of the syllabus would be complete.
 
 Here's a good link, though: [Tone in Business Writing](https://owl.english.purdue.edu/owl/resource/652/1/)
+

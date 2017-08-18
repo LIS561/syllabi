@@ -32,15 +32,16 @@
 
 :Logic0a a skos:Concept ;
   skos:inScheme :LIS561concepts ;
+    :reqReading "LOGIC0READING" ;
   skos:prefLabel "Propositional Logic, Part 1"@en .
 
 :Logic0b a skos:Concept ;
   skos:inScheme :LIS561concepts ;
-  :reqReading "LOGIC0READING" ;
   skos:prefLabel "Propositional Logic, Part 2"@en .
 
 :ModelsDomains a skos:Concept ;
   skos:inScheme :LIS561concepts ;
+  :reqReading "PLATONISMREADING" ;  
   skos:prefLabel "Models and Domains"@en.
 
 :Logic1a a skos:Concept ;

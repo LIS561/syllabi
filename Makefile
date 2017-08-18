@@ -13,7 +13,7 @@ export M4PATH
 	pandoc -s --bibliography=LIS561.bib -o $*.docx $*.md
 
 %.html : %.md LIS561.bib
-	pandoc -s --bibliography=LIS561.bib -o $*.html $*.md
+	pandoc -s --bibliography=Readings.bib -o $*.html $*.md
 
 %.cldr : %.ttl 
 	 python NewCalendar2.py $*.ttl
