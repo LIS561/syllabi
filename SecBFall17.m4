@@ -9,10 +9,14 @@ define(METADATA, syllabib.md)dnl
 define(SAFETY, RHFshort.md)dnl
 define(CONTACT1, Schneider.md)dnl
 define(CONTACT2, Empty.md)dnl
-define(TA1, Empty.md)dnl
-define(TA2, Empty.md)dnl
-define(TA3, Empty.md)dnl
+define(CONTACT3, Empty.md)dnl
+define(CONTACT4, Empty.md)dnl
+define(CONTACT5, Empty.md)dnl
+define(TA1, AboutJett.md)dnl
+define(TA2, AboutKLee.md)dnl
+define(TA3, AboutLoLee.md)dnl
 define(INSTRUCTOR, AboutSchneider.md)dnl
+define(QUIZDUEDAY, Friday)dnl
 define(FINALSEC, # Readings)dnl
 define(PRES1DATE, August 29)dnl
 define(PRES2DATE, September 05)dnl

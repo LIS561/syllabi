@@ -10,4 +10,4 @@ define(LOGICDREADING, [@krotzsch_description_2012])dnl
 define(PLATONISMREADING, [@jubien_numbers_1997; @jubien_platonism_1997])dnl
 define(SYNTAXREADING, [@rosen_languages_1988])dnl
 define(SEMANTICSREADING, [@bach_background_1989])dnl
-define(ONTOLOGYREADING, [@hitzler_owl_2012; @manola_rdf_2014])dnl
+define(ONTOLOGYREADING, [@hitzler_owl_2012])dnl

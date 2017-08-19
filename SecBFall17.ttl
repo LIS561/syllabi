@@ -37,6 +37,7 @@
 
 :Logic0b a skos:Concept ;
   skos:inScheme :LIS561concepts ;
+  :reqReading "SEMANTICSREADING" ;  
   skos:prefLabel "Propositional Logic, Part 2"@en .
 
 :ModelsDomains a skos:Concept ;
@@ -231,9 +232,8 @@
   event:time [ a tl:Interval ;
       tl:at "2017-11-19T00:00:00-5:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
-  dcterms:subject :Review ;
   :date "PRES13DATE" ;  
-  rdfs:label "Week 13"@en .
+  rdfs:label "Week 13: Thanksgiving Holiday"@en .
 
 :Week14 a :Week ;
   event:time [ a tl:Interval ;
