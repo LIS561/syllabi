@@ -4,11 +4,13 @@ All assignments are required for all students. All work must be
 completed in order to pass this class. Late or incomplete assignments
 will not be given full credit unless the student has contacted the
 instructor prior to the due date of the assignment (or in the case of
-emergencies, as soon as practicable). Completed, graded assignments may be repeated for an improved grade with no penalty other than 4.5/5 being the highest possible grade for repeated assignments. Further arrangements for makeup work will be made as needed.
+emergencies, as soon as practicable). Comprehension quizzes may be
+repeated for an improved grade within one week of receiving the
+initial grade.
 
 **Assignments, Exercises & Grade Distribution:**
 
-- Comprehension quizes (usually due on QUIZDUEDAY):    35% 
+- Comprehension quizzes (usually due on QUIZDUEDAY):    35% 
 - Group classroom exercises:                           22%
 - Modeling scenario memoranda:                         40%
 - Participation and engagement in class and on forums: 3%
@@ -28,10 +30,33 @@ emergencies, as soon as practicable). Completed, graded assignments may be repea
 | 60-62 = D-
 | 59 and below = F
 
+**Comprehension quizzes**
+
+Comprehension quizzes are based on the reading assignments, and are
+completed online. Their purpose is to help you ensure that you
+understand the concepts and methods presented by the authors of our
+readings.  A link to each quiz will be posted to the Moodle calendar.
+
+**Group classroom exercises**
+
+Classroom exercises involve practice with the course content and its
+application in information modeling scenarios. Engagement with the
+problem at hand, cooperation with group members, and thoughtful spoken
+and written treatment of issues that arise are the most important
+factors in assessing your contributions in this setting, just as they
+are in the working world. 
+
 **Modeling Scenario Memoranda**
 
-If this paragraph explained what we exect from you in the graded
-memoranda, this section of the syllabus would be complete.
+These are short written assignments (typically 1-2 pages) that are
+connected to modeling exercises and the case studies that frame
+them. The memos offer analyses and recommendations to (and request
+clarifications from) a hypothetical audience of professional
+colleagues, clients, or supervisors.
 
-Here's a good link, though: [Tone in Business Writing](https://owl.english.purdue.edu/owl/resource/652/1/)
+Assesment of your work on these exercises will be based on the clarity
+of your writing and your success in presenting the appropriate tone.
+For recommendations on tone in business writing, consult the resources
+at [this link](https://owl.english.purdue.edu/owl/resource/652/1/).
+
 
