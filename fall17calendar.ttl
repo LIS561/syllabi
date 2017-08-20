@@ -1,0 +1,262 @@
+@prefix : <http://courseweb.ischool.illinois.edu/lis/2017sp/lis561/> .
+@prefix hwk: <https://courses.ischool.illinois.edu/mod/assign/> .
+@prefix z: <http://www.zotero.org/namespaces/export#> .
+@prefix ad: <http://schemas.talis.com/2005/address/schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sam: <http://cirss.lis.illinois.edu/DataCon/SAM/> .
+@prefix sro: <http://salt.semanticauthoring.org/ontologies/sro#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dolce: <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xref: <http://id.crossref.org/contributor/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix resource: <http://purl.org/vocab/resourcelist/schema#> .
+@base <http://courseweb.ischool.illinois.edu/lis/2016fa/lis501/> .
+
+:SemesterFall2017 a :Semester ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-08-29T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P70D"^^xsd:duration] ;
+  rdfs:label "Fall semester"@en .
+
+:Logic0a a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+    :reqReading "LOGIC0READING" ;
+  skos:prefLabel "Propositional Logic, Part 1"@en .
+
+:Logic0b a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SEMANTICSREADING" ;  
+  skos:prefLabel "Propositional Logic, Part 2"@en .
+
+:ModelsDomains a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "PLATONISMREADING" ;  
+  skos:prefLabel "Models and Domains"@en.
+
+:Logic1a a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGIC1READING" ;
+  skos:prefLabel "Predicate Logic, Part 1"@en .
+
+:Logic1b a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Predicate Logic, Part 2"@en .
+
+:Sets a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SETREADING" ;
+  skos:prefLabel "Sets and relations"@en .
+
+:Functions a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Functions"@en .
+
+:UMLnotation a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "UMLREADING" ;
+  skos:prefLabel "UML Part 1: notation"@en .
+
+:ClassesUML a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "UMLREADING" ;
+  skos:prefLabel "UML Part 2: classes and sets"@en .
+
+:NormalForms1 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "NORMALFORMREADING" ;
+  skos:prefLabel "Normal forms, Part 1"@en .
+
+:NormalForms2 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Normal forms, Part 2"@en .
+
+:RelationalAlgebra a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Relational Algebra"@en.
+
+:Syntax a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SYNTAXREADING" ;
+  skos:prefLabel "Syntax and Grammar"@en .
+
+:Semantics1 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SEMANTICSREADING" ;
+  skos:prefLabel "Semantics and Interpretation, Part 1"@en .
+
+:Semantics2 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Semantics and Interpretation, Part 2"@en .
+
+:RDF1 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "RDFREADING" ;
+  skos:prefLabel "The RDF model and language"@en .
+
+:RDF2 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "RDF, Part 2"@en .
+
+:Ontologies a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "ONTOLOGYREADING" ;
+  skos:prefLabel "Ontologies"@en .
+
+:Inference a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Inference and reasoners"@en .
+
+:LogicD a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGICDREADING" ;
+  skos:prefLabel "Description Logics"@en .
+
+:Review a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Review Session"@en .
+
+:Conclusion a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Wrapup and Evaluation"@en .
+
+
+:Week1 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-08-27T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Logic0a ;
+  :date "PRES1DATE" ;    
+  rdfs:label "Week 1"@en .
+
+:Week2 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-09-03T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Logic0b, :ModelsDomains ;
+  :date "PRES2DATE" ;
+  rdfs:label "Week 2"@en .
+
+:Week3 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-09-10T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Logic1a ;
+  :date "PRES3DATE" ;  
+  rdfs:label "Week 3"@en .
+
+:Week4 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-09-17T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Logic1b, :Sets ;
+  :date "PRES4DATE" ;  
+  rdfs:label "Week 4"@en .
+
+:Week5 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-09-24T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Functions, :UMLnotation ;
+  :date "PRES5DATE" ;  
+  rdfs:label "Week 5"@en .
+
+:Week6 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-10-01T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :ClassesUML, :NormalForms1 ;
+  :date "PRES6DATE" ;  
+  rdfs:label "Week 6"@en .
+
+:Week7 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-10-08T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :NormalForms2, :RelationalAlgebra ;
+  :date "PRES7DATE" ;  
+  rdfs:label "Week 7"@en .
+
+:Week8 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-10-15T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Syntax ;
+  :date "PRES8DATE" ;  
+  rdfs:label "Week 8"@en .
+
+:Week9 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-10-22T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Semantics1 ;
+  :date "PRES9DATE" ;  
+  rdfs:label "Week 9"@en .
+
+:Week10 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-10-29T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Semantics2, :RDF1 ;
+  :date "PRES10DATE" ;  
+  rdfs:label "Week 10"@en .
+
+:Week11 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-11-05T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :RDF2 ;
+  :date "PRES11DATE" ;  
+  rdfs:label "Week 11"@en .
+
+:Week12 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-11-12T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Ontologies ;
+  :date "PRES12DATE" ;  
+  rdfs:label "Week 12"@en .
+
+:Week13 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-11-19T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  :date "PRES13DATE" ;  
+  rdfs:label "Thanksgiving Holiday"@en .
+
+:Week14 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-11-26T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Inference ;
+  :date "PRES14DATE" ;    
+  rdfs:label "Week 14"@en .
+
+:Week15 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-12-03T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :LogicD ;
+  :date "PRES15DATE" ;    
+  rdfs:label "Week 15"@en .
+
+:Week16 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-12-10T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :Conclusion ;
+  :date "PRES16DATE" ;    
+  rdfs:label "Week 16"@en .
+
+

@@ -19,18 +19,18 @@ define(INSTRUCTOR, AboutSchneider.md)dnl
 define(QUIZDUEDAY, Friday)dnl
 define(FINALSEC, # Readings)dnl
 define(PRES1DATE, August 29)dnl
-define(PRES2DATE, September 05)dnl
+define(PRES2DATE, September 5)dnl
 define(PRES3DATE, September 12)dnl
 define(PRES4DATE, September 19)dnl
 define(PRES5DATE, September 26)dnl
-define(PRES6DATE, October 03)dnl
+define(PRES6DATE, October 3)dnl
 define(PRES7DATE, October 10)dnl
 define(PRES8DATE, October 17)dnl
 define(PRES9DATE, October 24)dnl
 define(PRES10DATE, October 31)dnl
-define(PRES11DATE, November 07 30)dnl
+define(PRES11DATE, November 7)dnl
 define(PRES12DATE, November 14)dnl
 define(PRES13DATE, November 21)dnl
 define(PRES14DATE, November 28)dnl
-define(PRES15DATE, December 05)dnl
+define(PRES15DATE, December 5)dnl
 define(PRES16DATE, December 12)dnl

@@ -8,14 +8,14 @@ emergencies, as soon as practicable). Comprehension quizzes may be
 repeated for an improved grade within one week of receiving the
 initial grade.
 
-**Assignments, Exercises & Grade Distribution:**
+## Assignments, Exercises & Grade Distribution
 
 - Comprehension quizzes (usually due on QUIZDUEDAY):    35% 
 - Group classroom exercises:                           22%
 - Modeling scenario memoranda:                         40%
 - Participation and engagement in class and on forums: 3%
 
-**Grading Scale:**
+### Grading Scale:
 
 | 94-100 = A
 | 90-93 = A-
@@ -30,14 +30,14 @@ initial grade.
 | 60-62 = D-
 | 59 and below = F
 
-**Comprehension quizzes**
+### Comprehension quizzes
 
 Comprehension quizzes are based on the reading assignments, and are
 completed online. Their purpose is to help you ensure that you
 understand the concepts and methods presented by the authors of our
 readings.  A link to each quiz will be posted to the Moodle calendar.
 
-**Group classroom exercises**
+### Group classroom exercises
 
 Classroom exercises involve practice with the course content and its
 application in information modeling scenarios. Engagement with the
@@ -46,7 +46,7 @@ and written treatment of issues that arise are the most important
 factors in assessing your contributions in this setting, just as they
 are in the working world. 
 
-**Modeling Scenario Memoranda**
+### Modeling Scenario Memoranda
 
 These are short written assignments (typically 1-2 pages) that are
 connected to modeling exercises and the case studies that frame
