@@ -42,7 +42,7 @@
 
 :ModelsDomains a skos:Concept ;
   skos:inScheme :LIS561concepts ;
-  :reqReading "PLATONISMREADING" ;  
+  :reqReading "MODELSREADING" ;  
   skos:prefLabel "Models and Domains"@en.
 
 :Logic1a a skos:Concept ;
@@ -70,7 +70,6 @@
 
 :ClassesUML a skos:Concept ;
   skos:inScheme :LIS561concepts ;
-  :reqReading "UMLREADING" ;
   skos:prefLabel "UML Part 2: classes and sets"@en .
 
 :NormalForms1 a skos:Concept ;
@@ -84,7 +83,7 @@
 
 :RelationalAlgebra a skos:Concept ;
   skos:inScheme :LIS561concepts ;
-  :reqReading "RELALBEGRAREADING" ;  
+  :reqReading "RELALGEBRAREADING" ;  
   skos:prefLabel "Relational Algebra"@en.
 
 :Syntax a skos:Concept ;

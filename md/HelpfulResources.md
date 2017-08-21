@@ -1,5 +1,5 @@
 # Library Resources
-| LIBRARYRESOURCES
+| <LIBRARYRESOURCES>
 | lislib@library.illinois.edu 
 | Phone: (217) 300-8439
 

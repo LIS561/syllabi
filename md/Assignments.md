@@ -9,10 +9,6 @@ repeated up until the deadline.
 
 ## Assignments, Exercises & Grade Distribution
 
-- Comprehension quizzes (usually due on QUIZDUEDAY):    35% 
-- Group classroom exercises:                           22%
-- Modeling scenario memoranda:                         40%
-- Participation and engagement in class and on forums: 3%
 
 | Assignment Type  |Percentage of Grade   |
 |---|---|
