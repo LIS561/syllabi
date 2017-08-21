@@ -17,7 +17,7 @@ define(TA2, AboutKLee.md)dnl
 define(TA3, AboutLoLee.md)dnl
 define(INSTRUCTOR, AboutSchneider.md)dnl
 define(QUIZDUEDAY, Friday)dnl
-#define(FINALSEC, # Readings)dnl
+define(FINALSEC, # Readings)dnl
 define(PRES1DATE, August 29)dnl
 define(PRES2DATE, September 5)dnl
 define(PRES3DATE, September 12)dnl
