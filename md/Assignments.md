@@ -5,8 +5,7 @@ completed in order to pass this class. Late or incomplete assignments
 will not be given full credit unless the student has contacted the
 instructor prior to the due date of the assignment (or in the case of
 emergencies, as soon as practicable). Comprehension quizzes may be
-repeated for an improved grade within one week of receiving the
-initial grade.
+repeated up until the deadline.
 
 ## Assignments, Exercises & Grade Distribution
 
@@ -35,7 +34,7 @@ initial grade.
 Comprehension quizzes are based on the reading assignments, and are
 completed online. Their purpose is to help you ensure that you
 understand the concepts and methods presented by the authors of our
-readings.  A link to each quiz will be posted to the Moodle calendar.
+readings. A link to each quiz will be posted to the Moodle calendar.
 
 ### Group classroom exercises
 
@@ -46,17 +45,21 @@ and written treatment of issues that arise are the most important
 factors in assessing your contributions in this setting, just as they
 are in the working world. 
 
-### Modeling Scenario Memoranda
+### Modeling scenario memoranda
 
-These are short written assignments (typically 1-2 pages) that are
-connected to modeling exercises and the case studies that frame
-them. The memos offer analyses and recommendations to (and request
-clarifications from) a hypothetical audience of professional
-colleagues, clients, or supervisors.
+Modeling scenario memoranda are short written assignments (typically 1-2 pages).
+In these memos, you will offer analyses and recommendations, and request
+clarifications, related to modeling exercises and the case studies that frame
+them. The audience for such memos generally includes professional colleagues, 
+clients, and supervisors; you will practice writing for these audiences.
 
 Assesment of your work on these exercises will be based on the clarity
-of your writing and your success in presenting the appropriate tone.
+of your writing and on your success in presenting the appropriate tone.
 For recommendations on tone in business writing, consult the resources
-at [this link](https://owl.english.purdue.edu/owl/resource/652/1/).
+at https://owl.english.purdue.edu/owl/resource/652/1/.
 
+### Participation and engagement in class and on forums
 
+Participation and engagement, both in class and on Moodle, means cooperating with group members;
+asking and answering questions in class, online and in office hours; working consistently 
+throughout the semester; and engaging with classmates both inside and outside of class.
