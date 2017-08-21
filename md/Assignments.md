@@ -63,7 +63,7 @@ clients, and supervisors; you will practice writing for these audiences.
 Assesment of your work on these exercises will be based on the clarity
 of your writing and on your success in presenting the appropriate tone.
 For recommendations on tone in business writing, consult the resources
-at https://owl.english.purdue.edu/owl/resource/652/1/.
+at <https://owl.english.purdue.edu/owl/resource/652/1/>.
 
 ### Participation and engagement in class and on forums
 
