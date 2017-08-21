@@ -14,6 +14,13 @@ repeated up until the deadline.
 - Modeling scenario memoranda:                         40%
 - Participation and engagement in class and on forums: 3%
 
+| Assignment Type  |Percentage of Grade   |
+|---|---|
+|Comprehension quizzes (usually due on QUIZDUEDAY)|   35% 
+|Group classroom exercises|   22%
+|Modeling scenario memoranda|   40%
+|Participation and engagement in class and on forums|   3%
+
 ### Grading Scale:
 
 | 94-100 = A
