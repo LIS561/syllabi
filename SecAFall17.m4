@@ -19,7 +19,7 @@ define(INSTRUCTOR, AboutDubin.md)dnl
 define(QUIZDUEDAY, Friday)dnl
 define(FINALSEC, # Readings)dnl
 define(PRES1DATE, August 28 and 30)dnl
-define(PRES2DATE, September 4 and 6)dnl
+define(PRES2DATE, September 6)dnl
 define(PRES3DATE, September 11 and 13)dnl
 define(PRES4DATE, September 18 and 20)dnl
 define(PRES5DATE, September 25 and 27)dnl

@@ -7,6 +7,6 @@ even our lives could depend on our ability to react quickly. When
 we’re faced with any kind of emergency – like fire, severe weather or
 if someone is trying to hurt you – The [University of Illinois Police
 Department](http://police.illinois.edu/safe) recommends three options:
-[Run, hide or
-fight](http://police.illinois.edu/dpsapp/wp-content/uploads/2017/08/syllabus-attachment.pdf).
+run, hide or fight.
+<http://police.illinois.edu/dpsapp/wp-content/uploads/2017/08/syllabus-attachment.pdf>.
 
