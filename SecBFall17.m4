@@ -1,5 +1,5 @@
 include(Fall17Readings.m4)dnl
-#include(SecBFall17.defs)dnl
+include(SecBFall17.defs)dnl
 define(MYSECDATA, Fall17Bdata.md)dnl
 define(COURSETITLE, Information Modeling)dnl
 define(ASSIGNMENTS, Assignments.md)dnl
