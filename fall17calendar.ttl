@@ -37,7 +37,7 @@
 
 :Logic0b a skos:Concept ;
   skos:inScheme :LIS561concepts ;
-  :reqReading "SEMANTICSREADING" ;  
+  :reqReading "LOGIC0BREADING" ;  
   skos:prefLabel "Propositional Logic, Part 2"@en .
 
 :ModelsDomains a skos:Concept ;
@@ -84,6 +84,7 @@
 
 :RelationalAlgebra a skos:Concept ;
   skos:inScheme :LIS561concepts ;
+  :reqReading "RELALBEGRAREADING" ;  
   skos:prefLabel "Relational Algebra"@en.
 
 :Syntax a skos:Concept ;

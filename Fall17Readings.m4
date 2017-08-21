@@ -9,5 +9,7 @@ define(LOGIC1READING, [@van_benthem_chapter_2014-1])dnl
 define(LOGICDREADING, [@krotzsch_description_2012])dnl
 define(PLATONISMREADING, [@jubien_numbers_1997; @jubien_platonism_1997])dnl
 define(SYNTAXREADING, [@rosen_languages_1988])dnl
-define(SEMANTICSREADING, [@bach_background_1989])dnl
+define(RELALGEBRAREADING, [@wenholz_relational_2012])dnl
+define(SEMANTICSREADING, [@bach_background_1989; @bach_worlds_1989])dnl
+define(LOGOC0BREADING, [@bach_background_1989])dnl
 define(ONTOLOGYREADING, [@hitzler_owl_2012])dnl
