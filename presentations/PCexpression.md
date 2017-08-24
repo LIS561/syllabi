@@ -79,7 +79,7 @@ A propositional logic expression is:
 
 # Seventh rule: nothing else
 
-- The most important rule: nothing that fails to conform to rules 1--7 is a propositional
+- The most important rule: nothing that fails to conform to rules 1--6 is a propositional
   logic expression.
 
 - Some strings of symbols obviously don't conform:
