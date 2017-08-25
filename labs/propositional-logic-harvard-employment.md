@@ -7,18 +7,18 @@
 
 # Harvard Employee Manual & Propositional Logic PART TWO
 5. Provide examples expressed elsewhere in the Harvard University Staff Employee Manual for the following. Express each one in propositional logic using the same guidelines as those in step 3.
-5a) conjunction
-5b) disjunction
-5c) implication
+* 5a) conjunction
+* 5b) disjunction
+* 5c) implication
 
 6. Find some assumptions. What isn't stated, but has to be true for the text to make sense?
 
 7. Send emisarries to another group to compare your results.
 
 # Harvard Employee Manual & Propositional Logic PART THREE
-8. Using the same guidelines as those in step 3 and 4, express assumptions in propositional logic that are:
-8a) conjunction
-8b) disjunction
+* 8. Using the same guidelines as those in step 3 and 4, express assumptions in propositional logic that are:
+* 8a) conjunction
+* 8b) disjunction
 
 8. Determine how to write logic symbols with your computer. Hint: you might open up a keyboard caps program or copy/paste the symbols from a website like Wikipedia.
 
