@@ -16,10 +16,10 @@
 7. Send emisarries to another group to compare your results.
 
 # Harvard Employee Manual & Propositional Logic PART THREE
-* 8. Using the same guidelines as those in step 3 and 4, express assumptions in propositional logic that are:
+8. Using the same guidelines as those in step 3 and 4, express assumptions in propositional logic that are:
 * 8a) conjunction
 * 8b) disjunction
 
-8. Determine how to write logic symbols with your computer. Hint: you might open up a keyboard caps program or copy/paste the symbols from a website like Wikipedia.
+9. Determine how to write logic symbols with your computer. Hint: you might open up a keyboard caps program or copy/paste the symbols from a website like Wikipedia.
 
-9. Post to this lab's forum with a paragraph of comments and reflections on challenges for analyzing these policies.
+10. Post to this lab's forum with a paragraph of comments and reflections on challenges for analyzing these policies.
