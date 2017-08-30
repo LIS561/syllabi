@@ -3,6 +3,7 @@
 **Topic:** Propositional Logic, Part 1
 
 **Reading before this class:** Syllabus, van Benthem Ch 2
+
 **Lectures before this class:** 
 1. What's logic got to do with IM? 
 2. What's a well-formed propositional logic expression 
@@ -17,6 +18,7 @@
 6. Harvard Employee Manual & Propositional Logic
 
 **Quiz topic:**
+
 **Writing assignments:**
 
 ---
