@@ -40,6 +40,7 @@
 
 **Quiz topic:**
 **Writing assignments:** Resume or introduction sheet?; Polished memo, individually
+
 ---
 ## Week 3
 
@@ -63,6 +64,7 @@
 
 **Quiz topic:**
 **Writing assignments:**
+
 ---
 ## Week 4
 
@@ -81,6 +83,7 @@
 
 **Quiz topic:** Based on 4.8 and 4.10 from Ch4???; Kranz 1, 2, 5, 10?
 **Writing assignments:**
+
 ---
 ## Week 5
 
@@ -103,6 +106,7 @@
 
 **Quiz topic:**
 **Writing assignments:** **Memo 2?**
+
 ---
 ## Week 6
 
@@ -123,6 +127,7 @@
 
 **Quiz topic:**
 **Writing assignments:**
+
 ---
 ##Week 7
 
@@ -144,6 +149,7 @@
 
 **Quiz topic:**
 **Writing assignments:** Individual UML diagram & executive summary of it?
+
 ---
 ## Week 8
 
@@ -164,6 +170,7 @@
 
 **Quiz topic:**
 **Writing assignments:**
+
 ---
 ##Week 9
 
@@ -183,6 +190,7 @@
 
 **Quiz topic:**
 **Writing assignments:**
+
 ---
 ##Week 10
 
@@ -201,6 +209,7 @@
 
 **Quiz topic:**
 **Writing assignments:**
+
 ---
 ## Week 11
 
@@ -220,6 +229,7 @@
 
 **Quiz topic:**
 **Writing assignments:**
+
 ---
 ## Week 12
 
@@ -240,6 +250,7 @@
 **Writing assignments:**
 ---
 Thanksgiving break
+
 ---
 ## Week 13 
 
@@ -258,6 +269,7 @@ Thanksgiving break
 
 **Quiz topic:**
 **Writing assignments:**
+
 ---
 ## Week 14
 
@@ -276,6 +288,7 @@ Thanksgiving break
 
 **Quiz topic:**
 **Writing assignments:**
+
 ---
 ## Week 15
 
