@@ -13,7 +13,7 @@
 2. Icebreaker
 3. Logic Game 1 (conforming expressions) & 2 (expanding expressions)
 4. Worksheet 1 - propositions, implication
-5. Worksheet 2 - translations into propositional logic
+5. Worksheet 2 - translations into propositional logic (from 2.6 & 2.7(
 6. Harvard Employee Manual & Propositional Logic
 
 **Quiz topic:**
@@ -27,31 +27,36 @@
 
 **Reading before this class:** Bach Chapter 1
 **Lectures before this class:**
+1. Propositions, statements, and sentences
+2. What's with all this Greek - Formulas
 
 **6 activities:**
 
 *6 activities:*
 1. Logic Game 3 - satisfying random states of affairs 
-2. 
-3. 
-4. 
-5.
-6. 
+2. Harvard Employee Manual & Propositional Logic continued
+3. Harvard Employee Manual & Propositional Logic continued
+4. First draft of a memo based on the Harvard Employee Manual & Propositional Logic
+5. ?
+6. ? 
 
 **Quiz topic:**
-**Writing assignments:**
+**Writing assignments:** Resume or introduction sheet?; Polished memo, individually
 ---
 ##Week 3
 
 **Topic:** Models and Domains
 
-**Reading before this class:** Jubien, Numbers; Jubien, Platonism; Seidl; Introduction
+**Reading before this class:** 
+1. Jubien, Numbers
+2. Jubien, Platonism
+3. Seidl; Introduction
 **Lectures before this class:**
+1. What do we need to build a model
+**other topics**?
 
 **6 activities:**
-
-*6 activities:*
-1. Propositional Logic
+1. Identifying classes, properties, and relations out of Harvard or Idaho, with colored highlighters - relational properties, non-relational properties, categories. **Need materials**
 2. 
 3. 
 4. 
@@ -69,8 +74,6 @@
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
 1. 
 2. 
 3. 
@@ -78,7 +81,7 @@
 5.
 6. 
 
-**Quiz topic:**
+**Quiz topic:** Based on 4.8 and 4.10 from Ch4???; Kranz 1, 2, 5, 10?
 **Writing assignments:**
 ---
 ##Week 5
@@ -89,19 +92,21 @@
 
 **Reading before this class:** 
 **Lectures before this class:**
+1. Children and ponies
+2. **Others?**
 
 **6 activities:**
 
 *6 activities:*
-1. 
-2. 
-3. 
-4. 
+1. Double vs. single predication 
+2. Interns and insurance - paraphrasing
+3. Interns and insurance - what is wrong with the rule?
+4. Interns and insurance - can you do better?
 5.
 6. 
 
 **Quiz topic:**
-**Writing assignments:**
+**Writing assignments:** **Memo 2?**
 ---
 ##Week 6
 
@@ -109,15 +114,13 @@
 1. Functions
 2. UML Part 1: Notation
 
-**Reading before this class:** Seidl
+**Reading before this class:** Seidl **need to add something on class diagrams, they are used in practice**
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
-1. 
-2. 
-3. 
+1. **Something about injection vs. surjection vs. bijection**
+2. **Something about relations vs. functions**
+3. Function composition game? (**need to make one**
 4. 
 5.
 6. 
@@ -136,17 +139,15 @@
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
-1. 
-2. 
-3. 
-4. 
-5.
-6. 
+1. Constructing UML diagrams with manipulatives **Need to make the manipulatives**
+2. Sets work on Model research project descriptions
+3. Diagramming UML diagrams in Dia
+4. Domain analysis to UML
+5. Draw UML
+6. Explain differences between the normal forms???
 
 **Quiz topic:**
-**Writing assignments:**
+**Writing assignments:** Individual UML diagram & executive summary of it?
 ---
 ##Week 8
 
@@ -158,11 +159,9 @@
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
-1. 
-2. 
-3. 
+1. Find normal form violations
+2. UML to DB
+3. Relational algebra for timetable
 4. 
 5.
 6. 
@@ -181,9 +180,9 @@
 **6 activities:**
 
 *6 activities:*
-1. 
-2. 
-3. 
+1. UK postcodes
+2. Further work on UK postcodes?
+3. **Some kind of game** Chutes & ladders with automata???
 4. 
 5.
 6. 
@@ -199,11 +198,9 @@
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
-1. 
-2. 
-3. 
+1. Semantics of Boswell authority record 1-3
+2. Semantics of Boswell authority record 4-5
+3. Discussion
 4. 
 5.
 6. 
@@ -219,14 +216,13 @@
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
-1. 
-2. 
-3. 
+1. Turtle for Boswell authority record
+2. **Integrate graphs between turtle of all the class. Resolve differences. Discuss vocabulary issues**
+3. **Can we do something more with these graphs? Shape expresions graph querying?**
 4. 
-5.
+5. 
 6. 
+
 
 **Quiz topic:**
 **Writing assignments:**
@@ -239,8 +235,6 @@
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
 1. 
 2. 
 3. 
@@ -281,10 +275,8 @@ Thanksgiving break
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
-1. 
-2. 
+1. Predicate logic and DL 1
+2. Predicate logic and DL 2
 3. 
 4. 
 5.
@@ -301,14 +293,12 @@ Thanksgiving break
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
 1. 
 2. 
 3. 
-4. 
-5.
-6. 
+4. Review and find synergies between course material
+5. 
+6. Evaluations
 
 **Quiz topic:**
 **Writing assignments:**
