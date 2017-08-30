@@ -1,4 +1,4 @@
-##Week 1
+## Week 1
 
 **Topic:** Propositional Logic, Part 1
 
@@ -21,7 +21,7 @@
 
 ---
 
-##Week 2
+## Week 2
 
 **Topic:** Propositional Logic, Part 2
 
@@ -31,8 +31,6 @@
 2. What's with all this Greek - Formulas
 
 **6 activities:**
-
-*6 activities:*
 1. Logic Game 3 - satisfying random states of affairs 
 2. Harvard Employee Manual & Propositional Logic continued
 3. Harvard Employee Manual & Propositional Logic continued
@@ -43,7 +41,7 @@
 **Quiz topic:**
 **Writing assignments:** Resume or introduction sheet?; Polished memo, individually
 ---
-##Week 3
+## Week 3
 
 **Topic:** Models and Domains
 
@@ -66,7 +64,7 @@
 **Quiz topic:**
 **Writing assignments:**
 ---
-##Week 4
+## Week 4
 
 **Topic:** Predicate Logic, Part 1
 
@@ -84,7 +82,7 @@
 **Quiz topic:** Based on 4.8 and 4.10 from Ch4???; Kranz 1, 2, 5, 10?
 **Writing assignments:**
 ---
-##Week 5
+## Week 5
 
 **Topic:** 
 1. Predicate Logic, Part 2
@@ -96,8 +94,6 @@
 2. **Others?**
 
 **6 activities:**
-
-*6 activities:*
 1. Double vs. single predication 
 2. Interns and insurance - paraphrasing
 3. Interns and insurance - what is wrong with the rule?
@@ -108,7 +104,7 @@
 **Quiz topic:**
 **Writing assignments:** **Memo 2?**
 ---
-##Week 6
+## Week 6
 
 **Topic:** 
 1. Functions
@@ -149,7 +145,7 @@
 **Quiz topic:**
 **Writing assignments:** Individual UML diagram & executive summary of it?
 ---
-##Week 8
+## Week 8
 
 **Topic:** 
 1. Normal Forms, Part 2
@@ -178,8 +174,6 @@
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
 1. UK postcodes
 2. Further work on UK postcodes?
 3. **Some kind of game** Chutes & ladders with automata???
@@ -208,7 +202,7 @@
 **Quiz topic:**
 **Writing assignments:**
 ---
-##Week 11
+## Week 11
 
 **Topic:** The RDF (Resource Description Framework) Model and Language
 
@@ -227,7 +221,7 @@
 **Quiz topic:**
 **Writing assignments:**
 ---
-##Week 12
+## Week 12
 
 **Topic:** Ontologies
 
@@ -247,7 +241,7 @@
 ---
 Thanksgiving break
 ---
-##Week 13 
+## Week 13 
 
 **Topic:** Inference and reasoners
 
@@ -255,8 +249,6 @@ Thanksgiving break
 **Lectures before this class:**
 
 **6 activities:**
-
-*6 activities:*
 1. 
 2. 
 3. 
@@ -267,7 +259,7 @@ Thanksgiving break
 **Quiz topic:**
 **Writing assignments:**
 ---
-##Week 14
+## Week 14
 
 **Topic:** Description Logics
 
@@ -285,7 +277,7 @@ Thanksgiving break
 **Quiz topic:**
 **Writing assignments:**
 ---
-##Week 15
+## Week 15
 
 **Topic:** Wrapup and Evaluation
 
