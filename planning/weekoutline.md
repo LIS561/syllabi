@@ -41,6 +41,7 @@
 6. ? 
 
 **Quiz topic:**
+
 **Writing assignments:** Resume or introduction sheet?; Polished memo, individually
 
 ---
@@ -65,6 +66,7 @@
 6. 
 
 **Quiz topic:**
+
 **Writing assignments:**
 
 ---
@@ -84,6 +86,7 @@
 6. 
 
 **Quiz topic:** Based on 4.8 and 4.10 from Ch4???; Kranz 1, 2, 5, 10?
+
 **Writing assignments:**
 
 ---
@@ -107,6 +110,7 @@
 6. 
 
 **Quiz topic:**
+
 **Writing assignments:** **Memo 2?**
 
 ---
@@ -128,6 +132,7 @@
 6. 
 
 **Quiz topic:**
+
 **Writing assignments:**
 
 ---
@@ -150,6 +155,7 @@
 6. Explain differences between the normal forms???
 
 **Quiz topic:**
+
 **Writing assignments:** Individual UML diagram & executive summary of it?
 
 ---
@@ -171,6 +177,7 @@
 6. 
 
 **Quiz topic:**
+
 **Writing assignments:**
 
 ---
@@ -191,6 +198,7 @@
 6. 
 
 **Quiz topic:**
+
 **Writing assignments:**
 
 ---
@@ -210,6 +218,7 @@
 6. 
 
 **Quiz topic:**
+
 **Writing assignments:**
 
 ---
@@ -230,6 +239,7 @@
 
 
 **Quiz topic:**
+
 **Writing assignments:**
 
 ---
@@ -249,6 +259,7 @@
 6. 
 
 **Quiz topic:**
+
 **Writing assignments:**
 ---
 Thanksgiving break
@@ -270,6 +281,7 @@ Thanksgiving break
 6. 
 
 **Quiz topic:**
+
 **Writing assignments:**
 
 ---
@@ -289,6 +301,7 @@ Thanksgiving break
 6. 
 
 **Quiz topic:**
+
 **Writing assignments:**
 
 ---
@@ -308,5 +321,6 @@ Thanksgiving break
 6. Evaluations
 
 **Quiz topic:**
+
 **Writing assignments:**
 ---
