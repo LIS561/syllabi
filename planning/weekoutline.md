@@ -28,6 +28,7 @@
 **Topic:** Propositional Logic, Part 2
 
 **Reading before this class:** Bach Chapter 1
+
 **Lectures before this class:**
 1. Propositions, statements, and sentences
 2. What's with all this Greek - Formulas
@@ -53,10 +54,12 @@
 1. Jubien, Numbers
 2. Jubien, Platonism
 3. Seidl; Introduction
-**Lectures before this class:**
-1. What do we need to build a model
-**other topics**?
 
+**Lectures before this class:**
+1. Properties
+2. Relationships
+3. Relational properties
+4. Language (denotes) World (p10 of Bach)
 **6 activities:**
 1. Identifying classes, properties, and relations out of Harvard or Idaho, with colored highlighters - relational properties, non-relational properties, categories. **Need materials**
 2. 
@@ -75,6 +78,7 @@
 **Topic:** Predicate Logic, Part 1
 
 **Reading before this class:** van Benthem Chapter 4
+
 **Lectures before this class:**
 
 **6 activities:**
@@ -97,6 +101,7 @@
 2. Sets & Relations
 
 **Reading before this class:** 
+
 **Lectures before this class:**
 1. Children and ponies
 2. **Others?**
@@ -121,6 +126,7 @@
 2. UML Part 1: Notation
 
 **Reading before this class:** Seidl **need to add something on class diagrams, they are used in practice**
+
 **Lectures before this class:**
 
 **6 activities:**
@@ -144,6 +150,7 @@
 2. Normal Forms, Part 1
 
 **Reading before this class:** Kent
+
 **Lectures before this class:**
 
 **6 activities:**
@@ -166,6 +173,7 @@
 2. Relational Algebra
 
 **Reading before this class:**  Wenholz
+
 **Lectures before this class:**
 
 **6 activities:**
@@ -187,6 +195,7 @@
 1. Syntax and Grammar
 
 **Reading before this class:** Rosen
+
 **Lectures before this class:**
 
 **6 activities:**
@@ -207,7 +216,10 @@
 **Topic:** Semantics and Interpretation, Part 1
 
 **Reading before this class:** Bach Chapter 1; Bach Chapter 2
-**Lectures before this class:**
+
+**Lectures before this class:** 
+1. What do we need to build a model
+2. **Anything else?**
 
 **6 activities:**
 1. Semantics of Boswell authority record 1-3
@@ -227,6 +239,7 @@
 **Topic:** The RDF (Resource Description Framework) Model and Language
 
 **Reading before this class:** RDF 1.1 Primer
+
 **Lectures before this class:**
 
 **6 activities:**
@@ -248,6 +261,7 @@
 **Topic:** Ontologies
 
 **Reading before this class:** OWL Primer
+
 **Lectures before this class:**
 
 **6 activities:**
@@ -270,6 +284,7 @@ Thanksgiving break
 **Topic:** Inference and reasoners
 
 **Reading before this class:** 
+
 **Lectures before this class:**
 
 **6 activities:**
@@ -290,6 +305,7 @@ Thanksgiving break
 **Topic:** Description Logics
 
 **Reading before this class:** A Description Logic Primer
+
 **Lectures before this class:**
 
 **6 activities:**
@@ -310,6 +326,7 @@ Thanksgiving break
 **Topic:** Wrapup and Evaluation
 
 **Reading before this class:** 
+
 **Lectures before this class:**
 
 **6 activities:**
