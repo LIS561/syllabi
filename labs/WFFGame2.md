@@ -15,15 +15,18 @@ you may write on the worksheet.
 Materials
 ---------
 
-1. The dice with the logical symbols and the propositional letters are used exactly the same as in the introductory game.
-2. The six colored plastic cubes correspond to propositional letters on the dice:
+1. The dice with the logical symbols and the propositional letters are
+   used exactly the same as in the introductory game.
+2. The six colored plastic cubes correspond to propositional letters
+   on the dice:
     - The blue cube corresponds to the letter 'b'.
     - The green cube corresponds to the letter 'g'.
     - The black cube corresponds to the letter 'k'.
     - The orange cube corresponds to the letter 'o'.
     - The pink cube corresponds to the letter 'p'.
-3. The tetrahedral (triangular) die is used to generate a random number from 1 to 4. The number rolled is the
-   upright number at the base of the triangle.
+3. The tetrahedral (triangular) die is used to generate a random
+   number from 1 to 4. The number rolled is the upright number at the
+   base of the triangle.
 
 
 Preparing the game
