@@ -3,7 +3,6 @@ title: Advanced Logic Game
 author: IS561
 ---
 
-
 Introduction
 ------------
 
@@ -49,125 +48,32 @@ Playing the game
    **the entire formula must be true with respect to the truth values of the available propositional letters**. 
 
 
-**Table 1: Logic Symbols**
-
-  **Symbol**   **Logical Operation**
-  ------------ ----------------------------
-  →            implication (if…then)
-  ↔            equality (if and only if)
-  ¬            negation (not)
-  ∧            conjunction (and)
-  ∨            inclusive disjunction (or)
-
-
-
-Tables
-------
-
-**Truth table for conjunction**
-
-     $p$       $q$         $p \wedge q$ 
- ----------- -------- ----------------------
-      0         0               0            
-      0         1               0            
-      1         0               0            
-      1         1               1            
-
-
-**Truth table for disjunction**
-
-
-     $p$       $q$          $p \vee q$  
- ----------- -------- ----------------------
-      0         0               0            
-      0         1               1            
-      1         0               1            
-      1         1               1            
-
-
-**Truth table for implication**
-
-     $p$       $q$         $p \rightarrow q$ 
- ----------- -------  --------------------------
-      0         0                  1              
-      0         1                  1              
-      1         0                  0              
-      1         1                  1              
-
-
-**Truth table for "if and only if"**
-
-     $p$       $q$         $p \leftrightarrow q$ 
- ----------- --------   --------------------------
-      0         0                  1                  
-      0         1                  0                  
-      1         0                  0                  
-      1         1                  1                  
-
-
-
-
-
-
-
-**Table 2: Truth Table for Logical Implication (→)**
-
-  ***p***   ***q***   ***p → q***
-  --------- --------- -------------
-      T         T           T
-      T         F           F
-      F         T           T
-      F         F           T
-
-**Table 3: Truth Table for Logical Equality (↔)**
-
-  ***p***   ***q***   ***p ↔ q***
-  --------- --------- -------------
-     T         T           T
-     T         F           F
-     F         T           F
-     F         F           T
-
-**Table 4: Truth Table for Logical Negation (¬)**
-
-  ***p***   ***¬p***
-  --------- ----------
-     T         F
-     F         T
- 
-**Table 5: Truth Table for Logical Conjunction (∧)**
-
-  ***p***   ***q***   ***p $\wedge$ q***
-  --------- --------- ------------------
-     T         T               T
-     T         F               F
-     F         T               F
-     F         F               F
-
-**Table 6: Truth Table for Logical Inclusive Disjunction (∨)**
-
-  ***p***   ***q***   ***p ∨ q***
-  --------- --------- -------------
-     T         T           T
-     T         F           T
-     F         T           T
-     F         F           F
-
 Example of Game Play
 --------------------
 
-Brett, Ian, Kavya, Linh, Melina, and Zhang are playing again.
-Brett rolls a 2 on the tetrahedral die, and Zhang draws two colored cubes at random from the drawstring bag.
-These turn out to be the orange cube and the blue cube, and so Zhang put them in the "TRUE" oval, and the other
-four colored cubes in the "FALSE" oval.
+Brett, Ian, Kavya, Linh, Melina, and Zhang are playing again.  Brett
+rolls a 2 on the tetrahedral die, and Zhang draws two colored cubes at
+random from the drawstring bag.  These turn out to be the orange cube
+and the blue cube, and so Zhang put them in the "TRUE" oval, and the
+other four colored cubes in the "FALSE" oval.
 
 
-Kavya rolls the six white dice and
-generates the following results: p, r, k, →, →, ∧. Kavya places the p, r and k results near the "FALSE" oval
-as a reminder that propositions p, r and k (the pink, red and black cubes) are false.
+Kavya rolls the six white dice and generates the following results: p,
+r, k, →, →, ∧. Kavya places the p, r and k results near the "FALSE"
+oval as a reminder that propositions p, r and k (the pink, red and
+black cubes) are false.
 
-Melina will write the first expression. This exercise is challenging
+Melina will write the first expression. It's achallenging exercise,
+because the three available propositions are false, but the conforming
+expression that includes them must be true. But Melina remembers that
+an implication can be true if both the antecedent and consequent are
+false. So she begins by writing $(p \rightarrow r)$ and then remembers
+that an implication is also true if the antecedent is false and the
+consequent is true.  Melina extends the expression to
+$(k \rightarrow (p \rightarrow r))$.
+
+Zhang writes the next expression $(r \rightarrow (p \wedge k))$, since
+that is another implication where both the antecedent and consequent
+are false.
 
 
-From this they
-assemble the following formula: (¬ g→r) ∧r
