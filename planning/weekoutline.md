@@ -14,7 +14,7 @@
 2. Icebreaker
 3. Logic Game 1 (conforming expressions) & 2 (expanding expressions)
 4. Worksheet 1 - propositions, implication
-5. Worksheet 2 - translations into propositional logic (from 2.6 & 2.7(
+5. Worksheet 2 - translations into propositional logic (from 2.6 & 2.7)
 6. Harvard Employee Manual & Propositional Logic
 
 **Quiz topic:**
