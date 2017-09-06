@@ -60,6 +60,7 @@
 2. Relationships
 3. Relational properties
 4. Language (denotes) World (p10 of Bach)
+
 **6 activities:**
 1. Identifying classes, properties, and relations out of Harvard or Idaho, with colored highlighters - relational properties, non-relational properties, categories. **Need materials**
 2. 
