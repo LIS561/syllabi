@@ -14,7 +14,7 @@
 2. Icebreaker
 3. Logic Game 1 (conforming expressions) & 2 (expanding expressions)
 4. Worksheet 1 - propositions, implication
-5. Worksheet 2 - translations into propositional logic (from 2.6 & 2.7(
+5. Worksheet 2 - translations into propositional logic (from 2.6 & 2.7)
 6. Harvard Employee Manual & Propositional Logic
 
 **Quiz topic:**
@@ -60,6 +60,7 @@
 2. Relationships
 3. Relational properties
 4. Language (denotes) World (p10 of Bach)
+
 **6 activities:**
 1. Identifying classes, properties, and relations out of Harvard or Idaho, with colored highlighters - relational properties, non-relational properties, categories. **Need materials**
 2. 
