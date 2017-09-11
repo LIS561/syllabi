@@ -62,9 +62,9 @@
 4. Language (denotes) World (p10 of Bach)
 
 **6 activities:**
-1. Identifying classes, properties, and relations out of Harvard or Idaho, with colored highlighters - relational properties, non-relational properties, categories. **Need materials**
-2. 
-3. 
+1. (MemoPrep.docx)Identifying classes, properties, and relations out of Harvard or Idaho, with colored highlighters - relational properties, non-relational properties, categories.
+2. Highlighting Example & Recognizing Entities, Relationships, and Properties Exercise (Idaho Exits & Access)
+3. Propositional Logic writing with group
 4. 
 5.
 6. 
