@@ -1,20 +1,25 @@
 # Properties, categories, and relationships in predicate logic
 
-The categories, properties, and relationships on this worksheet have
-been proposed by your classmates in the highlighting exercise. The
-last challenge for each example is to translate the entire rule into
-predicate logic. Skip these exercises (5, 9, and 13) during your first
-session with this worksheet, and return to them after trying the
+This worksheet is the companion worksheet to the highlighting worksheet 
+you did in class last week. The categories, properties, and 
+relationships on this worksheet have
+been proposed by your 
+classmates in the highlighting exercise. 
+
+The following three rules have been derived from the Idaho Exit Access 
+Requirements. Complete the exercises for each rule. 
+
+Note that the last challenge for each example is to translate the entire 
+rule into predicate logic. You can skip exercises 5, 9, and 13 during your 
+first session with this worksheet, and return to them after trying the
 translation exercises in chapter 4.
 
 It may be helpful to review Bach chapter 1 on the relationship between
-language and the world. Note especially the diagram on page 10.
-
-*Logic in Action* chapter 4 uses individual capital letters for
- predicate symbols instead of (Bach's) English words. Arguments to those
- predicates do not require parentheses, but the logical operators
- still do (see the grammar in section 4.5).
-
+language and the world. Note especially the diagram on page 10. You may also 
+want to review *Logic in Action* chapter 4, which uses individual capital 
+letters for  predicate symbols instead of (Bach's) English words. Arguments 
+to those predicates do not require parentheses, but the logical operators 
+still do (see the grammar in section 4.5).
 
 Worked example:
 
