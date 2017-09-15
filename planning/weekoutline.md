@@ -83,9 +83,9 @@
 **Lectures before this class:**
 
 **6 activities:**
-1. 
-2. 
-3. 
+1. Visit from writing support TAs
+2. Idaho predicate logic
+3. Harvard writing as group
 4. 
 5.
 6. 
