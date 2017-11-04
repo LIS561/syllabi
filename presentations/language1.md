@@ -1,7 +1,7 @@
 ---
 title: Artificial Languages, Part 1 (Syntax)
 author: Dave Dubin
-date: March 27, 2017
+date: October, 2017
 header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
