@@ -86,8 +86,7 @@
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#Barrier
 
-:Barrier a owl:Class ;
-	rdfs:subClassOf :Transition .
+:Barrier a owl:Class .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#Connection
 
@@ -199,57 +198,92 @@
 
 :building1 a owl:NamedIndividual , :Area .
 # 
+# http://purl.org/lis590od/IS561/ExitOntology#corridor1
+
+:corridor1 a owl:NamedIndividual , :Corridor ;
+	:includes :passageway1 ;
+	:within :floor1 .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#corridor2
+
+:corridor2 a owl:NamedIndividual , :Corridor ;
+	:includes :passageway2 ;
+	:within :floor2 .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#corridor3
+
+:corridor3 a owl:NamedIndividual , :Corridor ;
+	:includes :passageway3 ;
+	:within :floor1 .
+# 
 # http://purl.org/lis590od/IS561/ExitOntology#court1
 
 :court1 a owl:NamedIndividual , :Court .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#discharge1
 
-:discharge1 a owl:NamedIndividual , :ExitDischarge .
+:discharge1 a owl:NamedIndividual , :ExitDischarge ;
+	:includes :pathway1 .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#discharge2
+
+:discharge2 a owl:NamedIndividual , :ExitDischarge ;
+	:includes :pathway2 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorA
 
-:doorA a owl:NamedIndividual , :Door .
+:doorA a owl:NamedIndividual , :Door ;
+	:seals :doorwayA .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorB
 
-:doorB a owl:NamedIndividual , :Door .
+:doorB a owl:NamedIndividual , :Door ;
+	:seals :doorwayB .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorC
 
-:doorC a owl:NamedIndividual , :Door .
+:doorC a owl:NamedIndividual , :Door ;
+	:seals :doorwayC .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorD
 
-:doorD a owl:NamedIndividual , :Door .
+:doorD a owl:NamedIndividual , :Door ;
+	:seals :doorwayD .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorE
 
-:doorE a owl:NamedIndividual , :Door .
+:doorE a owl:NamedIndividual , :Door ;
+	:seals :doorwayE .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorF
 
-:doorF a owl:NamedIndividual , :Door .
+:doorF a owl:NamedIndividual , :Door ;
+	:seals :doorwayF .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorG
 
-:doorG a owl:NamedIndividual , :Door .
+:doorG a owl:NamedIndividual , :Door ;
+	:seals :doorwayG .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorH
 
-:doorH a owl:NamedIndividual , :Door .
+:doorH a owl:NamedIndividual , :Door ;
+	:seals :doorwayH .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorI
 
-:doorI a owl:NamedIndividual , :Door .
+:doorI a owl:NamedIndividual , :Door ;
+	:seals :doorwayI .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorJ
 
-:doorJ a owl:NamedIndividual , :Door .
+:doorJ a owl:NamedIndividual , :Door ;
+	:seals :doorwayJ .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorK
 
-:doorK a owl:NamedIndividual , :Door .
+:doorK a owl:NamedIndividual , :Door ;
+	:seals :doorwayK .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorL
 
@@ -257,31 +291,44 @@
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorM
 
-:doorM a owl:NamedIndividual , :Door .
+:doorM a owl:NamedIndividual , :Door ;
+	:seals :doorwayM .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorwayA
 
-:doorwayA a owl:NamedIndividual , :Doorway .
+:doorwayA a owl:NamedIndividual , :Doorway ;
+	:along :passageway1 , :pathway2 ;
+	:connectsTo :corridor1 , :discharge2 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorwayB
 
-:doorwayB a owl:NamedIndividual , :Doorway .
+:doorwayB a owl:NamedIndividual , :Doorway ;
+	:along :passageway1 , :pathway1 ;
+	:connectsTo :corridor1 , :discharge1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorwayC
 
-:doorwayC a owl:NamedIndividual , :Doorway .
+:doorwayC a owl:NamedIndividual , :Doorway ;
+	:along :passageway1 , :stairway1 ;
+	:connectsTo :corridor1 , :stairwell1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorwayD
 
-:doorwayD a owl:NamedIndividual , :Doorway .
+:doorwayD a owl:NamedIndividual , :Doorway ;
+	:along :passageway1 ;
+	:connectsTo :corridor1 , :room6 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorwayE
 
-:doorwayE a owl:NamedIndividual , :Doorway .
+:doorwayE a owl:NamedIndividual , :Doorway ;
+	:along :passageway1 ;
+	:connectsTo :corridor1 , :room4 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorwayF
 
-:doorwayF a owl:NamedIndividual , :Doorway .
+:doorwayF a owl:NamedIndividual , :Doorway ;
+	:along :passageway1 ;
+	:connectsTo :corridor1 , :room2 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#doorwayG
 
@@ -313,11 +360,33 @@
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#floor1
 
-:floor1 a owl:NamedIndividual , :InternalArea .
+:floor1 a owl:NamedIndividual , :InternalArea ;
+	:within :building1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#floor2
 
-:floor2 a owl:NamedIndividual , :InternalArea .
+:floor2 a owl:NamedIndividual , :InternalArea ;
+	:within :building1 .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#passageway1
+
+:passageway1 a owl:NamedIndividual , :Passageway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#passageway2
+
+:passageway2 a owl:NamedIndividual , :Passageway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#passageway3
+
+:passageway3 a owl:NamedIndividual , :Passageway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#pathway1
+
+:pathway1 a owl:NamedIndividual , :Pathway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#pathway2
+
+:pathway2 a owl:NamedIndividual , :Pathway .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room1
 
@@ -375,9 +444,15 @@
 
 :room9 a owl:NamedIndividual , :Room .
 # 
+# http://purl.org/lis590od/IS561/ExitOntology#stairway1
+
+:stairway1 a owl:NamedIndividual , :Stairway .
+# 
 # http://purl.org/lis590od/IS561/ExitOntology#stairwell1
 
-:stairwell1 a owl:NamedIndividual , :Stairwell .
+:stairwell1 a owl:NamedIndividual , :Stairwell ;
+	:includes :stairway1 ;
+	:within :building1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#yard1
 
