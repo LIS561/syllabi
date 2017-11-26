@@ -1,4 +1,4 @@
-@prefix : <http://www.example.com/> .
+@prefix : <http://purl.org/lis590od/IS561/ExitOntology#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix dbp: <http://dbpedia.org/resource/> .
@@ -21,7 +21,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
 
-:Exits a owl:Ontology .
+<http://purl.org/lis590od/IS561/ExitOntology> a owl:Ontology .
 # 
 # 
 # #################################################################
@@ -31,35 +31,35 @@
 # #################################################################
 # 
 # 
-# http://www.example.com/Exits#along
+# http://purl.org/lis590od/IS561/ExitOntology#along
 
-<http://www.example.com/Exits#along> a owl:ObjectProperty ;
-	rdfs:domain <http://www.example.com/Exits#Transition> ;
-	rdfs:range <http://www.example.com/Exits#Pathway> .
+:along a owl:ObjectProperty ;
+	rdfs:domain :Transition ;
+	rdfs:range :Pathway .
 # 
-# http://www.example.com/Exits#connectsTo
+# http://purl.org/lis590od/IS561/ExitOntology#connectsTo
 
-<http://www.example.com/Exits#connectsTo> a owl:ObjectProperty ;
-	rdfs:domain <http://www.example.com/Exits#Connection> ;
-	rdfs:range <http://www.example.com/Exits#Area> .
+:connectsTo a owl:ObjectProperty ;
+	rdfs:domain :Connection ;
+	rdfs:range :Area .
 # 
-# http://www.example.com/Exits#includes
+# http://purl.org/lis590od/IS561/ExitOntology#includes
 
-<http://www.example.com/Exits#includes> a owl:ObjectProperty ;
-	rdfs:domain <http://www.example.com/Exits#Area> ;
-	rdfs:range <http://www.example.com/Exits#Pathway> .
+:includes a owl:ObjectProperty ;
+	rdfs:domain :Area ;
+	rdfs:range :Pathway .
 # 
-# http://www.example.com/Exits#seals
+# http://purl.org/lis590od/IS561/ExitOntology#seals
 
-<http://www.example.com/Exits#seals> a owl:ObjectProperty ;
-	rdfs:domain <http://www.example.com/Exits#Barrier> ;
-	rdfs:range <http://www.example.com/Exits#Transition> .
+:seals a owl:ObjectProperty ;
+	rdfs:domain :Barrier ;
+	rdfs:range :Transition .
 # 
-# http://www.example.com/Exits#within
+# http://purl.org/lis590od/IS561/ExitOntology#within
 
-<http://www.example.com/Exits#within> a owl:ObjectProperty , owl:AsymmetricProperty , owl:TransitiveProperty , owl:IrreflexiveProperty ;
-	rdfs:domain <http://www.example.com/Exits#Area> ;
-	rdfs:range <http://www.example.com/Exits#Area> .
+:within a owl:ObjectProperty , owl:AsymmetricProperty , owl:TransitiveProperty , owl:IrreflexiveProperty ;
+	rdfs:domain :Area ;
+	rdfs:range :Area .
 # 
 # 
 # 
@@ -70,112 +70,112 @@
 # #################################################################
 # 
 # 
-# http://www.example.com/Exits#Aisle
+# http://purl.org/lis590od/IS561/ExitOntology#Aisle
 
-<http://www.example.com/Exits#Aisle> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Pathway> .
+:Aisle a owl:Class ;
+	rdfs:subClassOf :Pathway .
 # 
-# http://www.example.com/Exits#Area
+# http://purl.org/lis590od/IS561/ExitOntology#Area
 
-<http://www.example.com/Exits#Area> a owl:Class .
+:Area a owl:Class .
 # 
-# http://www.example.com/Exits#Balcony
+# http://purl.org/lis590od/IS561/ExitOntology#Balcony
 
-<http://www.example.com/Exits#Balcony> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#ExternalArea> .
+:Balcony a owl:Class ;
+	rdfs:subClassOf :ExternalArea .
 # 
-# http://www.example.com/Exits#Barrier
+# http://purl.org/lis590od/IS561/ExitOntology#Barrier
 
-<http://www.example.com/Exits#Barrier> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Transition> .
+:Barrier a owl:Class ;
+	rdfs:subClassOf :Transition .
 # 
-# http://www.example.com/Exits#Connection
+# http://purl.org/lis590od/IS561/ExitOntology#Connection
 
-<http://www.example.com/Exits#Connection> a owl:Class .
+:Connection a owl:Class .
 # 
-# http://www.example.com/Exits#Corridor
+# http://purl.org/lis590od/IS561/ExitOntology#Corridor
 
-<http://www.example.com/Exits#Corridor> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#InternalArea> .
+:Corridor a owl:Class ;
+	rdfs:subClassOf :InternalArea .
 # 
-# http://www.example.com/Exits#Court
+# http://purl.org/lis590od/IS561/ExitOntology#Court
 
-<http://www.example.com/Exits#Court> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#ExternalArea> .
+:Court a owl:Class ;
+	rdfs:subClassOf :ExternalArea .
 # 
-# http://www.example.com/Exits#Door
+# http://purl.org/lis590od/IS561/ExitOntology#Door
 
-<http://www.example.com/Exits#Door> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Barrier> .
+:Door a owl:Class ;
+	rdfs:subClassOf :Barrier .
 # 
-# http://www.example.com/Exits#Doorway
+# http://purl.org/lis590od/IS561/ExitOntology#Doorway
 
-<http://www.example.com/Exits#Doorway> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Transition> .
+:Doorway a owl:Class ;
+	rdfs:subClassOf :Transition .
 # 
-# http://www.example.com/Exits#ExitDischarge
+# http://purl.org/lis590od/IS561/ExitOntology#ExitDischarge
 
-<http://www.example.com/Exits#ExitDischarge> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#ExternalArea> .
+:ExitDischarge a owl:Class ;
+	rdfs:subClassOf :ExternalArea .
 # 
-# http://www.example.com/Exits#ExternalArea
+# http://purl.org/lis590od/IS561/ExitOntology#ExternalArea
 
-<http://www.example.com/Exits#ExternalArea> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Area> .
+:ExternalArea a owl:Class ;
+	rdfs:subClassOf :Area .
 # 
-# http://www.example.com/Exits#Gate
+# http://purl.org/lis590od/IS561/ExitOntology#Gate
 
-<http://www.example.com/Exits#Gate> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Barrier> .
+:Gate a owl:Class ;
+	rdfs:subClassOf :Barrier .
 # 
-# http://www.example.com/Exits#Gateway
+# http://purl.org/lis590od/IS561/ExitOntology#Gateway
 
-<http://www.example.com/Exits#Gateway> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Transition> .
+:Gateway a owl:Class ;
+	rdfs:subClassOf :Transition .
 # 
-# http://www.example.com/Exits#InternalArea
+# http://purl.org/lis590od/IS561/ExitOntology#InternalArea
 
-<http://www.example.com/Exits#InternalArea> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Area> .
+:InternalArea a owl:Class ;
+	rdfs:subClassOf :Area .
 # 
-# http://www.example.com/Exits#Passageway
+# http://purl.org/lis590od/IS561/ExitOntology#Passageway
 
-<http://www.example.com/Exits#Passageway> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Pathway> .
+:Passageway a owl:Class ;
+	rdfs:subClassOf :Pathway .
 # 
-# http://www.example.com/Exits#Pathway
+# http://purl.org/lis590od/IS561/ExitOntology#Pathway
 
-<http://www.example.com/Exits#Pathway> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Connection> .
+:Pathway a owl:Class ;
+	rdfs:subClassOf :Connection .
 # 
-# http://www.example.com/Exits#Ramp
+# http://purl.org/lis590od/IS561/ExitOntology#Ramp
 
-<http://www.example.com/Exits#Ramp> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Pathway> .
+:Ramp a owl:Class ;
+	rdfs:subClassOf :Pathway .
 # 
-# http://www.example.com/Exits#Room
+# http://purl.org/lis590od/IS561/ExitOntology#Room
 
-<http://www.example.com/Exits#Room> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#InternalArea> .
+:Room a owl:Class ;
+	rdfs:subClassOf :InternalArea .
 # 
-# http://www.example.com/Exits#Stairway
+# http://purl.org/lis590od/IS561/ExitOntology#Stairway
 
-<http://www.example.com/Exits#Stairway> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Pathway> .
+:Stairway a owl:Class ;
+	rdfs:subClassOf :Pathway .
 # 
-# http://www.example.com/Exits#Stairwell
+# http://purl.org/lis590od/IS561/ExitOntology#Stairwell
 
-<http://www.example.com/Exits#Stairwell> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#InternalArea> .
+:Stairwell a owl:Class ;
+	rdfs:subClassOf :InternalArea .
 # 
-# http://www.example.com/Exits#Transition
+# http://purl.org/lis590od/IS561/ExitOntology#Transition
 
-<http://www.example.com/Exits#Transition> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#Connection> .
+:Transition a owl:Class ;
+	rdfs:subClassOf :Connection .
 # 
-# http://www.example.com/Exits#Yard
+# http://purl.org/lis590od/IS561/ExitOntology#Yard
 
-<http://www.example.com/Exits#Yard> a owl:Class ;
-	rdfs:subClassOf <http://www.example.com/Exits#ExternalArea> .
+:Yard a owl:Class ;
+	rdfs:subClassOf :ExternalArea .
 # 
 # Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi
