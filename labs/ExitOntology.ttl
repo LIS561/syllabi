@@ -178,4 +178,209 @@
 :Yard a owl:Class ;
 	rdfs:subClassOf :ExternalArea .
 # 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#balcony1
+
+:balcony1 a owl:NamedIndividual , :Balcony .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#balcony2
+
+:balcony2 a owl:NamedIndividual , :Balcony .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#building1
+
+:building1 a owl:NamedIndividual , :Area .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#court1
+
+:court1 a owl:NamedIndividual , :Court .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#discharge1
+
+:discharge1 a owl:NamedIndividual , :ExitDischarge .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorA
+
+:doorA a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorB
+
+:doorB a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorC
+
+:doorC a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorD
+
+:doorD a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorE
+
+:doorE a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorF
+
+:doorF a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorG
+
+:doorG a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorH
+
+:doorH a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorI
+
+:doorI a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorJ
+
+:doorJ a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorK
+
+:doorK a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorL
+
+:doorL a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorM
+
+:doorM a owl:NamedIndividual , :Door .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayA
+
+:doorwayA a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayB
+
+:doorwayB a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayC
+
+:doorwayC a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayD
+
+:doorwayD a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayE
+
+:doorwayE a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayF
+
+:doorwayF a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayG
+
+:doorwayG a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayH
+
+:doorwayH a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayI
+
+:doorwayI a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayJ
+
+:doorwayJ a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayK
+
+:doorwayK a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayL
+
+:doorwayL a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#doorwayM
+
+:doorwayM a owl:NamedIndividual , :Doorway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#floor1
+
+:floor1 a owl:NamedIndividual , :InternalArea .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#floor2
+
+:floor2 a owl:NamedIndividual , :InternalArea .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room1
+
+:room1 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room10
+
+:room10 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room11
+
+:room11 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room12
+
+:room12 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room13
+
+:room13 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room14
+
+:room14 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room2
+
+:room2 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room3
+
+:room3 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room4
+
+:room4 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room5
+
+:room5 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room6
+
+:room6 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room7
+
+:room7 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room8
+
+:room8 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#room9
+
+:room9 a owl:NamedIndividual , :Room .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#stairwell1
+
+:stairwell1 a owl:NamedIndividual , :Stairwell .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#yard1
+
+:yard1 a owl:NamedIndividual , :Yard .
+# 
 # Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi
