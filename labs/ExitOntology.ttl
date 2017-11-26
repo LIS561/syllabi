@@ -34,20 +34,45 @@
 # http://purl.org/lis590od/IS561/ExitOntology#along
 
 :along a owl:ObjectProperty ;
+	owl:inverseOf :hasAlong ;
 	rdfs:domain :Transition ;
 	rdfs:range :Pathway .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#connectsTo
 
 :connectsTo a owl:ObjectProperty ;
+	owl:inverseOf :hasConnection ;
 	rdfs:domain :Connection ;
 	rdfs:range :Area .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#hasAlong
+
+:hasAlong a owl:ObjectProperty .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#hasConnection
+
+:hasConnection a owl:ObjectProperty .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#hasWithin
+
+:hasWithin a owl:ObjectProperty ;
+	owl:inverseOf :within .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#includedIn
+
+:includedIn a owl:ObjectProperty ;
+	owl:inverseOf :includes .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#includes
 
 :includes a owl:ObjectProperty ;
 	rdfs:domain :Area ;
 	rdfs:range :Pathway .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#sealedBy
+
+:sealedBy a owl:ObjectProperty ;
+	owl:inverseOf :seals .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#seals
 
@@ -57,7 +82,7 @@
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#within
 
-:within a owl:ObjectProperty , owl:AsymmetricProperty , owl:TransitiveProperty , owl:IrreflexiveProperty ;
+:within a owl:ObjectProperty ;
 	rdfs:domain :Area ;
 	rdfs:range :Area .
 # 
@@ -77,7 +102,8 @@
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#Area
 
-:Area a owl:Class .
+:Area a owl:Class ;
+	owl:disjointWith :Barrier , :Connection .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#Balcony
 
@@ -86,7 +112,37 @@
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#Barrier
 
-:Barrier a owl:Class .
+:Barrier a owl:Class ;
+	owl:disjointWith :Connection .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#BuildingEntrance
+
+:BuildingEntrance a owl:Class ;
+	owl:equivalentClass _:genid1 .
+
+_:genid1 owl:intersectionOf _:genid4 .
+
+_:genid4 a rdf:List ;
+	rdf:first _:genid5 .
+
+_:genid5 a owl:Restriction ;
+	owl:onProperty :connectsTo ;
+	owl:someValuesFrom :ExternalArea .
+
+_:genid4 rdf:rest _:genid2 .
+
+_:genid2 a rdf:List ;
+	rdf:first _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty :connectsTo ;
+	owl:someValuesFrom :InternalArea .
+
+_:genid2 rdf:rest rdf:nil .
+
+_:genid1 a owl:Class .
+
+:BuildingEntrance rdfs:subClassOf :Transition .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#Connection
 
@@ -105,12 +161,27 @@
 # http://purl.org/lis590od/IS561/ExitOntology#Door
 
 :Door a owl:Class ;
-	rdfs:subClassOf :Barrier .
+	owl:equivalentClass _:genid6 .
+
+_:genid6 a owl:Restriction ;
+	owl:onProperty :seals ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass :Doorway .
+
+:Door rdfs:subClassOf :Barrier ;
+	owl:disjointWith :Gate .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#Doorway
 
 :Doorway a owl:Class ;
-	rdfs:subClassOf :Transition .
+	owl:equivalentClass _:genid7 .
+
+_:genid7 a owl:Restriction ;
+	owl:onProperty :connectsTo ;
+	owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+	owl:onClass :Area .
+
+:Doorway rdfs:subClassOf :Transition .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#ExitDischarge
 
@@ -120,7 +191,32 @@
 # http://purl.org/lis590od/IS561/ExitOntology#ExternalArea
 
 :ExternalArea a owl:Class ;
-	rdfs:subClassOf :Area .
+	rdfs:subClassOf :Area ;
+	owl:disjointWith :InternalArea .
+# 
+# http://purl.org/lis590od/IS561/ExitOntology#ExternalDoor
+
+:ExternalDoor a owl:Class ;
+	owl:equivalentClass _:genid8 .
+
+_:genid8 owl:intersectionOf _:genid11 .
+
+_:genid11 a rdf:List ;
+	rdf:first :Door ;
+	rdf:rest _:genid9 .
+
+_:genid9 a rdf:List ;
+	rdf:first _:genid10 .
+
+_:genid10 a owl:Restriction ;
+	owl:onProperty :seals ;
+	owl:someValuesFrom :BuildingEntrance .
+
+_:genid9 rdf:rest rdf:nil .
+
+_:genid8 a owl:Class .
+
+:ExternalDoor rdfs:subClassOf :Door .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#Gate
 
@@ -521,7 +617,8 @@
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room1
 
-:room1 a owl:NamedIndividual , :Room .
+:room1 a owl:NamedIndividual , :Room ;
+	:within :floor1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room10
 
@@ -541,27 +638,33 @@
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room14
 
-:room14 a owl:NamedIndividual , :Room .
+:room14 a owl:NamedIndividual , :Room ;
+	:within :floor1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room2
 
-:room2 a owl:NamedIndividual , :Room .
+:room2 a owl:NamedIndividual , :Room ;
+	:within :floor1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room3
 
-:room3 a owl:NamedIndividual , :Room .
+:room3 a owl:NamedIndividual , :Room ;
+	:within :floor1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room4
 
-:room4 a owl:NamedIndividual , :Room .
+:room4 a owl:NamedIndividual , :Room ;
+	:within :floor1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room5
 
-:room5 a owl:NamedIndividual , :Room .
+:room5 a owl:NamedIndividual , :Room ;
+	:within :floor1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room6
 
-:room6 a owl:NamedIndividual , :Room .
+:room6 a owl:NamedIndividual , :Room ;
+	:within :floor1 .
 # 
 # http://purl.org/lis590od/IS561/ExitOntology#room7
 
