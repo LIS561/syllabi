@@ -50,3 +50,5 @@ $((Bju \wedge Ljg) \wedge (Big \wedge Liu))$                            \tiny Ja
 $((Bng \wedge Lng) \wedge (Bou \wedge Lou))$                            \tiny Nancy and Norman are natives of Germany and the USA. \normalsize
 ${\forall}x(Nx \leftrightarrow {\exists}y(Cy \wedge (Bxy \wedge Lxy)))$ \tiny A native lives in the country they were born in. \normalsize
 ${\forall}x{\forall}y((Bxy \wedge Lxy) \rightarrow Nx)$                 \tiny Same idea without ${\exists}$ quantifier. \normalsize
+${\forall}x{\forall}y(Lxy \leftrightarrow Ryx)$                         \tiny Define $R$ as the inverse of $L$.
+${\forall}x{\forall}y((Bxy \wedge Ryx) \rightarrow Nx)$                 \tiny Using $R$ ("country has resident") \normalsize
