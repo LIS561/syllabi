@@ -1,4 +1,4 @@
-@prefix : <http://purl.org/lis590od/IS561/ExitOntology#> .
+@prefix : <http://purl.org/lis590od/IS561/ExitsV2#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix dbp: <http://dbpedia.org/resource/> .
@@ -20,64 +20,64 @@
 @prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
-@base <http://purl.org/lis590od/IS561/ExitOntology> .
+@base <http://purl.org/lis590od/IS561/ExitsV2> .
 
-<http://purl.org/lis590od/IS561/ExitOntology> rdf:type owl:Ontology .
+<http://purl.org/lis590od/IS561/ExitsV2> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://purl.org/lis590od/IS561/ExitOntology#along
+###  http://purl.org/lis590od/IS561/ExitsV2#along
 :along rdf:type owl:ObjectProperty ;
        owl:inverseOf :hasAlong ;
        rdfs:domain :Transition ;
        rdfs:range :Pathway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#connectsTo
+###  http://purl.org/lis590od/IS561/ExitsV2#connectsTo
 :connectsTo rdf:type owl:ObjectProperty ;
             owl:inverseOf :hasConnection ;
             rdfs:domain :Connection ;
             rdfs:range :Area .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#hasAlong
+###  http://purl.org/lis590od/IS561/ExitsV2#hasAlong
 :hasAlong rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#hasConnection
+###  http://purl.org/lis590od/IS561/ExitsV2#hasConnection
 :hasConnection rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#hasWithin
+###  http://purl.org/lis590od/IS561/ExitsV2#hasWithin
 :hasWithin rdf:type owl:ObjectProperty ;
            owl:inverseOf :within .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#includedIn
+###  http://purl.org/lis590od/IS561/ExitsV2#includedIn
 :includedIn rdf:type owl:ObjectProperty ;
             owl:inverseOf :includes .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#includes
+###  http://purl.org/lis590od/IS561/ExitsV2#includes
 :includes rdf:type owl:ObjectProperty ;
           rdfs:domain :Area ;
           rdfs:range :Pathway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#sealedBy
+###  http://purl.org/lis590od/IS561/ExitsV2#sealedBy
 :sealedBy rdf:type owl:ObjectProperty ;
           owl:inverseOf :seals .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#seals
+###  http://purl.org/lis590od/IS561/ExitsV2#seals
 :seals rdf:type owl:ObjectProperty ;
        rdfs:domain :Barrier ;
        rdfs:range :Transition .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#within
+###  http://purl.org/lis590od/IS561/ExitsV2#within
 :within rdf:type owl:ObjectProperty ,
                  owl:AsymmetricProperty ,
                  owl:IrreflexiveProperty ;
@@ -89,28 +89,28 @@
 #    Classes
 #################################################################
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Aisle
+###  http://purl.org/lis590od/IS561/ExitsV2#Aisle
 :Aisle rdf:type owl:Class ;
        rdfs:subClassOf :Pathway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Area
+###  http://purl.org/lis590od/IS561/ExitsV2#Area
 :Area rdf:type owl:Class ;
       owl:disjointWith :Barrier ,
                        :Connection .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Balcony
+###  http://purl.org/lis590od/IS561/ExitsV2#Balcony
 :Balcony rdf:type owl:Class ;
          rdfs:subClassOf :ExternalArea .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Barrier
+###  http://purl.org/lis590od/IS561/ExitsV2#Barrier
 :Barrier rdf:type owl:Class ;
          owl:disjointWith :Connection .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#BuildingEntrance
+###  http://purl.org/lis590od/IS561/ExitsV2#BuildingEntrance
 :BuildingEntrance rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                owl:onProperty :connectsTo ;
@@ -126,21 +126,21 @@
                   rdfs:subClassOf :Transition .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Connection
+###  http://purl.org/lis590od/IS561/ExitsV2#Connection
 :Connection rdf:type owl:Class .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Corridor
+###  http://purl.org/lis590od/IS561/ExitsV2#Corridor
 :Corridor rdf:type owl:Class ;
           rdfs:subClassOf :InternalArea .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Court
+###  http://purl.org/lis590od/IS561/ExitsV2#Court
 :Court rdf:type owl:Class ;
        rdfs:subClassOf :ExternalArea .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Door
+###  http://purl.org/lis590od/IS561/ExitsV2#Door
 :Door rdf:type owl:Class ;
       owl:equivalentClass [ rdf:type owl:Restriction ;
                             owl:onProperty :seals ;
@@ -151,7 +151,7 @@
       owl:disjointWith :Gate .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Doorway
+###  http://purl.org/lis590od/IS561/ExitsV2#Doorway
 :Doorway rdf:type owl:Class ;
          owl:equivalentClass [ rdf:type owl:Restriction ;
                                owl:onProperty :connectsTo ;
@@ -161,18 +161,18 @@
          rdfs:subClassOf :Transition .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#ExitDischarge
+###  http://purl.org/lis590od/IS561/ExitsV2#ExitDischarge
 :ExitDischarge rdf:type owl:Class ;
                rdfs:subClassOf :ExternalArea .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#ExternalArea
+###  http://purl.org/lis590od/IS561/ExitsV2#ExternalArea
 :ExternalArea rdf:type owl:Class ;
               rdfs:subClassOf :Area ;
               owl:disjointWith :InternalArea .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#ExternalDoor
+###  http://purl.org/lis590od/IS561/ExitsV2#ExternalDoor
 :ExternalDoor rdf:type owl:Class ;
               owl:equivalentClass [ owl:intersectionOf ( :Door
                                                          [ rdf:type owl:Restriction ;
@@ -185,57 +185,57 @@
               rdfs:subClassOf :Door .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Gate
+###  http://purl.org/lis590od/IS561/ExitsV2#Gate
 :Gate rdf:type owl:Class ;
       rdfs:subClassOf :Barrier .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Gateway
+###  http://purl.org/lis590od/IS561/ExitsV2#Gateway
 :Gateway rdf:type owl:Class ;
          rdfs:subClassOf :Transition .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#InternalArea
+###  http://purl.org/lis590od/IS561/ExitsV2#InternalArea
 :InternalArea rdf:type owl:Class ;
               rdfs:subClassOf :Area .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Passageway
+###  http://purl.org/lis590od/IS561/ExitsV2#Passageway
 :Passageway rdf:type owl:Class ;
             rdfs:subClassOf :Pathway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Pathway
+###  http://purl.org/lis590od/IS561/ExitsV2#Pathway
 :Pathway rdf:type owl:Class ;
          rdfs:subClassOf :Connection .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Ramp
+###  http://purl.org/lis590od/IS561/ExitsV2#Ramp
 :Ramp rdf:type owl:Class ;
       rdfs:subClassOf :Pathway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Room
+###  http://purl.org/lis590od/IS561/ExitsV2#Room
 :Room rdf:type owl:Class ;
       rdfs:subClassOf :InternalArea .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Stairway
+###  http://purl.org/lis590od/IS561/ExitsV2#Stairway
 :Stairway rdf:type owl:Class ;
           rdfs:subClassOf :Pathway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Stairwell
+###  http://purl.org/lis590od/IS561/ExitsV2#Stairwell
 :Stairwell rdf:type owl:Class ;
            rdfs:subClassOf :InternalArea .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Transition
+###  http://purl.org/lis590od/IS561/ExitsV2#Transition
 :Transition rdf:type owl:Class ;
             rdfs:subClassOf :Connection .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#Yard
+###  http://purl.org/lis590od/IS561/ExitsV2#Yard
 :Yard rdf:type owl:Class ;
       rdfs:subClassOf :ExternalArea .
 
@@ -244,203 +244,203 @@
 #    Individuals
 #################################################################
 
-###  http://purl.org/lis590od/IS561/ExitOntology#balcony1
+###  http://purl.org/lis590od/IS561/ExitsV2#balcony1
 :balcony1 rdf:type owl:NamedIndividual ,
                    :Balcony .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#balcony2
+###  http://purl.org/lis590od/IS561/ExitsV2#balcony2
 :balcony2 rdf:type owl:NamedIndividual ,
                    :Balcony .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#building1
+###  http://purl.org/lis590od/IS561/ExitsV2#building1
 :building1 rdf:type owl:NamedIndividual ,
                     :Area .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#corridor1
+###  http://purl.org/lis590od/IS561/ExitsV2#corridor1
 :corridor1 rdf:type owl:NamedIndividual ,
                     :Corridor ;
            :includes :passageway1 ;
            :within :floor1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#corridor2
+###  http://purl.org/lis590od/IS561/ExitsV2#corridor2
 :corridor2 rdf:type owl:NamedIndividual ,
                     :Corridor ;
            :includes :passageway2 ;
            :within :floor2 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#corridor3
+###  http://purl.org/lis590od/IS561/ExitsV2#corridor3
 :corridor3 rdf:type owl:NamedIndividual ,
                     :Corridor ;
            :includes :passageway3 ;
            :within :floor1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#court1
+###  http://purl.org/lis590od/IS561/ExitsV2#court1
 :court1 rdf:type owl:NamedIndividual ,
                  :Court .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#discharge1
+###  http://purl.org/lis590od/IS561/ExitsV2#discharge1
 :discharge1 rdf:type owl:NamedIndividual ,
                      :ExitDischarge ;
             :includes :pathway1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#discharge2
+###  http://purl.org/lis590od/IS561/ExitsV2#discharge2
 :discharge2 rdf:type owl:NamedIndividual ,
                      :ExitDischarge ;
             :includes :pathway2 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorA
+###  http://purl.org/lis590od/IS561/ExitsV2#doorA
 :doorA rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayA .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorB
+###  http://purl.org/lis590od/IS561/ExitsV2#doorB
 :doorB rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayB .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorC
+###  http://purl.org/lis590od/IS561/ExitsV2#doorC
 :doorC rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayC .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorD
+###  http://purl.org/lis590od/IS561/ExitsV2#doorD
 :doorD rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayD .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorE
+###  http://purl.org/lis590od/IS561/ExitsV2#doorE
 :doorE rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayE .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorF
+###  http://purl.org/lis590od/IS561/ExitsV2#doorF
 :doorF rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayF .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorG
+###  http://purl.org/lis590od/IS561/ExitsV2#doorG
 :doorG rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayG .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorH
+###  http://purl.org/lis590od/IS561/ExitsV2#doorH
 :doorH rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayH .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorI
+###  http://purl.org/lis590od/IS561/ExitsV2#doorI
 :doorI rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayI .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorJ
+###  http://purl.org/lis590od/IS561/ExitsV2#doorJ
 :doorJ rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayJ .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorK
+###  http://purl.org/lis590od/IS561/ExitsV2#doorK
 :doorK rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayK .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorL
+###  http://purl.org/lis590od/IS561/ExitsV2#doorL
 :doorL rdf:type owl:NamedIndividual ,
                 :Door .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorM
+###  http://purl.org/lis590od/IS561/ExitsV2#doorM
 :doorM rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayM .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorN
+###  http://purl.org/lis590od/IS561/ExitsV2#doorN
 :doorN rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayN .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorO
+###  http://purl.org/lis590od/IS561/ExitsV2#doorO
 :doorO rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayO .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorP
+###  http://purl.org/lis590od/IS561/ExitsV2#doorP
 :doorP rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayP .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorQ
+###  http://purl.org/lis590od/IS561/ExitsV2#doorQ
 :doorQ rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayQ .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorR
+###  http://purl.org/lis590od/IS561/ExitsV2#doorR
 :doorR rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayR .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorS
+###  http://purl.org/lis590od/IS561/ExitsV2#doorS
 :doorS rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayS .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorT
+###  http://purl.org/lis590od/IS561/ExitsV2#doorT
 :doorT rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayT .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorU
+###  http://purl.org/lis590od/IS561/ExitsV2#doorU
 :doorU rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayU .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorV
+###  http://purl.org/lis590od/IS561/ExitsV2#doorV
 :doorV rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayV .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorW
+###  http://purl.org/lis590od/IS561/ExitsV2#doorW
 :doorW rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayW .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorX
+###  http://purl.org/lis590od/IS561/ExitsV2#doorX
 :doorX rdf:type owl:NamedIndividual ,
                 :Door ;
        :seals :doorwayX .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayA
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayA
 :doorwayA rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :along :pathway2 ;
@@ -448,7 +448,7 @@
                       :discharge2 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayB
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayB
 :doorwayB rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :along :pathway1 ;
@@ -456,287 +456,287 @@
                       :discharge1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayC
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayC
 :doorwayC rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor1 ,
                       :stairwell1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayD
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayD
 :doorwayD rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor1 ,
                       :room6 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayE
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayE
 :doorwayE rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor1 ,
                       :room4 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayF
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayF
 :doorwayF rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor1 ,
                       :room2 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayG
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayG
 :doorwayG rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor1 ,
                       :room1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayH
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayH
 :doorwayH rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor1 ,
                       :room3 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayI
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayI
 :doorwayI rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor1 ,
                       :room5 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayJ
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayJ
 :doorwayJ rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor3 ,
                       :room5 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayK
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayK
 :doorwayK rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor3 ,
                       :room3 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayL
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayL
 :doorwayL rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor3 ,
                       :room1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayM
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayM
 :doorwayM rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor3 ,
                       :yard1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayN
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayN
 :doorwayN rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor2 ,
                       :room11 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayO
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayO
 :doorwayO rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor2 ,
                       :stairwell1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayP
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayP
 :doorwayP rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor2 ,
                       :room12 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayQ
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayQ
 :doorwayQ rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor2 ,
                       :room9 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayR
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayR
 :doorwayR rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor2 ,
                       :room10 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayS
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayS
 :doorwayS rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor2 ,
                       :room7 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayT
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayT
 :doorwayT rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :corridor2 ,
                       :room8 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayU
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayU
 :doorwayU rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :balcony1 ,
                       :room10 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayV
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayV
 :doorwayV rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :balcony2 ,
                       :room12 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayW
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayW
 :doorwayW rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :room12 ,
                       :room13 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#doorwayX
+###  http://purl.org/lis590od/IS561/ExitsV2#doorwayX
 :doorwayX rdf:type owl:NamedIndividual ,
                    :Doorway ;
           :connectsTo :room14 ,
                       :room6 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#floor1
+###  http://purl.org/lis590od/IS561/ExitsV2#floor1
 :floor1 rdf:type owl:NamedIndividual ,
                  :InternalArea ;
         :within :building1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#floor2
+###  http://purl.org/lis590od/IS561/ExitsV2#floor2
 :floor2 rdf:type owl:NamedIndividual ,
                  :InternalArea ;
         :within :building1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#passageway1
+###  http://purl.org/lis590od/IS561/ExitsV2#passageway1
 :passageway1 rdf:type owl:NamedIndividual ,
                       :Passageway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#passageway2
+###  http://purl.org/lis590od/IS561/ExitsV2#passageway2
 :passageway2 rdf:type owl:NamedIndividual ,
                       :Passageway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#passageway3
+###  http://purl.org/lis590od/IS561/ExitsV2#passageway3
 :passageway3 rdf:type owl:NamedIndividual ,
                       :Passageway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#pathway1
+###  http://purl.org/lis590od/IS561/ExitsV2#pathway1
 :pathway1 rdf:type owl:NamedIndividual ,
                    :Pathway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#pathway2
+###  http://purl.org/lis590od/IS561/ExitsV2#pathway2
 :pathway2 rdf:type owl:NamedIndividual ,
                    :Pathway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room1
+###  http://purl.org/lis590od/IS561/ExitsV2#room1
 :room1 rdf:type owl:NamedIndividual ,
                 :Room ;
        :within :floor1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room10
+###  http://purl.org/lis590od/IS561/ExitsV2#room10
 :room10 rdf:type owl:NamedIndividual ,
                  :Room .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room11
+###  http://purl.org/lis590od/IS561/ExitsV2#room11
 :room11 rdf:type owl:NamedIndividual ,
                  :Room .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room12
+###  http://purl.org/lis590od/IS561/ExitsV2#room12
 :room12 rdf:type owl:NamedIndividual ,
                  :Room .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room13
+###  http://purl.org/lis590od/IS561/ExitsV2#room13
 :room13 rdf:type owl:NamedIndividual ,
                  :Room .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room14
+###  http://purl.org/lis590od/IS561/ExitsV2#room14
 :room14 rdf:type owl:NamedIndividual ,
                  :Room ;
         :within :floor1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room2
+###  http://purl.org/lis590od/IS561/ExitsV2#room2
 :room2 rdf:type owl:NamedIndividual ,
                 :Room ;
        :within :floor1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room3
+###  http://purl.org/lis590od/IS561/ExitsV2#room3
 :room3 rdf:type owl:NamedIndividual ,
                 :Room ;
        :within :floor1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room4
+###  http://purl.org/lis590od/IS561/ExitsV2#room4
 :room4 rdf:type owl:NamedIndividual ,
                 :Room ;
        :within :floor1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room5
+###  http://purl.org/lis590od/IS561/ExitsV2#room5
 :room5 rdf:type owl:NamedIndividual ,
                 :Room ;
        :within :floor1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room6
+###  http://purl.org/lis590od/IS561/ExitsV2#room6
 :room6 rdf:type owl:NamedIndividual ,
                 :Room ;
        :within :floor1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room7
+###  http://purl.org/lis590od/IS561/ExitsV2#room7
 :room7 rdf:type owl:NamedIndividual ,
                 :Room .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room8
+###  http://purl.org/lis590od/IS561/ExitsV2#room8
 :room8 rdf:type owl:NamedIndividual ,
                 :Room .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#room9
+###  http://purl.org/lis590od/IS561/ExitsV2#room9
 :room9 rdf:type owl:NamedIndividual ,
                 :Room .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#stairway1
+###  http://purl.org/lis590od/IS561/ExitsV2#stairway1
 :stairway1 rdf:type owl:NamedIndividual ,
                     :Stairway .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#stairwell1
+###  http://purl.org/lis590od/IS561/ExitsV2#stairwell1
 :stairwell1 rdf:type owl:NamedIndividual ,
                      :Stairwell ;
             :includes :stairway1 ;
             :within :building1 .
 
 
-###  http://purl.org/lis590od/IS561/ExitOntology#yard1
+###  http://purl.org/lis590od/IS561/ExitsV2#yard1
 :yard1 rdf:type owl:NamedIndividual ,
                 :Yard .
 
