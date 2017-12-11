@@ -443,7 +443,6 @@
 ###  http://purl.org/lis590od/IS561/ExitsV2#doorwayA
 :doorwayA rdf:type owl:NamedIndividual ,
                    :Doorway ;
-          :along :pathway2 ;
           :connectsTo :corridor1 ,
                       :discharge2 .
 
@@ -451,7 +450,6 @@
 ###  http://purl.org/lis590od/IS561/ExitsV2#doorwayB
 :doorwayB rdf:type owl:NamedIndividual ,
                    :Doorway ;
-          :along :pathway1 ;
           :connectsTo :corridor1 ,
                       :discharge1 .
 
