@@ -12,10 +12,10 @@ repeated up until the deadline.
 
 | Assignment Type  |Percentage of Grade   |
 |---|---|
-|Comprehension quizzes (usually due on QUIZDUEDAY)|   35% 
-|Group classroom exercises|   22%
-|Modeling scenario memoranda|   40%
-|Participation and engagement in class and on forums|   3%
+|Comprehension quizzes (usually due on QUIZDUEDAY)|   15% 
+|Exercises and particiaption in class|   15%
+|Three group projects|   45%
+|Written reading responses and homework|   25%
 
 ### Grading Scale:
 
@@ -48,21 +48,14 @@ and written treatment of issues that arise are the most important
 factors in assessing your contributions in this setting, just as they
 are in the working world. 
 
-### Modeling scenario memoranda
+### Group Modeling Projects
 
-Modeling scenario memoranda are short written assignments (typically 1-2 pages).
-In these memos, you will offer analyses and recommendations, and request
-clarifications, related to modeling exercises and the case studies that frame
-them. The audience for such memos generally includes professional colleagues, 
-clients, and supervisors; you will practice writing for these audiences.
+Analysis and modeling projects completed in groups
 
-Assesment of your work on these exercises will be based on the clarity
-of your writing and on your success in presenting the appropriate tone.
-For recommendations on tone in business writing, consult the resources
-at <https://owl.english.purdue.edu/owl/resource/652/1/>.
+### Reading responses and homework assignments
 
-### Participation and engagement in class and on forums
+Reading responses and homework assignments
 
-Participation and engagement, both in class and on Moodle, means cooperating with group members;
-asking and answering questions in class, online and in office hours; working consistently 
-throughout the semester; and engaging with classmates both inside and outside of class.
+
+
+
