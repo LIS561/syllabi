@@ -20,3 +20,4 @@ define(TURTLEREADING, [@beckett_rdf_2014])dnl
 define(RELATIONSREADING, [@rosen_relations:_2011])dnl
 define(FOUNDATIONSREADING, [@rosen_foundations:_2011])dnl
 define(AUTOMATAREADING, [@rosen_finite_2011])dnl
+define(KNOWLEDGEGRAPHS, [@pan_knowledge_2017])dnl

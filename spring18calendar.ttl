@@ -33,7 +33,7 @@
 :Logic0a a skos:Concept ;
   skos:inScheme :LIS561concepts ;
     :reqReading "LOGICFOUNDATIONSREADING" ;
-  skos:prefLabel "Propositional Logic, Part 1"@en .
+  skos:prefLabel "Logic and Foundations"@en .
 
 :Logic0b a skos:Concept ;
   skos:inScheme :LIS561concepts ;
@@ -43,7 +43,7 @@
 :ModelsDomains a skos:Concept ;
   skos:inScheme :LIS561concepts ;
   :reqReading "MODELSREADING" ;  
-  skos:prefLabel "Models and Domains"@en.
+  skos:prefLabel "Models, Domains, Properties, and Relationships"@en.
 
 :Logic1a a skos:Concept ;
   skos:inScheme :LIS561concepts ;
@@ -91,12 +91,10 @@
   :reqReading "AUTOMATAREADING" ;
   skos:prefLabel "Automata"@en .
 
-
-
 :UMLnotation a skos:Concept ;
   skos:inScheme :LIS561concepts ;
   :reqReading "UMLREADING" ;
-  skos:prefLabel "UML Part 1: notation"@en .
+  skos:prefLabel "Class Diagrams"@en .
 
 :ClassesUML a skos:Concept ;
   skos:inScheme :LIS561concepts ;
@@ -121,14 +119,10 @@
   :reqReading "SYNTAXREADING" ;
   skos:prefLabel "Syntax and Grammar"@en .
 
-:Semantics1 a skos:Concept ;
+:Semantics a skos:Concept ;
   skos:inScheme :LIS561concepts ;
   :reqReading "SEMANTICSREADING" ;
-  skos:prefLabel "Semantics and Interpretation, Part 1"@en .
-
-:Semantics2 a skos:Concept ;
-  skos:inScheme :LIS561concepts ;
-  skos:prefLabel "Semantics and Interpretation, Part 2"@en .
+  skos:prefLabel "Semantics and Interpretation"@en .
 
 :RDF1 a skos:Concept ;
   skos:inScheme :LIS561concepts ;
@@ -190,7 +184,7 @@
   event:time [ a tl:Interval ;
       tl:at "2017-02-04T00:00:00-6:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
-  dcterms:subject :Semantics1 ;
+  dcterms:subject :Semantics ;
   :date "PRES4DATE" ;  
   rdfs:label "Week 4"@en .
 
@@ -206,7 +200,7 @@
   event:time [ a tl:Interval ;
       tl:at "2017-02-18T00:00:00-6:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
-  dcterms:subject :Logic0b ;
+  dcterms:subject :Logic1a ;      
   :date "PRES6DATE" ;  
   rdfs:label "Week 6"@en .
 
@@ -214,7 +208,7 @@
   event:time [ a tl:Interval ;
       tl:at "2017-02-25T00:00:00-6:00"^^xsd:dateTime ;
       tl:duration "P7D"^^xsd:duration] ;
-  dcterms:subject :Logic1a ;
+  dcterms:subject :Logic1b ;
   :date "PRES7DATE" ;  
   rdfs:label "Week 7"@en .
 
