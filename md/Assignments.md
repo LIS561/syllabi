@@ -12,10 +12,11 @@ repeated up until the deadline.
 
 | Assignment Type  |Percentage of Grade   |
 |---|---|
-|Comprehension quizzes (usually due on QUIZDUEDAY)|   15% 
-|Exercises and particiaption in class|   15%
 |Three group projects|   45%
 |Written reading responses and homework|   25%
+|Comprehension quizzes (usually due on QUIZDUEDAY)|   15% 
+|Exercises and participation in class|   15%
+
 
 ### Grading Scale:
 
