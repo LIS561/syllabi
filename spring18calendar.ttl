@@ -32,7 +32,7 @@
 
 :Logic0a a skos:Concept ;
   skos:inScheme :LIS561concepts ;
-    :reqReading "LOGIC0READING" ;
+    :reqReading "LOGICFOUNDATIONSREADING" ;
   skos:prefLabel "Propositional Logic, Part 1"@en .
 
 :Logic0b a skos:Concept ;
@@ -263,7 +263,7 @@
       tl:duration "P7D"^^xsd:duration] ;
   dcterms:subject :LogicD ;      
   :date "PRES13DATE" ;  
-  rdfs:label "Thanksgiving Holiday"@en .
+  rdfs:label "Week 13"@en .
 
 :Week14 a :Week ;
   event:time [ a tl:Interval ;
