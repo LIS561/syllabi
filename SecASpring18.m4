@@ -18,6 +18,7 @@ define(TA3, AboutLoLee.md)dnl
 define(INSTRUCTOR, AboutDubin.md)dnl
 define(QUIZDUEDAY, Friday)dnl
 define(FINALSEC, # Readings)dnl
+define(PRES0DATE, Week before class)dnl
 define(PRES1DATE, January 16 and 18)dnl
 define(PRES2DATE, January 23 and 25)dnl
 define(PRES3DATE, January 30 and February 1)dnl

@@ -32,7 +32,7 @@
 
 :Logic0a a skos:Concept ;
   skos:inScheme :LIS561concepts ;
-    :reqReading "LOGICFOUNDATIONSREADING" ;
+    :reqReading "FOUNDATIONSREADING" ;
   skos:prefLabel "Logic and Foundations"@en .
 
 :Logic0b a skos:Concept ;
@@ -42,8 +42,15 @@
 
 :ModelsDomains a skos:Concept ;
   skos:inScheme :LIS561concepts ;
-  :reqReading "MODELSREADING" ;  
+  :reqReading "METAPHYSICSREADING" ;  
   skos:prefLabel "Models, Domains, Properties, and Relationships"@en.
+
+
+:ModelsModeling a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "MODELSREADING" ;  
+  skos:prefLabel "Models and Modeling"@en.
+
 
 :Logic1a a skos:Concept ;
   skos:inScheme :LIS561concepts ;
@@ -53,6 +60,13 @@
 :Logic1b a skos:Concept ;
   skos:inScheme :LIS561concepts ;
   skos:prefLabel "Predicate Logic, Part 2"@en .
+
+
+:Logic1r a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGICRELATIONALREADING" ;
+  skos:prefLabel "Logic, classes, and relationships"@en .
+
 
 :Sets a skos:Concept ;
   skos:inScheme :LIS561concepts ;
@@ -83,8 +97,6 @@
   skos:inScheme :LIS561concepts ;
   :reqReading "CONCEPTUALGRAPHSREADING" ;
   skos:prefLabel "Conceptual Graphs"@en .
-
-
 
 :Automata a skos:Concept ;
   skos:inScheme :LIS561concepts ;
@@ -155,6 +167,13 @@
   skos:inScheme :LIS561concepts ;
   skos:prefLabel "Wrapup and Evaluation"@en .
 
+:Week0 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-01-07T00:00:00-6:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  dcterms:subject :ModelsModeling ;
+  :date "PRES0DATE" ;    
+  rdfs:label "Week 0"@en .
 
 :Week1 a :Week ;
   event:time [ a tl:Interval ;
