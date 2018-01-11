@@ -7,7 +7,7 @@ M4PATH := ./md
 export M4PATH
 
 %.md : %.m4 %.cldr %.defs LIS561.m4
-	m4 -DFORMATDEFS="wpformat.m4" -DMYDEFS="$*.m4" LIS561.m4 > $*.md
+	m4 -DFORMATDEFS="wpformat.m4" -DMYDEFS="$*.m4" IS561.m4 > $*.md
 
 %.docx : %.md Spring18.bib
 	pandoc -s --bibliography=Spring18.bib -o $*.docx $*.md
