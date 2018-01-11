@@ -6,17 +6,17 @@
 M4PATH := ./md
 export M4PATH
 
-%.md : %.m4 %.cldr %.defs LIS561.m4
+%.md : %.m4 %.cldr %.defs IS561.m4
 	m4 -DFORMATDEFS="wpformat.m4" -DMYDEFS="$*.m4" IS561.m4 > $*.md
 
-%.docx : %.md Spring18.bib
-	pandoc -s --bibliography=Spring18.bib -o $*.docx $*.md
+%.docx : %.md %.bib
+	pandoc -s --bibliography=$*.bib -o $*.docx $*.md
 
-%.html : %.md LIS561.bib
-	pandoc -s --bibliography=Readings.bib -o $*.html $*.md
+%.bib : currentReadings.bib
+	cat currentReadings.bib > $*.bib
 
-%.pdf : %.md LIS561.bib
-	pandoc -s --bibliography=Readings.bib -o $*.pdf $*.md
+%.ttl : turtlePrefixes currentCalendar %.topics %.sched 
+	cat turtlePrefixes currentCalendar $*.topics $*.sched > $*.ttl
 
 %.cldr : %.ttl 
 	 python NewCalendar2.py $*.ttl
