@@ -12,10 +12,10 @@ export M4PATH
 %.docx : %.md %.bib
 	pandoc -s --bibliography=$*.bib -o $*.docx $*.md
 
-%.bib : currentReadings.bib
+%.bib : 
 	cat currentReadings.bib > $*.bib
 
-%.ttl : turtlePrefixes currentCalendar %.topics %.sched 
+%.ttl : %.topics %.sched turtlePrefixes currentCalendar
 	cat turtlePrefixes currentCalendar $*.topics $*.sched > $*.ttl
 
 %.cldr : %.ttl 
