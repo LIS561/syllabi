@@ -1,0 +1,185 @@
+:P1D1 a :Deadline ;
+  rdfs:label "First deliverables"@en ;
+  :date "P1D1DUE" ;
+  :during :Week4 .
+
+:P1D2 a :Deadline ;
+  rdfs:label "Second deliverables"@en ;
+  :date "P1D2DUE" ;
+  :during :Week6 .
+
+:P1D3 a :Deadline ;
+  rdfs:label "Third deliverables"@en ;
+  :date "P1D3DUE" ;
+  :during :Week8 .
+
+:P2D1 a :Deadline ;
+  rdfs:label "First deliverables"@en ;
+  :date "P2D1DUE" ;
+  :during :Week8 .
+
+:P2D2 a :Deadline ;
+  rdfs:label "Second deliverables"@en ;
+  :date "P2D2DUE" ;
+  :during :Week11 .
+
+:P2D3 a :Deadline ;
+  rdfs:label "Third deliverables"@en ;
+  :date "P2D3DUE" ;
+  :during :Week12 .
+
+:P3D1 a :Deadline ;
+  rdfs:label "First deliverables"@en ;
+  :date "P3D1DUE" ;
+  :during :Week13 .
+
+:P3D2 a :Deadline ;
+  rdfs:label "Second deliverables"@en ;
+  :date "P3D2DUE" ;
+  :during :Week15 .
+
+:P3D3 a :Deadline ;
+  rdfs:label "Third deliverables"@en ;
+  :date "P3D3DUE" ;
+  :during :Week17 .
+
+:Q1D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q1DUE" ;
+  :during :Week1 .
+
+:Q2D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q2DUE" ;
+  :during :Week2 .
+
+:Q3D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q3DUE" ;
+  :during :Week3 .
+
+:Q4D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q4DUE" ;
+  :during :Week4 .
+
+:Q5D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q5DUE" ;
+  :during :Week5 .
+
+:Q6D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q6DUE" ;
+  :during :Week6 .
+
+:Q7D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q7DUE" ;
+  :during :Week7 .
+
+:Q8D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q8DUE" ;
+  :during :Week8 .
+
+:Q9D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q9DUE" ;
+  :during :Week9 .
+
+:Q10D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q10DUE" ;
+  :during :Week11 .
+
+:Q11D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q11DUE" ;
+  :during :Week12 .
+
+:Q12D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q12DUE" ;
+  :during :Week13 .
+
+:Q13D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q13DUE" ;
+  :during :Week14 .
+
+:Q14D1 a :Deadline ;
+  rdfs:label "Closing date"@en ;
+  :date "Q14DUE" ;
+  :during :Week15 .
+
+:H1D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H1DUE" ;
+  :during :Week2 .
+
+:H2D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H2DUE" ;
+  :during :Week3 .
+
+:H3D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H3DUE" ;
+  :during :Week4 .
+
+:H4D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H4DUE" ;
+  :during :Week5 .
+
+:H5D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H5DUE" ;
+  :during :Week6 .
+
+:H6D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H6DUE" ;
+  :during :Week7 .
+
+:H7D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H7DUE" ;
+  :during :Week8 .
+
+:H8D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H8DUE" ;
+  :during :Week9 .
+
+:H9D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H9DUE" ;
+  :during :Week11 .
+
+:H10D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H10DUE" ;
+  :during :Week12 .
+
+:H11D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H11DUE" ;
+  :during :Week13 .
+
+:H12D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H12DUE" ;
+  :during :Week14 .
+
+:H13D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H13DUE" ;
+  :during :Week15 .
+
+:H14D1 a :Deadline ;
+  rdfs:label "Upload deadline"@en ;
+  :date "H14DUE" ;
+  :during :Week16 .
+
