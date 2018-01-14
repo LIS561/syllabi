@@ -1,2 +1,2 @@
-# About Michaek Gryk
+# About Michael Gryk
 Dr. Michael R. Gryk is currently Associate Professor of Molecular Biology and Biophysics at UCONN Health, the medical school at the University of Connecticut. He is also a doctoral student of Library and Information Science at the School of Information Sciences, University of Illinois at Urbana – Champaign. Dr. Gryk has worked in the field of structural biology, concentrating on bioNMR, since 1990. His recent research interests are in the computational and informational science aspects of biomedical research. He received his M.S. in chemistry from the University of Connecticut and his Ph.D. in biophysics from Stanford University, Stanford, California.
