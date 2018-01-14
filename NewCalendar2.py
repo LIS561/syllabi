@@ -51,9 +51,9 @@ for d in mygraph.subjects(RDF.type, i561.Deadline):
                                     for o in mygraph.objects(a,i561.dueDate):
                                             adue = str(o)
                             if (weekdue in deadlines.keys()):
-                                    deadlines[weekdue] += "**Due:** " + dlabel + ", " + alabel + "\n\n"
+                                    deadlines[weekdue] += "- **Due " + duedate + ":** " + dlabel + ", " + alabel + "\n"
                             else:
-                                    deadlines[weekdue] = "**Due:** " + dlabel + ", " + alabel + "\n\n"
+                                    deadlines[weekdue] = "- **Due " + duedate + ":** " + dlabel + ", " + alabel + "\n"
                             newdefs[adue] = duedate
                             
 cldrfile.write("# Topic Schedule\n")
@@ -79,13 +79,13 @@ for d in wlist:
                               background = str(q)
                       for r in mygraph.objects(s,i561.reqReading):
                               required = str(r)
-              cldrfile.write("- " + myconcept + "\n")  
-              rstring = "    - **Required Readings:** "
+              cldrfile.write("#### Topic: " + myconcept + "\n\n")  
+              rstring = "- **Required Readings:** "
               if required:
                 cldrfile.write(rstring + " " + required + "\n")
                 cldrfile.write("\n")
               dstring = ""
-              bstring = "    - **Further Background:** "
+              bstring = "- **Further Background:** "
               if background:
                 cldrfile.write(bstring + " " + background + "\n")
                 cldrfile.write("\n")

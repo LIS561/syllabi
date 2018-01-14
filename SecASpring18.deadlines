@@ -41,7 +41,7 @@
 :P3D3 a :Deadline ;
   rdfs:label "Third deliverables"@en ;
   :date "P3D3DUE" ;
-  :during :Week17 .
+  :during :Week16 .
 
 :Q1D1 a :Deadline ;
   rdfs:label "Closing date"@en ;
