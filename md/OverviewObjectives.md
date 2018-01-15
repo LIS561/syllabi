@@ -40,10 +40,13 @@ and a survey course.
 
 ## Learning Objectives
 
+### Content Objectives
 1. Develop fluency in reading and understanding formal definitions.
 2. Understand the role of abstraction in making systems design choices.
 3. Contrast deep vs. superficial differences in modeling languages.
 4. Recognize practical implications of trading expressive power for tractability.
 5. Appreciate the fundamental role of a very small set of inter-related concepts.
 
-
+### Teamwork and Communication Objectives
+1. Develop and practice strong teamwork skills.
+2. Develop and practice strong oral and written communication skills.
