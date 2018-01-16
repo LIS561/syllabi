@@ -35,6 +35,7 @@ define(PRES13DATE, April 10 and 13)dnl
 define(PRES14DATE, April 17 and 19)dnl
 define(PRES15DATE, April 24 and 26)dnl
 define(PRES16DATE, May 1)dnl
+define(PRES17DATE, Finals Week)dnl
 define(P1D1DUE, February 8)dnl
 define(P1D2DUE, February 22)dnl
 define(P1D3DUE, March 8)dnl

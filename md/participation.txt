@@ -1,16 +1,33 @@
 Participation
-Your participation grade is a combination of your attendance, in-class participation, and overall progress throughout the semester; all assessed by your instructor. 
 
-You will only receive one final participation grade in the course, but your participation will be assessed twice: after Week 5 Lab (representing what the participation grade would be if the semester were over), and updated at the end of the course. You should use the mid-course grade as a indicator that you can use to gauge your participation and to improve. Your instructor encourages you to discuss this further in office hours.
+Your participation grade is a combination of your attendance, in-class
+participation, and overall progress throughout the semester; all
+assessed by your instructor.
+
+You will only receive one final participation grade in the course, but
+your participation will be assessed twice: after Week 5 Lab
+(representing what the participation grade would be if the semester
+were over), and updated at the end of the course. You should use the
+mid-course grade as a indicator that you can use to gauge your
+participation and to improve. Your instructor encourages you to
+discuss this further in office hours.
 
 The following rubric will be used to assign a score:
 
-10 = Student has been an active participant in class discussion, bringing to the class insights from their interpretations of readings and lived experiences and is demonstrating an increasing grasp of the key concepts covered in class. 
+10 = Student has been an active participant in class discussion,
+bringing to the class insights from their interpretations of readings
+and lived experiences and is demonstrating an increasing grasp of the
+key concepts covered in class.
 
-8 = Student has been an active participant in some of the class discussion and is demonstrating some gains in grasping key concepts covered in class. 
+8 = Student has been an active participant in some of the class
+discussion and is demonstrating some gains in grasping key concepts
+covered in class.
 
-6 = Student is occasionally active in class and is demonstrating some learning, but it is clear they are not performing to their full capabilities. 
+6 = Student is occasionally active in class and is demonstrating some
+learning, but it is clear they are not performing to their full
+capabilities.
 
-4 = Student has missed several classes and/or is not always active when attending class. 
+4 = Student has missed several classes and/or is not always active
+when attending class.
 
-0 = Student has consistently missed class during the rated period. 
+0 = Student has consistently missed class during the rated period.
