@@ -123,6 +123,12 @@
   :reqReading "LOGICDREADING" ;
   skos:prefLabel "Description Logics"@en .
 
+
+:Applications a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "GRAPHAPPREADING" ;
+  skos:prefLabel "Applications and success stories"@en .
+
 :Review a skos:Concept ;
   skos:inScheme :LIS561concepts ;
   skos:prefLabel "Review Session"@en .

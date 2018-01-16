@@ -15,8 +15,11 @@ export M4PATH
 %.bib : 
 	cat currentReadings.bib > $*.bib
 
-%.ttl : %.topics %.sched turtlePrefixes currentCalendar
-	cat turtlePrefixes currentCalendar $*.topics $*.sched > $*.ttl
+%.work : %.deadlines %.assignments
+	cat $*.assignments $*.deadlines > $*.work
+
+%.ttl : %.topics %.sched %.work turtlePrefixes currentCalendar
+	cat turtlePrefixes currentCalendar $*.topics $*.sched $*.work > $*.ttl
 
 %.cldr : %.ttl 
 	 python NewCalendar2.py $*.ttl

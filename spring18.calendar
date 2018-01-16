@@ -124,4 +124,11 @@
   :date "PRES16DATE" ;    
   rdfs:label "Week 16"@en .
 
+:Week17 a :Week ;
+  event:time [ a tl:Interval ;
+      tl:at "2017-05-06T00:00:00-5:00"^^xsd:dateTime ;
+      tl:duration "P7D"^^xsd:duration] ;
+  :date "PRES17DATE" ;    
+  rdfs:label "Week 17"@en .
+
 

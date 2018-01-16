@@ -1,13 +1,13 @@
 include(Spring18Readings.m4)dnl
-include(SecASpring18.defs)dnl
-define(MYSECDATA, Spring18Adata.md)dnl
+include(SecBSpring18.defs)dnl
+define(MYSECDATA, Spring18Bdata.md)dnl
 define(COURSETITLE, Information Modeling)dnl
 define(ASSIGNMENTS, Assignments.md)dnl
-define(CALENDAR, SecASpring18.cldr)dnl
+define(CALENDAR, SecBSpring18.cldr)dnl
 define(OVERVIEW, OverviewObjectives.md)dnl
 define(METADATA, syllabib.md)dnl
 define(SAFETY, RHFshort.md)dnl
-define(CONTACT1, Dubin.md)dnl
+define(CONTACT1, Schneider.md)dnl
 define(CONTACT2, Jett.md)dnl
 define(CONTACT3, KLee.md)dnl
 define(CONTACT4, LoLee.md)dnl
@@ -15,8 +15,8 @@ define(CONTACT5, Empty.md)dnl
 define(TA1, AboutJett.md)dnl
 define(TA2, AboutKLee.md)dnl
 define(TA3, AboutLoLee.md)dnl
-define(INSTRUCTOR, AboutDubin.md)dnl
-define(QUIZDUEDAY, TBA)dnl
+define(INSTRUCTOR, AboutSchneider.md)dnl
+define(QUIZDUEDAY, Friday)dnl
 define(FINALSEC, # Readings)dnl
 define(PRES0DATE, Week before class)dnl
 define(PRES1DATE, January 16 and 18)dnl

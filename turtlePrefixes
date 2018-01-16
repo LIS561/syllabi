@@ -1,4 +1,4 @@
-@prefix : <http://courseweb.ischool.illinois.edu/lis/2017sp/lis561/> .
+@prefix : <http://courseweb.ischool.illinois.edu/is561/> .
 @prefix hwk: <https://courses.ischool.illinois.edu/mod/assign/> .
 @prefix z: <http://www.zotero.org/namespaces/export#> .
 @prefix ad: <http://schemas.talis.com/2005/address/schema#> .
@@ -22,4 +22,4 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix resource: <http://purl.org/vocab/resourcelist/schema#> .
-@base <http://courseweb.ischool.illinois.edu/lis/2016fa/lis501/> .
+
