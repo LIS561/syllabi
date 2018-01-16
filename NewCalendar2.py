@@ -8,6 +8,7 @@ ttlfilename = str(sys.argv[1])
 
 project = ""
 newdefs = {}
+dstring = ""
 regex1 = re.compile(r"([^.]+)\.ttl")
 mymatch = re.search(regex1,ttlfilename)
 if mymatch:

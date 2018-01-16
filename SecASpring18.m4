@@ -43,7 +43,7 @@ define(P2D2DUE, March 29)dnl
 define(P2D3DUE, April 5)dnl
 define(P3D1DUE, April 12)dnl
 define(P3D2DUE, April 26)dnl
-define(P3D3DUE, May 3)dnl
+define(P3D3DUE, May 4)dnl
 define(Q1DUE, January 19)dnl
 define(Q2DUE, January 26)dnl
 define(Q3DUE, February 2)dnl
