@@ -1,6 +1,6 @@
 # Course Description
 
-Covers the role of formal syntaxes and structures in the design of
+Covers the role of formal syntax and structures in the design of
 systems for recording, managing and accessing information. Applies
 concepts from logic, set theory, and discrete mathematics to
 requirements analysis, conceptual modeling, and mapping between
