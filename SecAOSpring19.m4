@@ -1,4 +1,4 @@
-include(Spring18Readings.m4)dnl
+include(Spring19Readings.m4)dnl
 include(SecAOSpring19.defs)dnl
 define(MYSECDATA, Spring19AOdata.md)dnl
 define(COURSETITLE, Information Modeling)dnl
@@ -8,13 +8,13 @@ define(OVERVIEW, OverviewObjectives.md)dnl
 define(METADATA, syllabib.md)dnl
 define(SAFETY, RHFshort.md)dnl
 define(CONTACT1, Dubin.md)dnl
-define(CONTACT2, Jett.md)dnl
-define(CONTACT3, KLee.md)dnl
-define(CONTACT4, LoLee.md)dnl
+define(CONTACT2, Empty.md)dnl
+define(CONTACT3, Empty.md)dnl
+define(CONTACT4, Empty.md)dnl
 define(CONTACT5, Empty.md)dnl
-define(TA1, AboutJett.md)dnl
-define(TA2, AboutKLee.md)dnl
-define(TA3, AboutLoLee.md)dnl
+define(TA1, Empty.md)dnl
+define(TA2, Empty.md)dnl
+define(TA3, Empty.md)dnl
 define(INSTRUCTOR, AboutDubin.md)dnl
 define(QUIZDUEDAY, TBA)dnl
 define(FINALSEC, # Readings)dnl
