@@ -4,13 +4,13 @@ Two sorts of students are anticipated and the course
 objectives are similar but slightly different for each group. In
 neither case is prior relevant knowledge assumed.
 
-- LIS561 prepares students anticipating generalist responsibilities
+- IS561 prepares students anticipating generalist responsibilities
   (as directors, managers, general staff, etc.) to be effective
   leaders in making decisions about the design, development, and
   evaluation of information systems, services, and policies, helping
   their organizations and communities deal with all aspects of the
   difficult technology challenges ahead.
-- LIS561 prepares students anticipating careers as technology
+- IS561 prepares students anticipating careers as technology
   specialists to efficiently acquire and maintain superior information
   modeling skills throughout their careers and to play leadership
   roles in the design, development, and evaluation of information
@@ -21,7 +21,7 @@ competent professionals we focus on developing a deep understanding
 that will have long-term benefits and prepare students to engage the
 hardest problems facing organizations and society.
 
-Of course LIS561 alone cannot fully realize these objectives; it
+Of course IS561 alone cannot fully realize these objectives; it
 makes a partial contribution, focusing on the principles and concepts
 of information modeling. A partial contribution, but a necessary one:
 the connection between a deep understanding of information modeling

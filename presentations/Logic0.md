@@ -2,6 +2,11 @@
 title: Propositional Logic
 author: Dave Dubin
 date: Fall Semester, 2018
+header-includes:
+  - \usepackage[utf8]{inputenc}
+  - \usepackage{amssymb}
+  - \usepackage{syllogism}  
+  - \usepackage{mathtools}
 ---
 
 # Reasoning vs. representation

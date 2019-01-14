@@ -1,0 +1,94 @@
+==For Group Project 1==
+	- Start earlier in the semester 
+	- Better framing or narrative for the Group Project
+	- Add memos
+	- Ten days between deliverables
+	- Grading: have TAs do initial first pass
+	- Use ER/EER work as a modeling language for the project (in part because E&R text uses ER diagrams, in part because students think UML Class diagrams are for automatic OOP)
+	- Skills/knowledge necessary for group project 1: requirements analysis and competency questions, UML (or ER) diagraming, relational mapping from conceptual design, writing structured queries.
+	- Clarify why 1A needs to be in the form of Y/N questions
+	- Add more guidance for introduction & conclusion for 1B
+
+
+==For Group Project 2==
+	- "the art of data modeling"
+	- be very prescriptive
+	- give comparison of different modeling approaches on concrete examples
+	- consider whether there is better software than Protégé
+	- can we break this up to allow each student to have a part to do?
+	- Grading: have TAs do initial first pass -- some things are easier to check in a text file (e.g. ex: and rdfs:label), others have specific places in the interface to check
+	- consider whether we want to take points off when too many classes are given, when object properties are given inverses that don't appear on the diagram etc.
+	- clarify what a good data property is
+	- Stress classes vs. instances, good resource is "Expressing Knowledge" on pages 8-10 from the Overview of Semantic Technologies:
+https://courses.ischool.illinois.edu/pluginfile.php/373871/mod_resource/content/0/Overview-of-Semantic-Technologies.pdf (this relates to the data property issue)
+	- specify conventions, e.g. what should be lowercase
+	- rubric for 2B needs to include distinctness of individuals
+	- clarify the requirement descriptions for 2B (object property assertions for individuals)
+	- In 2C fix #7 and #8 to say appointed instead of assigned
+	- clarify the relationship between the individuals from 2B and the individuals for 2C
+	- figure out what we need from the crashing Protege exercise in order to do 2C
+
+
+==Both group assignments==
+	- integrate writing support
+
+==Pretest/posttest==
+	- Consider whether we want UML and ER on the pre/post - test
+	- Clarify SQL questions in pre/post test and how we intend to grade them
+	- Do the post test in week 3
+
+==Homework==
+	- Clarify SQL questions in pre/post test and how we intend to grade them and homework assignments 
+	- Fix diagram in HW #8 or add clarification
+
+==Topic sequencing==
+	- Talk about domain and range as concepts in logic right after the Idaho Sets and Relations worksheet
+	- Course sequencing and group projects. Be sure we are covering the ideas required before we ask them to use them.
+	- XML early in semester (Documents and Document Modeling? Slides 2-6 and 20-27)
+
+==Topics==
+	- Add Requirements Analysis as a course topic or theme
+	- Emphasize Schema level versus Instance level information
+	- Make more explicit connections to things like data structures and computational processing
+
+==TA's==
+	- Make lists of what needs to be done (parcel off more tasks for TAs)
+	- Have TA's make a first pass at grading group projects
+
+==Admin==
+	- Use one edition of E&N Database Textbook book for chapters
+	- Revise the catalog description.
+	
+==Individual Memos==
+	- Can we have extra grading support and/or integration of writing support that would make it feasible to do individual memos that are started in class with the group but completed individually?
+
+
+
+
+
+==For prerequisites==
+Consider:
+- Are there any class activities that would benefit from projection of a single shared document (e.g. etherpad).
+- Multiple choice questions can be used to assess prior background
+
+Example from Carpentries workshop:
+
+Have you ever participated in a Software Carpentry or Data Carpentry Workshop?
+ 
+	1	Yes, I have taken a workshop. 
+	2	Yes, I have been a workshop helper. 
+	3	Yes, I organized a workshop. 
+	4	No, but I am familiar with what is taught at a workshop. 
+	5	No, and I am not familiar with what is taught at a workshop. 
+ 
+Which of these most accurately describes your teaching experience?
+ 
+	1	I have been a graduate or undergraduate teaching assistant for a university/college course. 
+	2	I have not had any teaching experience in the past. 
+	3	I have taught a seminar, workshop, or other short or informal course.
+	4	I have been the instructor-of-record for my own university/college course.
+	5	I have taught at the primary education level.
+	6	I have taught informally through outreach programs, hackathons, laboratory demonstrations, and similar activities. 
+
+==For group work==
+Consider having "flags" for each group --- need help, done.
