@@ -59,7 +59,7 @@ for d in mygraph.subjects(RDF.type, i561.Deadline):
                             
 cldrfile.write("# Topic Schedule\n")
 
-wlist = weekstart.keys()
+wlist = list(weekstart.keys())
 wlist.sort()
 
 for d in wlist:
