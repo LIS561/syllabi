@@ -1,0 +1,18 @@
+* Group G meeting notes, Bethnal Green, January 21, 2019 2:30 PM CST
+
+Present:
+- Charley
+- Oliver
+- Bill
+- Nancy
+- Fagin
+- Dodger
+
+** Status review
+
+Homework assignment 1 is due Friday, January 25. All team members have
+Github accounts and have accepted the instructor's invitation to join
+the IS561 group. Four team members have prior experience producing
+vector diagrams in SVG format, two have written short documents using
+markdown, and three have used Git clients prior to the start of the
+semester. The remaining three have begun working through 
