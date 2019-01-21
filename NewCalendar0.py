@@ -1,6 +1,5 @@
 #!/usr/bin/python
 from rdflib import *
-import bibtexparser
 import sys
 import re
 
@@ -33,9 +32,9 @@ wlist = []  # List of weeks
 weekstart = {} # associate weeks with their starting date
 
 for s in mygraph.subjects(RDF.type, i561.Week):
-	for i in mygraph.objects(s,event.time):
-	        for a in mygraph.objects(i,tl.at):
-			    weekstart[str(a)] = s
+        for i in mygraph.objects(s,event.time):
+                for a in mygraph.objects(i,tl.at):
+                        weekstart[str(a)] = s
 deadlines = {}
 
 for d in mygraph.subjects(RDF.type, i561.Deadline):
@@ -64,17 +63,17 @@ wlist.sort()
 
 for d in wlist:
         myweek = myconcept = required = background  = ''
-	for o in mygraph.objects(weekstart[d], RDFS.label):
-	      myweek = str(o)
-	for o in mygraph.objects(weekstart[d], i561.date):
-	      weekdate = str(o)
+        for o in mygraph.objects(weekstart[d], RDFS.label):
+              myweek = str(o)
+        for o in mygraph.objects(weekstart[d], i561.date):
+              weekdate = str(o)
         cldrfile.write("\n")
         cldrfile.write("### " +  myweek + ": " + weekdate + "\n\n")
         if weekstart[d] in deadlines.keys():
                cldrfile.write(dstring + "" + deadlines[weekstart[d]] + "\n")
                cldrfile.write("\n")
-	for s in mygraph.objects(weekstart[d],dc.subject):
-	      for p in mygraph.objects(s,skos.prefLabel):
+        for s in mygraph.objects(weekstart[d],dc.subject):
+              for p in mygraph.objects(s,skos.prefLabel):
                       myconcept = str(p)
                       for q in mygraph.objects(s,i561.backgroundReading):
                               background = str(q)

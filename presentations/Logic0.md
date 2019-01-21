@@ -9,27 +9,12 @@ header-includes:
   - \usepackage{mathtools}
 ---
 
-# "Bene disserere est finis logices"
-
-- Most logic books (including your assigned reading) introduce propositional
-  logic as a tool or system for analyzing the validity and soundness of reasoning.
-
-- van Benthem, et al. contrast arguments like this invalid one:
-
-\syllog[(2.4)]{If you take my medication, you will get better}{But you are not taking my medication}{So, you will not get better.}
-
-. . .
-
-- \ldots with this valid argument:
-
-\syllog[(2.6)]{If you take my medication, you will get better}{But you are not getting better}{So, you have not taken my medication.}
-
-
 # Reasoning vs. representation
 
 - In this class we'll give some attention to logical reasoning and inference.
 - The same rules that govern valid argumentation also enable information systems to answer interesting questions.
-- But logic is also a means to describe a *domain* (some part of the world we're interested in).
+- Logic is also a means to describe a *domain* (some part of the world
+  we're interested in).
 
 # Propositions, statements, and sentences
 ![Platonistic view](propositions1.eps)\ 
