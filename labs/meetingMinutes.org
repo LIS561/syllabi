@@ -12,7 +12,31 @@ Present:
 
 Homework assignment 1 is due Friday, January 25. All team members have
 Github accounts and have accepted the instructor's invitation to join
-the IS561 group. Four team members have prior experience producing
-vector diagrams in SVG format, two have written short documents using
-markdown, and three have used Git clients prior to the start of the
-semester. The remaining three have begun working through 
+the IS561 group. All of us therefore have write access to the wiki
+repository. Four team members have prior experience producing vector
+diagrams in SVG format, two have written short documents using
+markdown, and two have used Git clients prior to the start of the
+semester. The rest of us have been watching video tutorials on Git
+since the live session on January 14, but we haven't attempted the
+assignment yet.
+
+** Goals
+
+*** TODO Acquaint all team members with the Dia diagram editor.
+    DEADLINE: <2019-01-23 Wed>
+*** TODO Each team member to have attempted homework 1 on our own. 
+    DEADLINE: <2019-01-24 Thu>
+*** TODO Each team member to have completed homework 1 individually, with consultation support from the others.
+    DEADLINE: <2019-01-25 Fri>
+
+** Plans
+
+*** A face to face meeting 
+    SCHEDULED: <2019-01-23 Wed> 
+    6:00 PM CDT, Bethnal Green, at which we will each draw an SVG diagram using Dia.
+
+*** A Google hangouts session 
+    SCHEDULED: <2019-01-24 Thu>
+    6:00 PM CDT, online, during which we will report on attempts to
+    complete homework 1 individually, and offer specific suggestions
+    on how to overcome difficulties.
