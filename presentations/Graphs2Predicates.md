@@ -10,18 +10,28 @@ header-includes:
 ---
 
 
-# UML Class Diagram
-![UML](CourseSection.eps)\ 
+# Predicates
 
-# Instance diagram
-![RDF](courses2.eps)\ 
+- A *predicate* is a kind of expression that represents a proposition.
+- A predicate consists of a *predicate symbol* and one or more *arguments*.
+- The layout of a predicate expression depends on which syntax we adopt.
+- Examples: $Pb$, $Rabc$, $Qx$, $Tdxn$
+- Examples: $Postman(b)$, $Reminds(a, b,c)$, $Quiet(x)$, $Thinking(d,x,n)$
 
+# Propositions
 
-
+- A *proposition* is the abstract content of a simple declarative sentence.
+- "Eight is an integer" expresses the same proposition as "Ok estas entjero."
+- "Jupiter is larger than Venus" expresses the same proposition as "Jupiter ist größer als die Venus".
+- Propositions are the bearers of truth values: they are the kinds of
+  things that can be true or false.
+- Propositions are the objects of *propositional attitudes*. They are the kinds of things that
+  can be believed, desired, doubted, expected, or feared.
+  
 
 # Predicate logic expressions
 
-- Predicate logic (also called first order logic) uses letters in three different ways.
+- Our predicate logic notation uses letters in three different ways.
 - Lower case letters from the beginning of the Latin alphabet represent specific
   individual things in the domain we're modeling. Think of them like proper names.
 - Lower case letters from the end of the alphabet (like $x$ and $y$) are variables
@@ -31,6 +41,14 @@ header-includes:
   might belong to, or relations they might stand in. Think of them like relations in
   a relational database.
 
+
+
+# UML Class Diagram
+![UML](CourseSection.eps)\ 
+
+
+
+
 # Predicates for courses and sections
 
 - $Px$ means "x is a person."
@@ -38,6 +56,7 @@ header-includes:
 - $Rx$ means "x is a professor."
 - $Cx$ means "x is a course."
 - $Nx$ means "x is a section."
+- $Oxy$ means "x is a section of y."
 - $Exy$ means "x is enrolled in y."
 - $Ixy$ means "x is instructor for y."
 - $Txy$ means "x is taking y."
@@ -47,6 +66,14 @@ header-includes:
 - $m$ means "IS561"
 - $o$ means "IS561-OA Spring 2019."
 
+# Instance diagram
+![RDF](courses2.eps)\ 
+
+# Simple assertions
+
+- Adamo is enrolled in IS561-OA: $Eao$
+- Sofia is the instructor for IS561-OA: $Iso$
+- IS561-OA is a section of IS561: $Oom$
 
 # Logical Operators
 
