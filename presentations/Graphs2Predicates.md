@@ -47,8 +47,6 @@ header-includes:
 ![UML](CourseSection.eps)\ 
 
 
-
-
 # Predicates for courses and sections
 
 - $Px$ means "x is a person."
@@ -78,8 +76,6 @@ header-includes:
 # Logical Operators
 
 ![sl](logicTable.eps){width=350}\ 
-
-
   
 # Examples of predicate logic expressions
 
@@ -98,82 +94,36 @@ header-includes:
 
 - The scope of a quantifier consists of the logical expression immediately following it. This means that one quantifier can be
   within the scope of another.
-- Define $Cx$, $Px$, and $Rxy$ as meaning $x$ is a child, $x$ is a pony, and $x$ rode $y$, respectively.
-- The ambiguous English sentence, "Every child was riding a pony" expresses two different propositions.
-- We can express the first in logical form as ${\exists}x (Px \wedge {\forall}y (Cy \rightarrow Ryx))$. On this
-  interpretation, there is some particular pony (or ponies) that every child rode.
-- We can express the second as ${\forall}y (Cy \rightarrow  {\exists}x (Px \wedge Ryx))$. On this interpretation,
-  every child was riding some pony, but no particular pony was necessarily ridden by every child.
+- Define $Sx$, $Cx$, and $Txy$ as meaning $x$ is a student, $x$ is a course, and $x$ takes $y$, respectively.
+- The ambiguous English sentence, "Every student was taking a course" expresses two different propositions.
+- We can express the first in logical form as ${\exists}x (Cx \wedge {\forall}y (Sy \rightarrow Tyx))$. On this
+  interpretation, there is some particular course (or courses) that every student took.
+- We can express the second as ${\forall}y (Sy \rightarrow  {\exists}x (Cx \wedge Tyx))$. On this interpretation,
+  every student was taking some course, but no particular course was necessarily taken by every student.
 
-# Translating to logical form
 
-- Many English sentences admit more than one logical form. We say they
-  are either syntactically or semantically \emph{ambiguous}.
-- A syntactically ambiguous sentence has more than one parse. We'll
-  have more to say about that in a few weeks, but one example is "I
-  saw the man on the hill with the telescope."
-- A semantically ambiguous parse has more than one interpretation, even
-  with the same grammatical parse. Consider this argument from LeBlanc and Wisdom:
-       - All fathers are parents;
-       - All artists are dreamers;
-       - Therefore, all fathers of artists are parents of artists and
-         fathers of dreamers.
-- Define the unary predicates $Ax$ and $Dx$ as "x is an artist" and "x
-  is a dreamer," respectively.
-- Define the binary predicates $Fxy$ and $Pxy$ as "x is the father of
-  y" and "x is the parent of y," respectively.
+# Domain and codomain
 
-# Translating to logical form
+- From the UML diagram we see that the domain of "enrolled in" is
+  student and the codomain is section.
+- So if something x is enrolled in something y, then x must be a
+  student and y must be a section.
+- In other words:
+- ${\forall}x {\forall}y (Exy \rightarrow (Sx \wedge Ny))$
 
-It seems natural to translate the argument this way:
+# Back to the UML Class Diagram
+![UML](CourseSection.eps)\ 
 
-- All fathers are parents: ${\forall}xy (Fxy \rightarrow Pxy)$
-- All artists are dreamers: ${\forall}x (Ax \rightarrow Dx)$
-- Therefore, all fathers of artists are parents of artists and
-  fathers of dreamers:
-  ${\forall}wx ((Fxw \wedge Aw) \rightarrow {\exists}yz ((Pxy \wedge Ay) \wedge (Fxz \wedge Dz)))$
 
-. . .
+# Back to the Instance diagram
+![RDF](courses2.eps)\ 
 
-That translation is not only natural, it also gives us a valid argument. But on reflection, a strict
-reading of the first premise gives us this translation:
+# Other inferences
 
-. . .
+- The instance diagram only shows students enrolled in sections and
+  professors instructors for sections.
+- We'd like facts about taking and teaching courses to be deduced from
+  the section enrollment.
+- ${\forall}x {\forall}y (Exy \rightarrow Txy)$
+- ${\forall}x {\forall}y (Ixy \rightarrow Gxy)$
 
-- All fathers are parents: ${\forall}xy (Fxy \rightarrow {\exists}z Pxz)$
-
-. . .
-
-In other words, "All fathers of anyone are parents of \emph{someone}. And the resulting
-argument is \emph{not} valid.
-
-# Inference and validity
-
-- Just as with propositional logic, a conclusion follows validly from premises if it cannot be false
-  when the premises are true.
-- As with translation, our common sense and domain knowledge can set
-  us up for surprises. Consider (courtesy of Prof. Smullyan) :
-      - Everyone loves a lover;
-      - Romeo loves Juliet;
-      - Therefore, Othello loves Iago.
-
-# Surprised?
-
-- Everyone loves a lover
-      - ${\forall}x {\forall}y (Vx \rightarrow Lyx)$
-      - ${\forall}x (Vx \leftrightarrow {\exists}z Lxz)$
-- Romeo loves Juliet
-      - $Lrj$
-- Therefore, Othello loves Iago.
-      - $Loi$
-
-# Formal grammar for first order logic
-
-From your reading for this week:
-
-- $\textbf{v} \Coloneqq x|y|z|\ldots$
-- $\textbf{c} \Coloneqq a|b|c|\ldots$
-- $\textbf{t} \Coloneqq \textbf{v}|\textbf{c}$
-- $\textbf{P} \Coloneqq P|Q|R|\ldots$
-- $\textbf{Atom} \Coloneqq \textbf{Pt}_{1}\ldots\textbf{t}_{n}$ where $n$ is the arity of \textbf{P}
-- $\varphi \Coloneqq \textbf{Atom}|\neg\varphi|(\varphi \wedge \varphi)|(\varphi \vee \varphi)|(\varphi \rightarrow \varphi)|(\varphi \leftrightarrow \varphi)|{\forall}\textbf{v} \varphi|{\exists}\textbf{v} \varphi$
