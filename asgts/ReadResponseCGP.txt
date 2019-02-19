@@ -1,0 +1,90 @@
+
+Page 83: When we construct a specialization hierarchy, we must decide
+         on a single discriminant for each
+         generalization/specialization relationship and be systematic
+         about it. (figure 9.5)
+
+Page 84: In addition, note that the subclasses for any
+         generalization/specialization relationship in the hierarchy
+         represent categories with no overlaps. In other words, the
+         “sibling” subclasses in any generalization/specialization
+         relationship in the hierarchy are mutually exclusive. [...]
+         This is good, because it helps us to cleanly delimit the
+         semantics of each class in the hierarchy. Using clear
+         discriminant with precise semantics helps to achieve this,
+         and vague or ill-defined discriminants, such as "type" or
+         "variety", hinders it. (compare figure 9.6) The three of them
+         are, technically speaking, genuine subclasses of Building,
+         but they do not work as a family, because they do not help us
+         organize buildings into clean separate categories.
+
+Page 46: There are two rules about instantiation that are very
+         important. First, every object has one, and exactly one,
+         class as its type. This means that an object cannot lack a
+         type class or have multiple type classes.
+
+
+Page 25: Note that the concept of entity is extremely abstract; it
+         encompasses anything that we can point to, literally or
+         metaphorically; it also includes both real and imaginary
+         things. The most evident kinds of entities are physical
+         things such as books, buildings, hammers or trees. But
+         immaterial things are entities too, including songs, laws or
+         beliefs. People are entities too, and processes and events,
+         such as wars, rituals or earthquakes, are also
+         entities. Fictional things such as Excalibur or Atlantis are
+         also entities. Actually, anything that we can think of is an
+         entity.
+
+Page 28: As we said in previous chapters, conceptual models reside in
+         our minds, since they are made of concepts. Objects are a
+         particular kind of concepts, and therefore, they are
+         intangible and not perceivable outside our own mind.
+
+Page 46: There are two rules about instantiation that are very
+         important. First, every object has one, and exactly one,
+         class as its type. This means that an object cannot lack a
+         type class or have multiple type classes. If we want to
+         describe something that looks like two or more things at
+         once, we cannot do it by saying that this thing is an
+         instance of two or more classes; rather, we would need to
+         create a class in the model that captures this special hybrid
+         situation. For example, a calculator-watch cannot be modelled
+         by an object that is an instance of both Calculator and
+         Watch. Rather, it should be modelled as an instance of a
+         CalculatorWatch class.
+
+Page 46: Second, the type class of an object cannot vary over
+         time. Once an object is created as an instance of a
+         particular type class, this relationship is forever. Classes
+         are supposed to capture essential categories in the world,
+         and objects are supposed to describe entities in terms of
+         their essential characteristics, rather than accessory or
+         accidental ones. For these reasons, moving an object from one
+         type to another is rarely needed if the model is good. If you
+         find the need or the potentiality, revise your classes and
+         your overall conceptualization of the model scope.
+
+Page 91: Can’t we express then the fact that buildings are organized
+         in terms of function and also protection level? We can, but
+         we need to take the following approach.  First, we need to
+         decide which of the two (or more) discriminants is more
+         relevant for the model, or establishes a clearer and more
+         prominent divide between types of buildings, and specialize
+         Building according to this discriminant. Then, we can
+         specialize the resulting subclasses, one by one, according to
+         the second discriminant.  Figure 9.10 shows the result.
+
+Page 94: Classes that are very unspecific are rarely useful to
+         represent the world in practical terms. For example, we do
+         not go around pointing at houses and saying “look, what a
+         nice structure”. The concept of a structure, even if it is
+         known and more or less clear in our mind, is too vague for
+         practical purposes.
+
+Page 94: A class that is not meant to be used for direct
+         representation, that is, instantiated, is called an abstract
+         class. In turn, the classes that are meant to be instantiated
+         and thus represent our world directly are called concrete
+         classes.
+
