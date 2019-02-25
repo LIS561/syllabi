@@ -58,11 +58,13 @@ tool(Tool) :- realizes(Tool,_).
 # Rules of inference
 
 ~~~~~~~~~~~~~~~~~~~~
-% A recipe needs a tool if a step in the recipe uses the tool
-% or if the recipe requires an ingredient satisfying a property
+% A recipe needs a tool if a step in the recipe uses
+% the tool or if the recipe requires an ingredient
+% satisfying a property
 
-needstool(Recipe,something,Property) :- requires(Recipe,Ingredient),
-                                        satisfies(Ingredient, Property).
+needstool(Recipe,something,Property) :-
+   requires(Recipe,Ingredient),
+   satisfies(Ingredient, Property).
 ~~~~~~~~~~~~~~~~~~~~
 
 ${\forall}x {\forall}y {\forall}z ((Rxy \wedge Syz) \rightarrow Nxay)$
@@ -70,25 +72,29 @@ ${\forall}x {\forall}y {\forall}z ((Rxy \wedge Syz) \rightarrow Nxay)$
 # Rules of inference
 
 ~~~~~~~~~~~~~~~~~~~~
-% A recipe needs a tool if a step in the recipe uses the tool
-% or if the recipe requires an ingredient satisfying a property
+% A recipe needs a tool if a step in the recipe uses the
+% tool or if the recipe requires an ingredient satisfying
+% a property
 
-needstool(Recipe,Tool,Property) :-  stepin(Step,Recipe),
-                                    utool(Step,Tool),
-				    realizes(Tool, Property).
+needstool(Recipe,Tool,Property) :-
+   stepin(Step,Recipe),
+   utool(Step,Tool),
+   realizes(Tool, Property).
 ~~~~~~~~~~~~~~~~~~~~
 
-${\forall}w {\forall}x {\forall}y {\forall}z ((Swx \wedge Uwy) \wedge Ryz ) \rightarrow Nxyz)$
+${\forall}w {\forall}x {\forall}y {\forall}z (((Swx \wedge Uwy) \wedge Ryz ) \rightarrow Nxyz)$
 
 # Rules of inference
 
 ~~~~~~~~~~~~~~~~~~~~
-% A recipe needs a tool if a step in the recipe uses the tool
-% or if the recipe requires an ingredient satisfying a property
+% A recipe needs a tool if a step in the recipe uses
+% the tool or if the recipe requires an ingredient
+% satisfying a property
 
-needstool(Recipe,Tool,someproperty) :-  stepin(Step,Recipe),
-                                        utool(Step,Tool),
-					not realizes(Tool, _).
+needstool(Recipe,Tool,someproperty) :-
+   stepin(Step,Recipe),
+   utool(Step,Tool),
+   not realizes(Tool, _).
 ~~~~~~~~~~~~~~~~~~~~
 
-${\forall}w {\forall}x {\forall}y {\forall}z ((Swx \wedge Uwy) \wedge \neg\Ryz ) \rightarrow Nxyb)$
+${\forall}w {\forall}x {\forall}y {\forall}z (((Swx \wedge Uwy) \wedge {\neg}Ryz ) \rightarrow Nxyb)$
