@@ -67,7 +67,7 @@ needstool(Recipe,something,Property) :-
    satisfies(Ingredient, Property).
 ~~~~~~~~~~~~~~~~~~~~
 
-${\forall}x {\forall}y {\forall}z ((Rxy \wedge Syz) \rightarrow Nxay)$
+${\forall}x {\forall}y {\forall}z ((Rxy \wedge Syz) \rightarrow Nxaz)$
 
 # Rules of inference
 
