@@ -75,7 +75,7 @@ header-includes:
 
 # Logical Operators
 
-![sl](logicTable.eps){width=350}\ 
+![sl](logicTable.eps){width=700}\ 
   
 # Examples of predicate logic expressions
 
