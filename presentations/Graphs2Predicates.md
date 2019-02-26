@@ -124,6 +124,6 @@ header-includes:
   professors instructors for sections.
 - We'd like facts about taking and teaching courses to be deduced from
   the section enrollment.
-- ${\forall}x {\forall}y (Exy \rightarrow Txy)$
-- ${\forall}x {\forall}y (Ixy \rightarrow Gxy)$
+- ${\forall}x {\forall}y {\forall}z ((Exy \wedge Oyz) \rightarrow Txz)$
+- ${\forall}x {\forall}y {\forall}z ((Ixy \wedge Oyz) \rightarrow Gxz)$
 
