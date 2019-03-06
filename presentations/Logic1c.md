@@ -126,19 +126,19 @@ ${\langle}wff{\rangle} \Coloneqq {\exists}{\langle}var{\rangle}\ {\langle}wff{\r
 - Bach calls his structure an interpretation, so I'll use $I$ for that.
 
 # Language and the world
-![Cognitive view](semantics3a.eps)\ 
+![Animal example](semantics3a.eps)\ 
 
 # Language and the world
-![Cognitive view](semantics3b.eps)\ 
+![Animal example](semantics3b.eps)\ 
 
 # Language and the world
-![Cognitive view](semantics3c.eps)\ 
+![Animal example](semantics3c.eps)\ 
 
 # Language and the world
-![Cognitive view](semantics3d.eps)\ 
+![Animal example](semantics3d.eps)\ 
 
 # Language and the world
-![Cognitive view](semantics3e.eps)\ 
+![Animal example](semantics3e.eps)\ 
 
 
 
