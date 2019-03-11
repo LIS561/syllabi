@@ -1,0 +1,86 @@
+@prefix : <http://is561.org/Recipes#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix dbp: <http://dbpedia.org/resource/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix wped: <http://en.wikipedia.org/wiki/> .
+@prefix dolce: <http://ontology.ip.rm.cnr.it/ontologies/DOLCE-Lite#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+
+:Recipe a owl:Class .
+:Ingredient a owl:Class .
+:FoodSubstance a owl:Class .
+:Step a owl:Class .
+:Tool a owl:Class .
+:Quantity a owl:Class .
+:QualifyingProperty a owl:Class .
+:Source a owl:Class .
+
+:requires a owl:ObjectProperty ;
+	rdfs:domain :Recipe ;
+	rdfs:range :Ingredient .
+
+:includes a owl:ObjectProperty ;
+	rdfs:domain :Recipe ;
+	rdfs:range :Step .
+
+:hasSource a owl:ObjectProperty ;
+	rdfs:domain :Recipe ;
+	rdfs:range :Source .
+
+:directlyFollow a owl:ObjectProperty ;
+	rdfs:domain :Step ;
+	rdfs:range :Step .
+
+:hasSubStep a owl:ObjectProperty ;
+	rdfs:domain :Step ;
+	rdfs:range :Step .
+
+:usesTool a owl:ObjectProperty ;
+	rdfs:domain :Step ;
+	rdfs:range :Tool .
+
+:satisfies a owl:ObjectProperty ;
+	rdfs:domain :Ingredient ;
+	rdfs:range :QualifyingProperty .
+
+:realizesProperty a owl:ObjectProperty ;
+	rdfs:domain :Tool ;
+	rdfs:range :QualifyingProperty .
+
+:hasConstituent a owl:ObjectProperty ;
+	rdfs:domain :Ingredient ;
+	rdfs:range :FoodSubstance .
+
+:hasQuantity a owl:ObjectProperty ;
+	rdfs:domain :Ingredient ;
+	rdfs:range :Quantity .
+
+:equalOrGreaterMagnitude a owl:ObjectProperty ;
+	rdfs:domain :Quantity ;
+	rdfs:range :Quantity .
+
+:equalMagnitude a owl:ObjectProperty ;
+	rdfs:domain :Quantity ;
+	rdfs:range :Quantity .
+
+:equalOrGreaterAmount a owl:ObjectProperty ;
+	rdfs:domain :Ingredient ;
+	rdfs:range :Igredient .
+
+
+
