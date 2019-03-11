@@ -42,7 +42,7 @@
 	rdfs:domain :Recipe ;
 	rdfs:range :Source .
 
-:directlyFollow a owl:ObjectProperty ;
+:directlyFollows a owl:ObjectProperty ;
 	rdfs:domain :Step ;
 	rdfs:range :Step .
 
@@ -82,5 +82,26 @@
 	rdfs:domain :Ingredient ;
 	rdfs:range :Igredient .
 
+:sccs :includes :step2 .
 
+:step2p2 :directlyFollows :step2p1 .
 
+:step2 :hasSubStep :step2p1 .
+
+:step2p1 :usesTool :slowcooker .
+
+:step2p2 :usesTool :thing1 .
+
+:thing1 :realizesProperty :diced .
+
+:sccs :requires :chicken .
+
+:chicken :hasConstituent :chickenthighs .
+
+:chicken :hasQuantity :lbs2 .
+
+:chicken :satisfies :bonein .
+
+:chicken :satisfies :skinned .
+
+:chicken :satisfies :trimmed .
