@@ -1,7 +1,7 @@
 ---
 title: Description Logics
 author: Dave Dubin
-date: April 17, 2017
+date: March, 2019
 header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
@@ -134,10 +134,8 @@ are sets of individual, concept, and role names, respectively:
 
 A DL interpretation $\mathcal{I} = {\langle}\Delta^{\mathcal{I}}, \cdot^{\mathcal{I}}{\rangle}$ where:
 
-- $\Delta^{\mathcal{I}}$ is the domain set (Bach's $E$ and van
-  Benthem's $D$).
-- $\cdot^{\mathcal{I}}$ is the denotation function (Bach's $D$ and van
-  Benthem's $I$). This function maps:
+- $\Delta^{\mathcal{I}}$ is the domain set (Bach's $E$).
+- $\cdot^{\mathcal{I}}$ is the denotation function (Bach's $D$). This function maps:
      - a concept $A \rightarrow A^{\mathcal{I}} \subseteq \Delta^{\mathcal{I}}$
      - a role $R \rightarrow R^{\mathcal{I}} \subseteq \Delta^{\mathcal{I}} \times \Delta^{\mathcal{I}}$
      - a name $a \rightarrow a^{\mathcal{I}} \in \Delta^{\mathcal{I}}$
@@ -165,8 +163,8 @@ A DL interpretation $\mathcal{I} = {\langle}\Delta^{\mathcal{I}}, \cdot^{\mathca
 
 - Suppose we assert that the individual Dave (class Person) stands in
   the $appointedPosition$ relationship to the individual
-  research_associate_professor:
-  $Person(dave) \sqcap appointedPosition(dave,research\_associate\_professor)$
+  instructor:
+  $Person(dave) \sqcap appointedPosition(dave,instructor)$
 
 - Suppose that we also assert that the domain of $appointedPosition$
   is the concept $Appointment$: ${\exists}appointedPosition.\top \sqsubseteq Appointment$
@@ -178,8 +176,4 @@ A DL interpretation $\mathcal{I} = {\langle}\Delta^{\mathcal{I}}, \cdot^{\mathca
   exist interpretations in which Dave belongs to both classes.
 
 - In knowledge-based applications, domain rules offer sanity checks on our data.
-
-
-
-
 
