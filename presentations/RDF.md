@@ -1,7 +1,7 @@
 ---
 title: The Resource Description Framework
 author: Dave Dubin
-date: April 10, 2017
+date: March 2019
 header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
@@ -18,12 +18,12 @@ header-includes:
 5. Other modeling languages use RDF as a basis.
 
 # An RDF example from an earlier presentation
-![A state of affairs diagram](rdfex3.eps)
+![instances](Instances2.eps)\
 
 # Abstract vs. concrete syntax
 
-- The syntax formalization we read in Rosen's chapter is for *concrete syntax* definition.
-- That is to say, phrase structure grammars help us define what strings count as valid expressions in a language.
+- The turtle format discussed tonight is a *concrete syntax* definition.
+- It is governed by a formal grammar that defines what strings count as valid expressions.
 - An *abstract syntax* is a model for the data structure produced when a conforming expression is parsed.
 - RDF's data model is a *graph*: a set of *vertices* and a set of *edges* that connect the vertices.
 
@@ -37,10 +37,6 @@ header-includes:
 - So just as suggested by the diagram, subjects and objects can be understood as vertices in a directed graph, where relationships
   serve as the graph edges.
 
-# Instances with classes
-![Classes and instances](rdfex2.eps)
-
-
 # IRIs are the new URIs
 
 - URIs include URL web addresses and URNs: Uniform Resource Names.
@@ -51,26 +47,78 @@ header-includes:
 - But we run the risk of blurring a role distinction in our minds: IRIs as identifiers vs. URLs as addresses.
 
 
-# Instance relationships in RDF
+# Instance Diagram
+![instances](Ingredient2.eps)\ 
 
-\small
+# Datalog assertions
 
-~~~~~~~
-@prefix : <http://example.com/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-:Dubin2007 rdf:type :Appointment ;           
-    :start_date "09/01/2007"^^xsd:string ;
-    :appointee :David_Dubin ;
-    :appointing_organization :GSLIS ;
-    :appointed_position :Research_Associate_Professor .
-~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~
+% Ingredient side
+requires(sccs,chicken).
+hasconstit(chicken,chickenthighs).
+hasquant(chicken,lbs2).
+satisfies(chicken,bonein).
+satisfies(chicken,skinned).
+satisfies(chicken,trimmed).
+~~~~~~~~~~~~~~~~~~~~
 
-\normalsize
 
-Compare with: $((((Aa \wedge Sab) \wedge Ead) \wedge Oag) \wedge Par)$
+# Turtle statements
 
-Compare with: $Abdgr$ 
+~~~~~~~~~~~~~~~~~~~~
+:sccs :requires :chicken .
+:chicken :hasConstituent :chickenthighs .
+:chicken :hasQuantity :lbs2 .
+:chicken :satisfies :bonein .
+:chicken :satisfies :skinned .
+:chicken :satisfies :trimmed .
+~~~~~~~~~~~~~~~~~~~~
+
+
+# Instance Diagram
+![instances](StepTool3.eps)\ 
+
+# Datalog assertions
+
+~~~~~~~~~~~~~~~~~~~~
+% Step and tool side
+includes(sccs,step2).
+dfollows(step2p1,step2p2).
+hsubstep(step2,step2p1).
+utool(step2p1,slowcooker).
+utool(step2p2,thing1).
+realizes(thing1,diced).
+~~~~~~~~~~~~~~~~~~~~
+
+
+# Turtle statements
+
+~~~~~~~~~~~~~~~~~~~~
+:sccs :includes :step2 .
+:step2p2 :directlyFollows :step2p1 .
+:step2 :hasSubStep :step2p1 .
+:step2p1 :usesTool :slowcooker .
+:step2p2 :usesTool :thing1 .
+:thing1 :realizesProperty :diced .
+~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+# Class and property declarations in RDF
+
+~~~~~~~~~~~~~~~~~~~~
+@prefix : <http://is561.org/Recipes#> .
+
+:Recipe a owl:Class .
+:Ingredient a owl:Class .
+
+:requires a owl:ObjectProperty ;
+	rdfs:domain :Recipe ;
+	rdfs:range :Ingredient .
+~~~~~~~~~~~~~~~~~~~~
+
+
 
 # RDF serialization formats
 
@@ -81,29 +129,6 @@ RDF can be serialized in a variety of different formats. Each is a concrete synt
 - N-Triples
 - JSON-LD
 - \ldots and others.
-
-
-# Class declarations in RDF
-
-\small
-
-~~~~~~~ 
-@prefix : <http://example.com/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix org: <http://www.w3.org/ns/org#> .
-@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
-:Appointment rdf:type rdfs:Class ;
-   rdfs:subClassOf event:Event .
-org:Post rdf:type rdfs:Class ;
-   rdfs:subClassOf org:Role .
-:Faculty_Position rdf:type rdfs:Class ;
-   rdfs:subClassOf org:Post .
-~~~~~~~ 
-
-\normalsize
-
 
 # Using remote classes
 
@@ -116,10 +141,9 @@ org:Post rdf:type rdfs:Class ;
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-:David_Dubin rdf:type foaf:Person .
-:GSLIS rdf:type org:Organization .
-:Research_Associate_Professor rdf:type :Faculty_Position .
 
+:David_Dubin rdf:type foaf:Person .
+:iSchool rdf:type org:Organization .
 ~~~~~~~ 
 
 \normalsize

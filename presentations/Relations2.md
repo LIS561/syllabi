@@ -1,25 +1,19 @@
 ---
-title: Sets, relations, and functions
+title: Formalization of relationships
 author: Dave Dubin
-date: February 20, 2017
+date: February, 2019
 header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
   - \usepackage{mathtools}
 ---
 
-# Sets we've already encountered
-
-- Propositional logic: A set of $n$ proposition letters generates a set of $2^n$ states of affairs: ways the world might be.
-- $\{p,q,r\}$ generates $\{pqr,pq\overline{r},p\overline{q}r,p\overline{qr},\overline{p}qr,\overline{p}q\overline{r},\overline{pq}r,\overline{pqr}\}$
-- Grammar: let $P$ be a set of proposition letters and let $p \in P$. 
-- Production set: $\varphi \Coloneqq p|\neg\varphi|(\varphi \wedge \varphi)|(\varphi \vee \varphi)|(\varphi \rightarrow \varphi)|(\varphi \leftrightarrow \varphi)$
-- Think $\{\varphi \Coloneqq p, \varphi \Coloneqq \neg\varphi, \varphi \Coloneqq (\varphi \wedge \varphi), \varphi \Coloneqq (\varphi \vee \varphi),\ldots\}$
-- Logical consistency: A set of propositional logic statements is consistent if
-  at least one state of affairs satisfies every statement in 
-  the set.
-- Inference: a conclusion is \emph{valid} with respect to a set of premises if the conclusion
-  is true in every sitation where the premises are true (van Benthem, et al, section 2-4).
+# Tonight
+- Earlier we considered Jubien's definition of property: "a way that something can be."
+- Anything in the domain we're modeling that exhibits the property is an *instance* of the property.
+- We'll discuss how we can use sets to model properties and relationships, even
+  though a property will be different than the set that is its
+  *extension*.
 
 # From our syllabus
 
@@ -127,3 +121,68 @@ themes:
 - A relation $F \subseteq A \times B$ is a \emph{function} (or mapping) $F:A \rightarrow B$ if and only if
   the domain of $F$ is $A$ and $F$ pairs every element in that domain with exactly one element in the range,
   i.e. $\langle a,b \rangle \in F$ and $\langle a,c \rangle \in F$ implies $b = c$.
+
+
+# From sets to properties and relations
+- Suppose, for example, our domain ($\Delta$) includes things that have the
+  properties of being courses, course sections, students, and
+  instructors.
+- Define $C, E, I, O, P, S \subseteq \Delta$ as the sets of courses,
+  events, instructors, course sections (offerings), persons, and students, respectively.
+- $I \subseteq P$, $S \subseteq P$, $O \subseteq E$
+
+# From relations to relationships
+
+- Recall that Jubien understands relationships as ways something can
+  be with respect to something else.
+- We can model relationships as relations between two or more sets.
+- For example, define the "has section" relationship $H \subseteq (C \times O)$
+- Let $a, b, c, d$ represent IS561, IS501, Sp2019-IS561-OA, and
+  Fa2019-IS501-A, respectively.
+- $\langle a, c \rangle \in (C \times O), \langle a, d \rangle \in (C \times O), \langle b, c \rangle \in (C \times O), \langle b, d \rangle \in (C \times O)$
+- $\langle a, c \rangle \in H$ but $\langle a, d \rangle \notin H$
+- $\langle b, d \rangle \in H$ but $\langle b, c \rangle \notin H$
+
+
+# Classes vs. properties
+
+- In our professional discourse we'll frequently encounter the term
+  "class" as roughly synonymous with "category."
+- Classes, like properties, will have instances, but we'll typically
+  encounter them in the context of software or database development,
+  where the classes and instances are data structures, rather than
+  domain objects.
+- The two types of diagram we often see in our professions were originally
+  invented for software engineering.
+- Therefore, some of their notational conventions will make sense only
+  for purposes of writing code or defining database schemas.
+- Unfortunately, that doesn't stop people from using those conventions
+  imprecisely for illustrating domain models.
+- We will focus on those conventions important for modeling our
+  domains of interest.
+
+# UML Class Diagram
+![UML](UML1.eps)\ 
+
+# Entity-Relationship Diagram
+![ER](ER1.eps)\ 
+
+
+# Common to the ER diagram and the UML class diagram
+
+1. Rectangles representing domain categories ("entity sets" and "classes")
+2. Arrows between the rectangles representing hierarchical structure on the categories ("generalization")
+3. Connections between the rectangles representing domain relationships ("relationships" and "associations")
+4. The arity or "degree" of the relationship (typically binary)
+5. The cardinality or multiplicity of the relationship
+6. Scalar attributes or features of the classes
+
+# Not common to both diagrams
+
+1. Directionality of the relationship
+2. "Weak entity" distinction
+3. Identifying vs. descriptive attributes
+4. Meronymic vs. non-meronymic associations
+5. \ldots and many things covered in the readings, but not used in these examples
+
+

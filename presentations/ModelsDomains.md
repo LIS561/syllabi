@@ -1,12 +1,11 @@
 ---
 title: Models and Domains
 author: Dave Dubin
-date: January 23, 2017
+date: January 28, 2019
 header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
   - \usepackage{mathtools}
-csl: apa-annotated-bibliography.csl
 references:
 - id: jubien_platonism_1997
   type: chapter
@@ -64,11 +63,6 @@ references:
  - But we're actually going to learn about modeling parts of the world.
  - It's more accurate to say we'll be modeling *with* information,
  - or modeling for purposes of keeping track of information.
-
-# Today
- - Today I want to introduce some vocabulary in an informal way.
- - Over the next few weeks we will explore more formal understandings of these concepts.
- - Tonight I'll introduce you to a diagrammatic notation that we'll come back to in later presentations.
 
 # Reality and Domains of Discourse
  - We will introduce formal definitions of a domain of discourse later.
@@ -143,30 +137,6 @@ Jubien's examples of relation(ships) include:
  - In models such as RDF, these relational properties can only obtain between
    exactly two individuals (binary relationships only).
 
-# Propositions
-
- - Propositions are abstract bearers of truth values.
- - That is to say, they're the kinds of things that can be true or false.
- - Propositions are language-independent entities. You can think of
-   them as the information content of simple declarative sentences.
- - The Platonistic conception of propositions has them outside of
-   time and space.
- - So a proposition is not in your mind: it's the kind of thing with respect to which you can
-   stand in a relationship such as belief or desire.
-
-# States of Affairs
-- Maria E. Reicher [-@reicher_2009] characterizes the "standard conception" of
-  states of affairs as: "complex entities, consisting of particulars,
-  (universal) properties and relations, such that an atomic state of
-  affairs is a particular's exemplifying a property (or one or more
-  particulars' exemplifying a relation)."
-- States of affairs are the parts of reality responsible for making
-  propositions true or false.
-
-
-# State of affairs diagram
-![Dave's being employed by the University of Illinois](rdfex1.eps)
-
 # Summary of concepts
 
 - **Domain of discourse**: some part of reality that we wish to represent in a model.
@@ -176,8 +146,6 @@ Jubien's examples of relation(ships) include:
 - **Property**: A way something could be.
 - **Relationship**: A way two or more things could be with respect to each other.
 - **Relational property**: A way something could be in virtue of its particpation in a relationship.
-- **Proposition**: A language-independent bearer of truth values and object of propositional attitudes like belief.
-- **State of affairs**: A particular's exemplifying a property, or one or more
-  particulars' exemplifying a relation.
+
 
 # Further Reading

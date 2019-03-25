@@ -1,0 +1,186 @@
+:Project1 a :Assignment ;
+  rdfs:label "First Group Project"@en ;
+  :moodleURL hwk:MOODLEPROJ1 ;
+  :sylSecId "Projects" ;
+  :hasDeadline :P1D1, :P1D2, :P1D3 .
+
+:Project2 a :Assignment ;
+  rdfs:label "Second Group Project"@en ;
+  :moodleURL hwk:MOODLEPROJ2 ;
+  :sylSecId "Projects" ;
+  :hasDeadline :P2D1, :P2D2, :P2D3 .
+
+:Project3 a :Assignment ;
+  rdfs:label "Third Group Project"@en ;
+  :moodleURL hwk:MOODLEPROJ3 ;
+  :sylSecId "Projects" ;
+  :hasDeadline :P3D1, :P3D2, :P3D3 .
+
+:Quiz1 a :Assignment ;
+  rdfs:label "Quiz 1"@en ;
+  :moodleURL hwk:MOODLEQUIZ1 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q1D1 .
+
+:Quiz2 a :Assignment ;
+  rdfs:label "Quiz 2"@en ;
+  :moodleURL hwk:MOODLEQUIZ2 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q2D1 .
+
+:Quiz3 a :Assignment ;
+  rdfs:label "Quiz 3"@en ;
+  :moodleURL hwk:MOODLEQUIZ3 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q3D1 .
+
+:Quiz4 a :Assignment ;
+  rdfs:label "Quiz 4"@en ;
+  :moodleURL hwk:MOODLEQUIZ4 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q4D1 .
+
+:Quiz5 a :Assignment ;
+  rdfs:label "Quiz 5"@en ;
+  :moodleURL hwk:MOODLEQUIZ5 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q5D1 .
+
+:Quiz6 a :Assignment ;
+  rdfs:label "Quiz 6"@en ;
+  :moodleURL hwk:MOODLEQUIZ6 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q6D1 .
+
+:Quiz7 a :Assignment ;
+  rdfs:label "Quiz 7"@en ;
+  :moodleURL hwk:MOODLEQUIZ7 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q7D1 .
+
+:Quiz8 a :Assignment ;
+  rdfs:label "Quiz 8"@en ;
+  :moodleURL hwk:MOODLEQUIZ8 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q8D1 .
+
+:Quiz9 a :Assignment ;
+  rdfs:label "Quiz 9"@en ;
+  :moodleURL hwk:MOODLEQUIZ9 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q9D1 .
+
+:Quiz10 a :Assignment ;
+  rdfs:label "Quiz 10"@en ;
+  :moodleURL hwk:MOODLEQUIZ10 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q10D1 .
+
+:Quiz11 a :Assignment ;
+  rdfs:label "Quiz 11"@en ;
+  :moodleURL hwk:MOODLEQUIZ11 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q11D1 .
+
+:Quiz12 a :Assignment ;
+  rdfs:label "Quiz 12"@en ;
+  :moodleURL hwk:MOODLEQUIZ12 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q12D1 .
+
+:Quiz13 a :Assignment ;
+  rdfs:label "Quiz 13"@en ;
+  :moodleURL hwk:MOODLEQUIZ13 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q13D1 .
+
+:Quiz14 a :Assignment ;
+  rdfs:label "Quiz 14"@en ;
+  :moodleURL hwk:MOODLEQUIZ14 ;
+  :sylSecId "Quizzes" ;
+  :hasDeadline :Q14D1 .
+
+:Homework1 a :Assignment ;
+  rdfs:label "Homework Assignment 1"@en ;
+  :moodleURL hwk:MOODLEHWK1 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H1D1 .
+
+:Homework2 a :Assignment ;
+  rdfs:label "Homework Assignment 2"@en ;
+  :moodleURL hwk:MOODLEHWK2 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H2D1 .
+
+:Homework3 a :Assignment ;
+  rdfs:label "Homework Assignment 3"@en ;
+  :moodleURL hwk:MOODLEHWK3 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H3D1 .
+
+:Homework4 a :Assignment ;
+  rdfs:label "Homework Assignment 4"@en ;
+  :moodleURL hwk:MOODLEHWK4 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H4D1 .
+
+:Homework5 a :Assignment ;
+  rdfs:label "Homework Assignment 5"@en ;
+  :moodleURL hwk:MOODLEHWK5 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H5D1 .
+
+:Homework6 a :Assignment ;
+  rdfs:label "Homework Assignment 6"@en ;
+  :moodleURL hwk:MOODLEHWK6 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H6D1 .
+
+:Homework7 a :Assignment ;
+  rdfs:label "Homework Assignment 7"@en ;
+  :moodleURL hwk:MOODLEHWK7 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H7D1 .
+
+:Homework8 a :Assignment ;
+  rdfs:label "Homework Assignment 8"@en ;
+  :moodleURL hwk:MOODLEHWK8 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H8D1 .
+
+:Homework9 a :Assignment ;
+  rdfs:label "Homework Assignment 9"@en ;
+  :moodleURL hwk:MOODLEHWK9 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H9D1 .
+
+:Homework10 a :Assignment ;
+  rdfs:label "Homework Assignment 10"@en ;
+  :moodleURL hwk:MOODLEHWK10 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H10D1 .
+
+:Homework11 a :Assignment ;
+  rdfs:label "Homework Assignment 11"@en ;
+  :moodleURL hwk:MOODLEHWK11 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H11D1 .
+
+:Homework12 a :Assignment ;
+  rdfs:label "Homework Assignment 12"@en ;
+  :moodleURL hwk:MOODLEHWK12 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H12D1 .
+
+:Homework13 a :Assignment ;
+  rdfs:label "Homework Assignment 13"@en ;
+  :moodleURL hwk:MOODLEHWK13 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H13D1 .
+
+:Homework14 a :Assignment ;
+  rdfs:label "Homework Assignment 14"@en ;
+  :moodleURL hwk:MOODLEHWK14 ;
+  :sylSecId "Homework" ;
+  :hasDeadline :H14D1 .
+

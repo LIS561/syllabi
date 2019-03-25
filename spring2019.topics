@@ -1,0 +1,166 @@
+:IMandKR a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Information Modeling and Knowledge Representation"@en .
+
+:EntitiesProperties a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "EPRREADING" ;
+  skos:prefLabel "Entities, Properties, and Relationships"@en .
+
+:Syntax a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SYNTAXREADING" ;
+  skos:prefLabel "Syntax and Grammar"@en .
+
+:Graphs a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "GRAPHSREADING" ;
+  skos:prefLabel "Graphs"@en .
+
+:ConceptualGraphs a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "KNOWLEDGEGRAPHS" ;
+  skos:prefLabel "Knowledge Graphs"@en .
+
+:Logic1a a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGIC1READING" ;
+  skos:prefLabel "Predicate Logic Syntax"@en .
+
+:Logic1b a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Predicate Logic Semantics"@en .
+
+:Logic1c a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Predicate Logic Reasoning"@en .
+
+:Sets a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SETREADING" ;
+  skos:prefLabel "Sets and relations"@en .
+
+:LogicD a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGICDREADING" ;
+  skos:prefLabel "Description Logics"@en .
+
+
+
+
+
+
+
+
+
+
+:Logic1r a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGICRELATIONALREADING" ;
+  skos:prefLabel "Logic, classes, and relationships"@en .
+
+
+:SemanticWeb a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SEMANTICWEBREADING" ;
+  skos:prefLabel "Semantic Web"@en .
+
+
+:Logic0a a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "FOUNDATIONSREADING" ;
+  skos:prefLabel "Logic and Foundations"@en .
+
+:Logic0b a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "LOGIC0BREADING" ;  
+  skos:prefLabel "Propositional Logic, Part 2"@en .
+
+:ModelsDomains a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "METAPHYSICSREADING" ;  
+  skos:prefLabel "Models, Domains, Properties, and Relationships"@en.
+
+:ModelsModeling a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "MODELSREADING" ;  
+  skos:prefLabel "Models and Modeling"@en.
+
+:Functions a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Functions"@en .
+
+:Relations a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "RELATIONSREADING" ;
+  skos:prefLabel "Relations"@en .
+
+
+:Automata a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "AUTOMATAREADING" ;
+  skos:prefLabel "Automata"@en .
+
+:UMLnotation a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "UMLREADING" ;
+  skos:prefLabel "Class Diagrams"@en .
+
+:ClassesUML a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "UML Part 2: classes and sets"@en .
+
+:NormalForms1 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "NORMALFORMREADING" ;
+  skos:prefLabel "Normal forms, Part 1"@en .
+
+:NormalForms2 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Normal forms, Part 2"@en .
+
+:RelationalAlgebra a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "RELALGEBRAREADING" ;  
+  skos:prefLabel "Relational Algebra"@en.
+
+
+:Semantics a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "SEMANTICSREADING" ;
+  skos:prefLabel "Semantics and Interpretation"@en .
+
+:RDF1 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "RDFREADING" ;
+  skos:prefLabel "The RDF model and language"@en .
+
+:RDF2 a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "RDF, Part 2"@en .
+
+:Ontologies a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "ONTOLOGYREADING" ;
+  skos:prefLabel "Ontologies"@en .
+
+:Inference a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Inference and reasoners"@en .
+
+
+
+:Applications a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  :reqReading "GRAPHAPPREADING" ;
+  skos:prefLabel "Applications and success stories"@en .
+
+:Review a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Review Session"@en .
+
+:Conclusion a skos:Concept ;
+  skos:inScheme :LIS561concepts ;
+  skos:prefLabel "Wrapup and Evaluation"@en .
+
+

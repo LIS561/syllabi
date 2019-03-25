@@ -1,0 +1,18 @@
+:Week0 dcterms:subject :ModelsModeling .
+:Week1 dcterms:subject :Logic0a .
+:Week2 dcterms:subject :UMLnotation, :Sets, :Logic1r .
+:Week3 dcterms:subject :Relations, :RelationalAlgebra .
+:Week4 dcterms:subject :Semantics .
+:Week5 dcterms:subject :ModelsDomains .
+:Week6 dcterms:subject :Logic1a .
+:Week7 dcterms:subject :Logic1b .
+:Week8 dcterms:subject :Syntax .
+:Week9 dcterms:subject :Graphs, :Automata .
+:Week11 dcterms:subject :ConceptualGraphs .
+:Week12 dcterms:subject :RDF1 .
+:Week13 dcterms:subject :LogicD .
+:Week14 dcterms:subject :Ontologies .
+:Week15 dcterms:subject :Applications .
+:Week16 dcterms:subject :Conclusion .
+
+
