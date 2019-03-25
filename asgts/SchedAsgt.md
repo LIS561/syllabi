@@ -6,7 +6,7 @@ Students assigned to project groups need to meet together. We wish to
 book the smallest number of meeting rooms and times that we can, which
 means scheduling meetings at the same time if possible.
 
-If the students are identified by letter, and the meetings by number,
+If the students are identified by letter, and the groups by number,
 what's the smallest number of rooms and times that we can book while
 ensuring that no student will miss a meeting? Produce a timetable of
 meeting times and places.
