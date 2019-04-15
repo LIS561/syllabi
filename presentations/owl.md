@@ -1,7 +1,7 @@
 ---
 title: The OWL Ontology Language
 author: Dave Dubin
-date: April 24, 2017
+date: April 2019
 header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
