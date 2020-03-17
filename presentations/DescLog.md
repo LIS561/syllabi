@@ -54,7 +54,7 @@ header-includes:
   to guarantee that our questions are decidable, and that algorithms
   for answering our questions are usually efficient.
 
-# Key differences: predicate logic vs. description logs
+# Key differences: predicate logic vs. description logics
 
 1. Description logics only have unary and binary predicates.
     - Just like Bach's fragment. Nothing like ${\forall}x{\forall}y{\exists}z\ Pxyz$ is allowed.
@@ -63,7 +63,7 @@ header-includes:
     - Unary predicates are called *concepts* (like RDF classes).
     - Binary predicates are called *roles* (like RDF properties).
 2. Variables aren't explicit in syntax. Concepts have one and roles have two.
-3. Reasoning about anonymous individuals is imited with description logics.
+3. Reasoning about anonymous individuals is limited with description logics.
 4. Description logic statements are understood to be divided into
    three categories:
     - Statements assigning individuals to concepts and roles are in the *ABox*.
